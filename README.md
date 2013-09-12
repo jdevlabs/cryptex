@@ -1,7 +1,7 @@
 Cryptex - 2
 ===========
 
-An Online Hacking-cum-Treasure Hunt.
+An Online Hacking Game.
 
 This is the centralized repo, containing everything related to the project.
 
