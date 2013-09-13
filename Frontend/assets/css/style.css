@@ -1,0 +1,71 @@
+/* Stylesheet for cryptex 
+	Created by Zishan
+*/
+
+div#outerDiv {
+	position: relative;
+}
+
+div#signBox {
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	width: 336px;
+	height: 200px;
+	margin-left: -168px;
+	margin-top: -100px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 0px 20px #000000;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	box-shadow: 0px 0px 20px #000000;
+	opacity: 0.65;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 65);
+	filter: alpha(opacity = 65);	
+}
+
+#signText {
+	display: block;
+	margin-left: 133px;
+	padding-top: 12px;
+	font-size: 1.2em;
+}
+
+.signField{
+	margin-left: 48px;
+	
+}
+
+.signTextIn{
+	margin-top: 15px;
+	font-size: 1.1em;
+}
+
+@font-face{
+	font-family: 'captureIt';
+	src: local('Capture It'),
+		url('../fonts/Capture_it.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'fffTusj';
+	src: local('FFF Tusj'),
+		url('../fonts/FFF_Tusj.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'digitalDream';
+	src: local('Digital Dream'),
+		url('../fonts/DIGITALDREAMFAT.ttf') format('truetype');
+}
+
+header h1{
+	margin-top: 70px;
+	margin-left: -350px;
+	position: fixed;
+	left: 50%;
+	font-family: 'digitalDream';
+	font-size: 8em;
+	opacity: .7;
+}
