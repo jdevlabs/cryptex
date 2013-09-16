@@ -1,4 +1,13 @@
+<?php
+  echo "string";
+  error_reporting(E_ALL);
+  mysqli_connect('localhost', 'r', '') or die('wtf');
+  echo "string";
+?>
+
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
