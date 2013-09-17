@@ -1,8 +1,57 @@
+
 <?php
-  echo "string";
-  error_reporting(E_ALL);
-  mysqli_connect('localhost', 'r', '') or die('wtf');
-  echo "string";
+
+//Database Parameters
+$mysql_host = 'localhost';
+$mysql_user = 'dufferzafar';
+$mysql_pass = 'plok';
+
+$mysql_db = 'test';
+
+// Testing
+@mysql_connect($mysql_host, $mysql_user, $mysql_pass) or die('Connection Failed');
+@mysql_select_db($mysql_db) or die('Database Failed to Load');
+
+// DB Loaded. Have Some Fun Now.
+$query = "SELECT userid, pass FROM user WHERE username = 'dufferzafar' ORDER BY userid";
+
+if ($qRun = mysql_query($query))
+{
+  // echo "Query successfully executed";
+
+  // No Row Macthed
+  if (mysql_num_rows($qRun) == NULL)
+  {
+    echo "No Result Found";
+  }
+  else
+  {
+    while ($qRow = mysql_fetch_assoc($qRun))
+    {
+      $userid = $qRow['userid'];
+      $pass = $qRow['pass'];
+
+      echo "User " . $userid . " has password " . $pass .  "<br>";
+    }
+  }
+}
+else
+{
+  echo mysql_error();
+  die("<br><br>Query Failed");
+}
+
+
+// Better Way.
+// $link = mysql_connect('localhost', 'dufferzafar', 'plok');
+// if (!$link)
+// {
+//     die('Could not connect:     ' . mysql_error());
+// }
+// echo 'Connected successfully';
+// mysql_close($link);
+
+die("<br><br>All is well");
 ?>
 
 <!DOCTYPE html>
