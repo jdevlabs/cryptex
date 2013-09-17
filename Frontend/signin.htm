@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cryptex|Welcome</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<link type = "text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css" />
-		<link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-		<!-- HTML5 shim for IE backwards compatibility -->
-			<!-- [if lt IE 9]>
-				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<![endif]-->
-	</head>
-	
-	<body>
-		<div id="outerDiv">
-			<header>
-				<h1>CRYPTEX</h1>			
-			</header>
-	   		<div id="signBox">
-	   			<span id="signText">Sign In</span>
-	   			<div class="signField" >
-		   			<form action="#" method="post" name="signIn">	   	
-						<div class="signTextIn">User Name</div>
-						<input type="text" name="userName" placeholder="Username" />
-						<br />
-						<div class="signTextIn">Password</div>
-						<input type="password" name="password" placeholder="Password"/>
-						<button type="submit" class="btn btn-primary" data-loading-text="Loading...">Sign In</button>
-					</form>
-				</div> <!-- end signField -->	
-			</div> <!-- end signBox -->
-		</div> <!-- end outerDiv -->
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	</body>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cryptex | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link type = "text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css" />
+
+
+</head>
+
+<body>
+	<!-- <div class="container" style="margin-top: 150px;"> -->
+	<!-- <div class="row"> -->
+	<div class="span4 offset4 well"  style="margin-top: 150px;">
+		<legend>Please Sign In</legend>
+		<!-- <div class="alert alert-error">
+			<a class="close" data-dismiss="alert" href="#">X</a>Incorrect Username or Password!
+		</div> -->
+		<!-- <form method="POST" action="" accept-charset="UTF-8"> -->
+		<label>Username</label>
+		<input type="text" id="username" class="span4" name="username" placeholder="Username">
+		<label>Password</label>
+		<input type="password" id="password" class="span4" name="password" placeholder="Password">
+		<!-- <label class="checkbox inline">
+			<input type="checkbox" name="remember" value="1"> Remember Me
+		</label> -->
+		<button style="margin-top: 10px;" type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
+		<!-- </form> -->
+	</div>
+	<!-- </div> -->
+	<!-- </div> -->
+
+	<!-- Load Additional Modules at the end. -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
 </html>
