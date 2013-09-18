@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptex | Register</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link type = "text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css" />
+
+
+</head>
+
+<body>
+
+  <!-- <img src="assets/img/Cryptex_logo.png" style="margin-left: 286px; margin-top: -5px; height=50%; widht=50%"> -->
+  <div class="span4 offset4 well "  style="margin-top: 100px;">
+    <legend>Registration</legend>
+    <label>Name</label>
+    <input type="text" id="name" class="span4" name="name" placeholder="Name">
+    <label>Username</label>
+    <input type="text" id="username" class="span4" name="username" placeholder="Username">
+    <label>E-mail</label>
+    <input type="email" id="email" class="span4" name="email" placeholder="E-mail">
+    <label>Password</label>
+    <input type="password" id="password" class="span4" name="password" placeholder="Password">
+    <label>Confirmation</label>
+    <input type="password" id="cpassword" class="span4" name="cpassword" placeholder="Confirm password">
+
+    <button style="margin-top: 10px;" type="submit" name="Register" class="btn btn-info btn-block">Register me</button>
+    <hr>
+
+    <button style="margin-top: 10px;" type="submit" name="Register" class="btn btn-info btn-block">Login with Facebook</button>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+
 
 <?php
 
@@ -22,7 +61,7 @@ if ($qRun = mysql_query($query))
   // No Row Macthed
   if (mysql_num_rows($qRun) == NULL)
   {
-    echo "No Result Found";
+    // echo "No Result Found";
   }
   else
   {
@@ -31,7 +70,7 @@ if ($qRun = mysql_query($query))
       $userid = $qRow['userid'];
       $pass = $qRow['pass'];
 
-      echo "User " . $userid . " has password " . $pass .  "<br>";
+      // echo "User " . $userid . " has password " . $pass .  "<br>";
     }
   }
 }
@@ -51,54 +90,5 @@ else
 // echo 'Connected successfully';
 // mysql_close($link);
 
-die("<br><br>All is well");
+// die("<br><br>All is well");
 ?>
-
-<!DOCTYPE html>
-
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/crypt.png">
-
-    <title>Signin Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="form-control" placeholder="Email address" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
-</html>

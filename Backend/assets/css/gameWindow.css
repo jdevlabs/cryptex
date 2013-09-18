@@ -1,0 +1,58 @@
+/* template stylesheet for cryptex */
+
+/**{
+	border: .5px dashed black;
+}*/
+
+/* Navigation Panel */
+
+nav#mainMenu{
+	position: fixed;
+	top: 65%;
+	margin-top: -150px;
+}
+
+#mainMenu .hasSub{
+	z-index: 1;
+}
+
+
+li.hasSub, ul{
+	margin: 0px;
+}
+
+
+ul a{
+	padding: 30px;
+	background-color: #ccc;
+	border-radius: 100%;
+}
+
+li.active{
+	padding: 40px;
+}
+
+li.hasSub{
+	padding: 40px;
+}
+
+
+#mainMenu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+#mainMenu .hasSub ul{
+	display: none;
+}
+
+#mainMenu .hasSub:hover ul{
+	display: inline-block;
+}
+
+
+#mainMenu .subMenu li{
+	display: inline-block;
+}
