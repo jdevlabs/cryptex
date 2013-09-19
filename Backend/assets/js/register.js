@@ -20,6 +20,25 @@ $(document).ready(function()
 
 		// alert($(this).serialize())
 
+		$.ajax({
+			//Show A Loader
+			// beforeSend: function() {},
+
+			//The Request
+			type: "POST",
+			url: "register.php",
+			data: $("#submitForm").serialize(),
+			success: function(data, tStatus)
+			{
+				alert("success: " + data);
+			},
+			error:function(jqXHR, tStatus, errorThrown)
+			{
+				alert("failure");
+			}
+			// error: function(jqXHR, tStatus, errorThrown) {}
+		});
+
 		// $msg.addClass('alert-success').html("<strong>Congratulations!</strong> You've successfully registered.").show();
 		return e.preventDefault();
 	});
