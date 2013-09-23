@@ -4,21 +4,13 @@ $(document).ready(function()
 	$('#submitForm').submit(function(e)
 	{
 
-		uName = $('#uName').val(); name = $('#name').val();
-		pass = $('#pass').val(); cPass = $('#cPass').val();
+		uName = $('#uName').val(); pass = $('#pass').val();
 
 		// Empty Fields
 		// if (uName == '')
 		// 	$msg.addClass('alert-error').html("<strong>Username :</strong> Is that the best you can come up with?").show();
-		// else if (name == '')
-		// 	$msg.addClass('alert-error').html("<strong>Name :</strong> Don't you have a name or something?").show();
 		// else if (pass == '')
 		// 	$msg.addClass('alert-error').html("<strong>Passwords :</strong> Think of something.").show();
-		// //Both Passwords are equal
-		// else if (pass != cPass)
-		// 	$msg.addClass('alert-error').html("<strong>Passwords :</strong> Passwords don't match bud!").show();
-
-		// alert($(this).serialize())
 
 		$.ajax({
 			//Show A Loader
@@ -26,7 +18,7 @@ $(document).ready(function()
 
 			//The Request
 			type: "POST",
-			url: "register.php",
+			url: "db.login.php",
 			data: $("#submitForm").serialize(),
 			success: function(data, tStatus)
 			{
