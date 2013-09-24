@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<?php>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,10 @@
 
 	<body>
 
-		require navbar.php
-	
+	<?php
+		require 'navbar.php';
+	?>
+
 		<!-- <div class="container" style="margin-top: 150px;"> -->
 		<!-- <div class="row"> -->
 		<!-- <img src="assets/img/Cryptex_logo.png" style="margin-left: 286px; margin-top: -20px;"> -->
@@ -31,16 +32,15 @@
 				</label> -->
 			<button style="margin-top: 10px;" type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
 			<hr>
-			
+
 			<button style="margin-top: 10px;" type="submit" name="Register" class="btn btn-info btn-block">Login with Facebook</button>
 			<!-- </form> -->
 		</div>
 		<!-- </div> -->
 		<!-- </div> -->
-	
+
 		<!-- Load Additional Modules at the end. -->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
-<?>
