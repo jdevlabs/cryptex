@@ -9,6 +9,8 @@
 </head>
 
 <body>
+	<?php	require 'navbar.php'; ?>
+
 	<!-- <img src="assets/img/Cryptex_logo.png" style="margin-left: 286px; margin-top: -5px; height=50%; widht=50%"> -->
 	<div class="span4 offset4 well "  style="margin-top: 100px;">
 		<form id="submitForm">

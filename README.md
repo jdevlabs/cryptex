@@ -1,13 +1,18 @@
 # Cryptex 2
-#### v0.3.1
-----
+v0.3.1
 
 An online hacking and treasure hunting Game.
 
 This is the centralized repo containing everything related to the project.
 
+## Table of Contents
 
-### What's Done
+* [What's been done](#done)
+* [Stuff to do](#todo)
+* [Issues](#issues)
+* [Guidelines](#guide)
+
+## <a name="done"></a> What's Done
 
 * Frontend ( based on Bootstrap )
 
@@ -20,37 +25,36 @@ This is the centralized repo containing everything related to the project.
   * Ajax/PHP for Register & Login
 
 
-### To Do
+## <a name="todo"></a> To Do
 
-* Frontend
+* MainWindow Functions (jq+php)
 
-  * MainWindow Functions
+  * Load question
+  * Submit answer
+  * Load avatar data
 
-    * Load question (jq+php)
-    * Submit answer (jq+php)
-    * Load avatar data (jq+php)
+* Login/Register
 
-  * Login/Register
+  * Facebook Integration (php fb api)
+  * On-the-fly form validation (html+jq)
 
-    * On-the-fly form validation (html+jq)
+* DB Tables
+
+  * users: id, name, username, pass (MD5)
+  * ques: id, ques(i) ??
+  * ans: id, ans(i) ??
+
+* Low Priority
 
   * Leaderboard ( Design + Functionality )
   * Level Map ( Design + Functionality )
 
-* Backend
 
-  * Login/Register
+## <a name="issues"></a> Design Issues
 
-    * Prevent all sorts of SQL injection (php+mysql)
+* Whether to use navbar.php or not?
+* How to store and load questions?
 
-  * DB Tables
+## <a name="guide"></a> Guidelines
 
-    * users: id, name, username, pass (MD5)
-
-  * Questions DB
-
-
-### Design Issues
-
-  * Whether to use navbar.php or not?
-  * How to store and load questions?
+* Minify (or obufuscate) all javascript
