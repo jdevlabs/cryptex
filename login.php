@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	<?php	require 'navbar.php'; ?>
 	<!-- <div class="container" style="margin-top: 150px;"> -->
 	<!-- <div class="row"> -->
 	<!-- <img src="assets/img/Cryptex_logo.png" style="margin-left: 286px; margin-top: -20px;"> -->
