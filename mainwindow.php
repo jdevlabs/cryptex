@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<?php require 'navbar.php'; ?>
+<?php require '_navbar.php'; ?>
 
 <div class="row span4 offset3" style="margin-top: 120px;">
 	<div class="span8">
@@ -28,8 +28,8 @@
 	</div>
 </div>
 
-<!-- Load additional files at end so page loading seems faster. -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!-- // <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
 <?php //Now Load Additional Thingies. Can the user exploit? ?>

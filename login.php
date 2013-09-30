@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<?php	require 'navbar.php'; ?>
+	<?php	require '_navbar.php'; ?>
 	<!-- <div class="container" style="margin-top: 150px;"> -->
 	<!-- <div class="row"> -->
 	<!-- <img src="assets/img/Cryptex_logo.png" style="margin-left: 286px; margin-top: -20px;"> -->
@@ -32,10 +32,11 @@
 		</form>
 	</div>
 
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<!-- // <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
   <!-- Ajax Handlers -->
-  <script type="text/javascript" src="ajax/login.js"></script>
+  <script type="text/javascript" src="ajax/_login.js"></script>
 </body>
 </html>

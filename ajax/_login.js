@@ -18,7 +18,7 @@ $(document).ready(function()
 
 			//The Request
 			type: "POST",
-			url: "db.login.php",
+			url: "db\\_login.php",
 			data: $("#submitForm").serialize(),
 			success: function(data, tStatus)
 			{

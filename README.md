@@ -1,5 +1,4 @@
-# Cryptex 2
-v0.3.1
+# Cryptex 2 v0.3.1
 
 An online hacking and treasure hunting Game.
 
@@ -9,6 +8,7 @@ This is the centralized repo containing everything related to the project.
 
 * [What's been done](#done)
 * [Stuff to do](#todo)
+* [Notes](#notes)
 * [Issues](#issues)
 * [Guidelines](#guide)
 
@@ -49,6 +49,14 @@ This is the centralized repo containing everything related to the project.
   * Leaderboard ( Design + Functionality )
   * Level Map ( Design + Functionality )
 
+## <a name="notes"></a> Notes
+
+* Files beginning with an **underscore** mostly contain helper functions and just work as include files.
+
+* The **ajax** folder contains the js ajax handlers. Their php counterparts are kept in **db**.
+
+* **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
+
 
 ## <a name="issues"></a> Design Issues
 
@@ -57,4 +65,4 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="guide"></a> Guidelines
 
-* Minify (or obufuscate) all javascript
+* Minify (or obfuscate) all javascript
