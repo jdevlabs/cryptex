@@ -10,6 +10,7 @@ This is the centralized repo containing everything related to the project.
 * [Stuff to do](#todo)
 * [Notes](#notes)
 * [Issues](#issues)
+* [Ideas](#ideas)
 
 ## <a name="done"></a> What's Done
 
@@ -64,3 +65,8 @@ This is the centralized repo containing everything related to the project.
 
 * Whether to use navbar.php or not?
 * How to store and load questions?
+
+## <a name="ìdeas"></a> Ideas
+
+* Questions could be themed. Harry Potter?
+* A Random quote on every page. Hack this site has them.
