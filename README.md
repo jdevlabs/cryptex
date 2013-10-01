@@ -24,10 +24,10 @@ This is the centralized repo containing everything related to the project.
 
   * Ajax/PHP for Register & Login
 
+* Added nojs.php. All other pages will redirect to it incase the javascript on the user's computer is disabled.
+
 
 ## <a name="todo"></a> To Do
-
-* Added noscript redirection to *_header.php*. Create nojs.php now.
 
 * MainWindow Functions (jq+php)
 
