@@ -1,4 +1,4 @@
-# Cryptex 2 v0.3.1
+# Cryptex v0.3.5
 
 An online hacking and treasure hunting Game.
 
@@ -10,7 +10,6 @@ This is the centralized repo containing everything related to the project.
 * [Stuff to do](#todo)
 * [Notes](#notes)
 * [Issues](#issues)
-* [Guidelines](#guide)
 
 ## <a name="done"></a> What's Done
 
@@ -26,6 +25,8 @@ This is the centralized repo containing everything related to the project.
 
 
 ## <a name="todo"></a> To Do
+
+* Add noscript tags to ensure that some other stuff is displayed when javascript is disabled.
 
 * MainWindow Functions (jq+php)
 
@@ -57,12 +58,9 @@ This is the centralized repo containing everything related to the project.
 
 * **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
 
+* We'll Minify (or obfuscate) all javascript at the end of development. Post Production.
 
 ## <a name="issues"></a> Design Issues
 
 * Whether to use navbar.php or not?
 * How to store and load questions?
-
-## <a name="guide"></a> Guidelines
-
-* Minify (or obfuscate) all javascript
