@@ -24,7 +24,7 @@ $(document).ready(function()
 
 			//The Request
 			type: "POST",
-			url: "db.register.php",
+			url: "db\\_register.php",
 			data: $("#submitForm").serialize(),
 			success: function(data, tStatus)
 			{

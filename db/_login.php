@@ -1,5 +1,5 @@
 <?php
-require 'db.connect.php';
+require '_connect.php';
 
 if(isset($_POST['username'],  $_POST['password']))
 {
