@@ -13,6 +13,7 @@ Choose one of - Very Easy, Easy, Medium, Hard, Steel -->
 
 <!-- Copy the text of the problem as-is -->
 **Problem Description** : 
+This level is what we call "The Idiot Test", if you can't complete it, don't give up on learning all you can, but, don't go begging to someone else for the answer, thats one way to get you hated/made fun of. Enter the password and you can continue. 
 
 <!-- Your solution. Use simple english. Do remember that all of this data is meta and won't matter. Add the answer too, if the level has it. -->
 **Solution** : Press Ctrl+U to view the source code. The password is present in the comments.

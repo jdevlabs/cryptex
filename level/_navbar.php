@@ -1,3 +1,6 @@
+<!--
+  Navbar Begins
+-->
 <div class="navbar"><div class="navbar-inner"><div class="container-fluid">
   <a class="brand" href="#" name="top">Cryptex 2</a>
   <div class="nav-collapse collapse">
@@ -27,13 +30,13 @@
         </div>
       </li>
       <?php //Visible only on Main Game Window ?>
-      <li id="navSeparator2" style="display:none;" class="divider-vertical"></li>
-      <li id="navUserPopup" style="display:none;" class="dropdown">
+      <li id="navSeparator2" class="divider-vertical"></li>
+      <li id="navUserPopup" class="dropdown">
         <a class="dropdown-toggle" href="#"  data-toggle="dropdown"><i class="icon-user"></i><strong class="caret"></strong></a>
         <div class="dropdown-menu span3 " style="padding: 15px; padding-bottom: 0px;">
           <form method="post" action="login" accept-charset="UTF-8">
             <div class="row pull-right">
-              <div class="span1"><img src="assets/img/avatar.svg" alt="avatar"></div>
+              <div class="span1"><img src="/cryptex/assets/img/avatar.svg" alt="avatar"></div>
             </div>
             <!-- <label><span class=" badge badge-info">Level : 1000</span></label> -->
             <h4 style="margin-bottom: 15px;">theShivamRana</h4>
@@ -50,3 +53,6 @@
       </li>
     </ul>
   </div></div></div></div>
+<!--
+  Navbar Ends
+-->

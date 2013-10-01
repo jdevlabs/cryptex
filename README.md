@@ -27,7 +27,7 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="todo"></a> To Do
 
-* Add noscript tags to ensure that some other stuff is displayed when javascript is disabled.
+* Added noscript redirection to *_header.php*. Create nojs.php now.
 
 * MainWindow Functions (jq+php)
 
@@ -66,7 +66,7 @@ This is the centralized repo containing everything related to the project.
 * Whether to use navbar.php or not?
 * How to store and load questions?
 
-## <a name="ìdeas"></a> Ideas
+## <a name="ideas"></a> Ideas
 
 * Questions could be themed. Harry Potter?
 * A Random quote on every page. Hack this site has them.
