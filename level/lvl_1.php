@@ -1,65 +1,56 @@
-<?php require('_header.php') ?>
+<?php require('_header.php'); ?>
 
 <?php
-
   /**
    * Check whether the user is permitted to access this level.
-   *
    */
 
-  // $current_level = getCurrentLevel();
+  // Fetch current_user_id
+  $current_user_id = 2;
+
+  // Get current user level
+  $current_level = getField("gamedata", "level", $current_user_id);
   // if ($current_level != 1)
-  //   redirectTo("lvl_" . $current_level . ".php");
-
-  /**
-   * Generates Random Strings
-   * @param  integer $length Length of the string to generate
-   * @return String          The random string, ready to be served
-   */
-  function generateRandomString($length = 10)
-  {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++)
-    {
-      $randomString .= $characters[rand(0, strlen($characters) - 1)];
-    }
-    return $randomString;
-  }
+    // redirectTo("lvl_" . $current_level . ".php");
 ?>
 
+<?php require('_helpers.php'); ?>
+
 <body>
-<?php require('_navbar.php') ?>
+
+<script> document.title = "Cryptex | Level " <?php echo '+ "' . $current_level . '"' ?> </script>
+
+<?php require('_navbar.php'); ?>
 
   <div class="row span4 offset3" style="margin-top: 120px;">
     <div class="span8">
-      <h5><i class="icon icon-fire"></i> LEVEL 1</h5>
+      <h5><i class="icon icon-fire"></i> Level <?php echo $current_level; ?></h5>
       <hr>
       <p id="quesData">
         The big fat lady asks Harry for the password to the gryffindor's common room but harry has yet again forgotten it. <br><br>
         Luckily, Harry knew that this could happen, so he wrote down the password in this file somewhere. <br><br>
         Can you please fecth it for him?
       </p>
+
       <?php
-        /**
-         * Check whether the random stuff exists in the db. If not, then generate and push to db.
-         *
-         * $randomStuff = getRandomStuff("lvl_1");
-         *
-         * if $randomStuff != NULL
-         *   echo "<!-- The password as told by Hermione is " . $randomStuff . " -->";
-         * else
-         *
-         */
+        // Get ques data from db.
+        $ques = getField("gamedata", "ques", $current_user_id);
 
-        // This is the random part of the code
-        echo "<!-- The password as told by Hermione is " . generateRandomString(25) . " -->";
+        //The ques has not yet been generated.
+        if (is_null($ques) or empty($ques))
+        {
+          // Generate question. The algorithm will change with levels.
+          $ques = generateRandomString(25);
 
-        /**
-         * The generated random stuff needs to added to db - it'd be generated only once per user per level
-         *
-         * pushRandomStuff("lvl_1", randomStuff);
-         */
+          // Save question to db. It'll be generated once per user per level.
+          updateField("gamedata", "ques", $ques, $current_user_id);
+
+          // The ques and ans are same. Won't happen in every level.
+          updateField("gamedata", "ans", $ques, $current_user_id);
+        }
+
+        // Show the question data to user.
+        echo "<!-- The password as told by Hermione is " . $ques . " -->";
       ?>
 
       <hr>
