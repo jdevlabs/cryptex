@@ -40,11 +40,7 @@ This is the centralized repo containing everything related to the project.
   * Facebook Integration (php fb api)
   * On-the-fly form validation (html+jq)
 
-* DB Tables
-
-  * users: id, name, username, pass (MD5)
-  * ques: id, ques(i) ??
-  * ans: id, ans(i) ??
+* Update *gamedata* table when a new user registers.
 
 * Low Priority
 
