@@ -10,5 +10,3 @@
     <meta http-equiv="refresh" content="0; /cryptex/nojs.php">
   </noscript>
 </head>
-
-<?php require '../db/_dbFunctions.php'; ?>

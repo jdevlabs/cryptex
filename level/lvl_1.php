@@ -1,19 +1,49 @@
-<?php require('_header.php'); ?>
-
 <?php
-  /**
-   * Check whether the user is permitted to access this level.
-   */
+require('../db/_dbFunctions.php');
 
-  // Fetch current_user_id
-  $current_user_id = 2;
+// Fetch current_user_id
+$current_user_id = 1;
 
-  // Get current user level
-  $current_level = getField("gamedata", "level", $current_user_id);
-  // if ($current_level != 1)
-    // redirectTo("lvl_" . $current_level . ".php");
+// Hardcoded into every lvl php
+$this_level = 1;
+
+// Get current user level
+$current_level = intval(getField("gamedata", "level", $current_user_id));
+
+/**
+ * Form submitted. Check whether answer is correct.
+ */
+if (isset($_POST['answer']))
+{
+  $postAns = trim($_POST['answer']);
+
+  $ans = getField("gamedata", "ans", $current_user_id);
+
+  if ($postAns == $ans)
+  {
+    // die("Level Cleared");
+
+    // Update the current level
+    updateField("gamedata", "level", ($current_level + 1), $current_user_id);
+
+    // Redirect to next level
+    header("Location: lvl_" . ($current_level + 1) . ".php");
+  }
+}
+
+/**
+ * Check whether the user is permitted to access this level.
+ */
+
+// Is this the level user should be on?
+if ($this_level != $current_level)
+{
+  // Redirect to the correct level
+  header("Location: lvl_" . $current_level . ".php");
+}
 ?>
 
+<?php require('_header.php'); ?>
 <?php require('_helpers.php'); ?>
 
 <body>
@@ -54,10 +84,10 @@
       ?>
 
       <hr>
-      <form class="form-horizontal">
+      <form class="form-horizontal" method="POST">
         <div class="form-group">
-            <input id="quesInput" type="text" class="span7" name="answer" placeholder="Tha Big Fat Lady is waiting...">
-            <button id="quesBtn" type="submit" class="btn btn-primary">Submit</button>
+            <input name="answer" type="text" class="span7" name="answer" placeholder="Tha Big Fat Lady is waiting...">
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
