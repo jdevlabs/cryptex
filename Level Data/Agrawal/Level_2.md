@@ -1,15 +1,16 @@
 # Level 2 #
 
-* ** URL ** : [Hack this site basic 3] (https://www.hackthissite.org/missions/basic/3/).
+**URL** : [Hack this site basic 3] (https://www.hackthissite.org/missions/basic/3/).
 
-* ** Level ** : Easy
+**Level** : Easy
 
-* Time taken : 2 min
+**Time Taken** : 2 min
 
-* Problem Description: This time Network Security Sam remembered to upload the password file, but there were deeper problems than that.
+**Problem Description** :Cryptex Security has uploaded the password file, but there are deeper problems than that.
 
-* Solution: Source code mein jaa kar dekh lo ki password.php mein password hai. Phir bas address bar mein existing link ke aage password.php likh do.
+**Solution**: 
+Open source code and find that the uploaded file is password.php. Then you just need to open that file by adding it to the existing URL.
 
-* Answer: 686f4698
+**Answer**: Will be unique for every user.
 
-* Comments: Har user ke liye hum log password change kar sakte hain.
+**Comments**: We may name the password file as something other than password.php.
