@@ -5,7 +5,7 @@ require('../db/_dbFunctions.php');
 $current_user_id = 1;
 
 // Hardcoded into every lvl php
-$this_level = 2;
+$this_level = 3;
 
 // Get current user level
 $current_level = intval(getField("gamedata", "level", $current_user_id));
@@ -57,30 +57,28 @@ if ($this_level != $current_level)
       <h5><i class="icon icon-fire"></i> Level <?php echo $current_level; ?></h5>
       <hr>
       <p id="quesData">
-        Harry enters the room to find Seamus sitting ready with another absurd riddle of his. <br><br>
-        "I bet you can't solve this one" yells Seamus. <br><br>
-        "You said this last time too and the time before that and before that" said an exasperated Harry <br><br>
-        "Yeah, but this one is real..." <br><br>
-        "Let's just cut to the chase please Seamus, I'm really tired." <br><br>
-        "OK, tell me what  <?php echo '"' . ceaserCipher("Neville Likes Luna", 13) . '"' ?> means and I won't bug you for the day."
+        You are the all-singing all-dancing crap of the world.
       </p>
 
       <?php
         // Get ques data from db.
-        // $ques = getField("gamedata", "ques", $current_user_id);
+        $ques = getField("gamedata", "ques", $current_user_id);
 
         //The ques has not yet been generated.
-        // if (is_null($ques) or empty($ques))
-        // {
+        if (is_null($ques) or empty($ques))
+        {
           // Generate question. The algorithm will change with levels.
-          $ques = ceaserCipher("Neville Likes Luna", 13);
+          $ques = generateRandomString(25);
 
           // Save question to db. It'll be generated once per user per level.
           updateField("gamedata", "ques", $ques, $current_user_id);
 
           // The ques and ans are same. Won't happen in every level.
-          updateField("gamedata", "ans", ceaserCipher($ques, 13), $current_user_id);
-        // }
+          updateField("gamedata", "ans", $ques, $current_user_id);
+        }
+
+        // Show the question data to user.
+        echo "<!-- The password as told by Hermione is " . $ques . " -->";
       ?>
 
       <hr>

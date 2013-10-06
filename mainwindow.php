@@ -32,7 +32,13 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
-<?php //Now Load Additional Thingies. Can the user exploit? ?>
+<?php
+
+//Now Load Additional Thingies.
+// TODO: Can the user exploit?
+
+?>
+
 <script>
 	$('#navSeparator2').show();
 	$('#navUserPopup').show();
