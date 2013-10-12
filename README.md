@@ -6,13 +6,36 @@ This is the centralized repo containing everything related to the project.
 
 ## Table of Contents
 
-* [What's been done](#done)
 * [Stuff to do](#todo)
+* [Changelog](#changelog)
 * [Notes](#notes)
-* [Issues](#issues)
 * [Ideas](#ideas)
 
-## <a name="done"></a> What's Done
+## <a name="todo"></a> To Do
+
+* Update *gamedata* table when a new user registers.
+* Load *avatar data* using jQ/Ajax
+
+* Hints UI
+  * Modals
+  * Tabs (Hint 1 | Hint 2 | Hint 3)
+
+* Contact Modal
+
+* Login/Register
+  * Facebook Integration (php fb api)
+  * On-the-fly form validation (html+jq)
+
+* Super Important
+  * URL Modification to access levels.
+
+* Low Priority
+  * Leaderboard ( Design + Functionality )
+  * Level Map ( Design + Functionality )
+
+## <a name="done"></a> Changelog
+
+* Added: nojs.php - All other pages will redirect to it incase the javascript on the user's computer is disabled.
 
 * Frontend ( based on Bootstrap )
 
@@ -24,29 +47,6 @@ This is the centralized repo containing everything related to the project.
 
   * Ajax/PHP for Register & Login
 
-* Added nojs.php. All other pages will redirect to it incase the javascript on the user's computer is disabled.
-
-
-## <a name="todo"></a> To Do
-
-* MainWindow Functions (jq+php)
-
-  * Load question
-  * Submit answer
-  * Load avatar data
-
-* Login/Register
-
-  * Facebook Integration (php fb api)
-  * On-the-fly form validation (html+jq)
-
-* Update *gamedata* table when a new user registers.
-
-* Low Priority
-
-  * Leaderboard ( Design + Functionality )
-  * Level Map ( Design + Functionality )
-
 ## <a name="notes"></a> Notes
 
 * Files beginning with an **underscore** mostly contain helper functions and just work as include files.
@@ -56,11 +56,6 @@ This is the centralized repo containing everything related to the project.
 * **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
 
 * We'll Minify (or obfuscate) all javascript at the end of development. Post Production.
-
-## <a name="issues"></a> Design Issues
-
-* Whether to use navbar.php or not?
-* How to store and load questions?
 
 ## <a name="ideas"></a> Ideas
 
