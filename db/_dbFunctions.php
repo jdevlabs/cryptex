@@ -6,7 +6,7 @@ require('_connect.php');
 /**
  * Retrieves a field from the table for that particular userid
  *
- * TODO: Add error handling
+ * TODO: Error handling.
  *
  * @param  [string] $table  [The db table to fetch from]
  * @param  [string] $field  [Field to fetch]
@@ -23,8 +23,7 @@ function getField($table, $field, $userid)
 /**
  * Insert fields into a table. Quickly.
  *
- * TODO: Support multiple fields
- * TODO: Return Error
+ * TODO: Support multiple fields. Error Handling.
  *
  * @param [string] $table  [The Table]
  * @param [string] $fields [ONE Field]

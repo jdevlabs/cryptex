@@ -13,25 +13,31 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="todo"></a> To Do
 
-* Update *gamedata* table when a new user registers.
-* Load *avatar data* using jQ/Ajax
+* Re-Think the Level access approach
+  * level.php
+  * Use includes, rather than redirects
+  * Sentinel values.
+
+* gamedata table
+  * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used
+  * Update score after level completion
+
+* Load *avatar data* using jQ/Ajax on every level.
 
 * Hints UI
   * Modals
   * Tabs (Hint 1 | Hint 2 | Hint 3)
-
-* Contact Modal
+  * Hints per level. In every lvl file?
 
 * Login/Register
   * Facebook Integration (php fb api)
+  * Add a new row to *gamedata*
+  * Create /logout.php
   * On-the-fly form validation (html+jq)
 
-* Super Important
-  * URL Modification to access levels.
-
 * Low Priority
-  * Leaderboard ( Design + Functionality )
-  * Level Map ( Design + Functionality )
+  * Contact Modal UI
+  * Leaderboard
 
 ## <a name="done"></a> Changelog
 
@@ -56,6 +62,8 @@ This is the centralized repo containing everything related to the project.
 * **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
 
 * We'll Minify (or obfuscate) all javascript at the end of development. Post Production.
+
+* Index.php -> Login.php -> 
 
 ## <a name="ideas"></a> Ideas
 

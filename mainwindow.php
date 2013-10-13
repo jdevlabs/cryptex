@@ -40,8 +40,8 @@
 ?>
 
 <script>
-	$('#navSeparator2').show();
-	$('#navUserPopup').show();
+	// $('#navSeparator2').show();
+	// $('#navUserPopup').show();
 </script>
 </body>
 </html>

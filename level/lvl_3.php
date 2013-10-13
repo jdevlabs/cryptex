@@ -65,6 +65,7 @@ if ($this_level != $current_level)
         $ques = getField("gamedata", "ques", $current_user_id);
 
         //The ques has not yet been generated.
+        //Todo: What if the values are not empty?
         if (is_null($ques) or empty($ques))
         {
           // Generate question. The algorithm will change with levels.

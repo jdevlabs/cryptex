@@ -1,6 +1,6 @@
 # Level 2 #
 
-**URL** : [Hack this site basic 3] (https://www.hackthissite.org/missions/basic/3/).
+**URL** : [Hack this site basic 3](https://www.hackthissite.org/missions/basic/3/).
 
 **Level** : Easy
 
