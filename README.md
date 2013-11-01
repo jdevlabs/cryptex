@@ -69,3 +69,7 @@ This is the centralized repo containing everything related to the project.
 
 * Questions could be themed. Harry Potter?
 * A Random quote on every page. Hack this site has them.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dZ-Corp/cryptex/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
