@@ -4,6 +4,27 @@
 <script> document.title = "Cryptex | Level " <?php echo '+ "' . $current_level . '"' ?> </script>
 
 <?php require('_navbar.php'); ?>
+<?php
+  $level = getField("gamedata", "level", $current_user_id);
+  $qlevel = getField("gamedata", "qlevel", $current_user_id);
+
+  // The ques has not yet been generated.
+  if ($level != $qlevel)
+  {
+    // Generate question.
+    $ques = ceaserCipher(getRandomFamily('Weasley'), 13);
+
+    // Save question/answer pair to db.
+    updateField("gamedata", "ques", $ques, $current_user_id);
+    updateField("gamedata", "ans", ceaserCipher($ques, 13), $current_user_id);
+
+    // Set Q/A Updated to this level
+    updateField("gamedata", "qlevel", '2', $current_user_id);
+  }
+  else
+    $ques = getField("gamedata", "ques", $current_user_id);
+
+?>
 
   <div class="row span4 offset3" style="margin-top: 120px;">
     <div class="span8">
@@ -15,32 +36,9 @@
         "You said this last time too and the time before that and before that" said an exasperated Harry <br><br>
         "Yeah, but this one is real..." <br><br>
         "Let's just cut to the chase please Seamus, I'm really tired." <br><br>
-        "OK, tell me what  <?php echo '"' . ceaserCipher("Neville Likes Luna", 13) . '"' ?> means and I won't bug you for the day."
+        "OK, tell me what  <?php echo '"' . $ques . '"' ?> means and I won't bug you for the day."
       </p>
 
-      <?php
-        // Get ques data from db.
-        $ques = getField("gamedata", "ques", $current_user_id);
-
-        $level = getField("gamedata", "level", $current_user_id);
-        $qlevel = getField("gamedata", "qlevel", $current_user_id);
-
-        // The ques has not yet been generated.
-        if ($level != $qlevel)
-        {
-          // Generate question. The algorithm will change with levels.
-          $ques = ceaserCipher("Neville Likes Luna", 13);
-
-          // Save question to db. It'll be generated once per user per level.
-          updateField("gamedata", "ques", $ques, $current_user_id);
-
-          // The ques and ans are same. Won't happen in every level.
-          updateField("gamedata", "ans", ceaserCipher($ques, 13), $current_user_id);
-
-          // Set Q/A Updated to this level
-          updateField("gamedata", "qlevel", '2', $current_user_id);
-        }
-      ?>
 
       <hr>
       <form class="form-horizontal" method="POST">

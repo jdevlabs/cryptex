@@ -33,6 +33,7 @@ if (isset($_POST['answer']))
 
 <?php require('_header.php'); ?>
 <?php require('_helpers.php'); ?>
+<?php require('_hpWorld.php'); ?>
 
 <?php require('lvl_' . $current_level . '.php'); ?>
 
