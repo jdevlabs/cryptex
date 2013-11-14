@@ -43,6 +43,7 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="done"></a> Changelog
 
+* Added: Level 3 - The invisibility cloak
 * Updated: Levels 1,2 to use data from _hpWorld
 * Added: _hpWorld.php - Random harry potter data.
   * Added Weasley and Black family.
