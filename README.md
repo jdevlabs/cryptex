@@ -6,17 +6,22 @@ This is the centralized repo containing everything related to the project.
 
 ## Table of Contents
 
-* [Stuff to do](#todo)
+* [Todo ASAP](#now)
+* [To be added later](#todo)
 * [Changelog](#changelog)
 * [Notes](#notes)
 * [Ideas](#ideas)
 
-## <a name="todo"></a> To Do
+## <a name="now"></a> To Do ASAP
+
+* Homepage "index.php"
 
 * Re-Think the Level access approach
   * level.php
   * Use includes, rather than redirects
   * Sentinel values.
+
+## <a name="todo"></a>Add Later
 
 * gamedata table
   * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used
@@ -35,11 +40,14 @@ This is the centralized repo containing everything related to the project.
   * Create /logout.php
   * On-the-fly form validation (html+jq)
 
-* Low Priority
-  * Contact Modal UI
-  * Leaderboard
+* Leaderboard
 
 ## <a name="done"></a> Changelog
+
+* Added: index.html - Basic Homepage with Login
+* Updated: Designed contact Admin Modal on the navbar.
+
+Before 14/11/2013:
 
 * Added: nojs.php - All other pages will redirect to it incase the javascript on the user's computer is disabled.
 
@@ -61,7 +69,7 @@ This is the centralized repo containing everything related to the project.
 
 * **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
 
-* We'll Minify (or obfuscate) all javascript at the end of development. Post Production.
+* Minify (or obfuscate) all javascript at the end of development. Post Production.
 
 * Index.php -> Login.php -> 
 

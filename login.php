@@ -19,13 +19,20 @@
       <!-- <div class="alert alert-error">
       <a class="close" data-dismiss="alert" href="#">X</a>Incorrect Username or Password!
       </div> -->
-      <label>Username</label>
-      <input type="text" id="uname" class="span4" name="username" placeholder="Your Username" required autofocus>
-      <label>Password</label>
-      <input type="password" id="pass" class="span4" name="password" placeholder="Your Password" required>
-      <!-- <label class="checkbox inline">
-      <input type="checkbox" name="remember" value="1"> Remember Me
-      </label> -->
+      <div class="control-group">
+        <label class="control-label" for="uname">Username</label>
+        <div class="controls">
+          <input class="span4" type="text" id="uname" name="username" placeholder="Your Username" required autofocus>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="uname">Password</label>
+        <div class="controls">
+          <input class="span4" type="text" id="uname" name="username" placeholder="Your Password" required autofocus>
+        </div>
+      </div>
+
       <button style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">Sign in</button>
       <hr>
       <button style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">Login with Facebook</button>
