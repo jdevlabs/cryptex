@@ -11,6 +11,8 @@
   </noscript>
 </head>
 
+<?php // Todo: Grab all assets from CDNs ?>
+
 <!-- // <script src="http://code.jquery.com/jquery-latest.js"></script> -->
 <script type="text/javascript" src="/cryptex/assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="/cryptex/assets/js/bootstrap.min.js"></script>

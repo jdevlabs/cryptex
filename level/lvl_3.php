@@ -1,51 +1,4 @@
-<?php
-require('../db/_dbFunctions.php');
-
-// Fetch current_user_id
-$current_user_id = 1;
-
-// Hardcoded into every lvl php
-$this_level = 3;
-
-// Get current user level
-$current_level = intval(getField("gamedata", "level", $current_user_id));
-
-/**
- * Form submitted. Check whether answer is correct.
- */
-if (isset($_POST['answer']))
-{
-  $postAns = trim($_POST['answer']);
-
-  $ans = getField("gamedata", "ans", $current_user_id);
-
-  if ($postAns == $ans)
-  {
-    // die("Level Cleared");
-
-    // Update the current level
-    updateField("gamedata", "level", ($current_level + 1), $current_user_id);
-
-    // Redirect to next level
-    header("Location: lvl_" . ($current_level + 1) . ".php");
-  }
-}
-
-/**
- * Check whether the user is permitted to access this level.
- */
-
-// Is this the level user should be on?
-if ($this_level != $current_level)
-{
-  // Redirect to the correct level
-  header("Location: lvl_" . $current_level . ".php");
-}
-?>
-
-<?php require('_header.php'); ?>
-<?php require('_helpers.php'); ?>
-
+<?php if (!defined('Grindelwald')) die("Bitch Please."); ?>
 <body>
 
 <script> document.title = "Cryptex | Level " <?php echo '+ "' . $current_level . '"' ?> </script>
@@ -91,5 +44,3 @@ if ($this_level != $current_level)
       </form>
     </div>
 </body>
-
-<?php require('_footer.php') ?>

@@ -1,4 +1,4 @@
-# Cryptex v0.3.5
+# Cryptex v0.3.9
 
 An online hacking and treasure hunting Game.
 
@@ -14,12 +14,7 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="now"></a> To Do ASAP
 
-* Homepage "index.php"
-
-* Re-Think the Level access approach
-  * level.php
-  * Use includes, rather than redirects
-  * Sentinel values.
+* _dbFunctions.php
 
 ## <a name="todo"></a>Add Later
 
@@ -44,7 +39,10 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="done"></a> Changelog
 
-* Added: index.html - Basic Homepage with Login
+* Added: Level\index.php - Single file for all levels
+  * Uses sentinel values to make sure the level files are included and not accessed directly.
+* Database: Added "qlevel" - the value is updated when a ques/ans pair is generated. Makes sure that a random ques/ans is generated only once per user per level.
+* Added: index.php - Basic Homepage with Login
 * Updated: Designed contact Admin Modal on the navbar.
 
 Before 14/11/2013:
