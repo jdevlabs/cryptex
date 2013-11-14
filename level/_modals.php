@@ -47,18 +47,23 @@ $('#navContact').click(function(event) {
 <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
   <div class="modal-header">
     <a href="#" class="close" data-dismiss="modal">x</a>
-    <h4>Having Problems? Contact Administrators.</h4>
+    <h4>Contact the administrators...</h4>
+    <p>Experiencing a problem? We're here to help, just let us know.</p>
   </div>
   <div class="modal-body">
-    <form action="" method="POST" role="form">
-        <div class="form-group">
-            <label for="">Problem?</label>
-            <input type="textarea" class="form-control" id="" placeholder="Input field">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <form >
+      <textarea id="prob" name="prob" rows="8" style="width: 515px;">
+        Enter a brief description of the problem you are experiencing.
+      </textarea>
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="control-group">
+      <div class="controls">
+        <?php //Todo: Contact Us CodeBehind ?>
+        <button id="SOS" class="btn btn-default btn-success">Help Me Out!</button>
+        <button data-dismiss="modal" class="btn btn-danger">Nevermind</button>
+      </div>
+    </div>
   </div>
 </div>

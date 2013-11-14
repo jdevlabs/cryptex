@@ -6,13 +6,13 @@
   <div class="nav-collapse collapse">
     <ul class="nav">
       <li class="divider-vertical"></li><li><a href="#"><i class="icon-home"></i> Home</a></li>
-      <li class="divider-vertical"></li><li><a href="#"><i class="icon-question-sign"></i> Problem</a></li>
       <li class="divider-vertical"></li><li><a href="#"><i class="icon-list"></i> Leaderboard</a></li>
       <li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>
     </ul>
     <ul class="nav pull-right">
       <?php //Can be hidden/shown as and when requiresd ?>
-      <li class="divider-vertical"></li><li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
+      <li class="divider-vertical"></li>
+      <li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
       <li id="navSignUp" style="display:none;" ><a href="#">Sign Up</a></li>
       <li id="navSeparator1" style="display:none;" class="divider-vertical"></li>
       <li id="navSignInPopup" style="display:none;" class="dropdown">
