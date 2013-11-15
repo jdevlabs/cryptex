@@ -1,4 +1,4 @@
-# Cryptex v0.3.9
+# Cryptex v0.4
 
 An online hacking and treasure hunting Game.
 
@@ -14,13 +14,17 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="now"></a> To Do ASAP
 
+* More Levels
+* Add Score Handling
+* Hints ?
+
+## <a name="todo"></a>Add Later
+
 * _hpWorld.php
   * Add families from lexicon
   * GetRandomString()
 
 * _dbFunctions.php
-
-## <a name="todo"></a>Add Later
 
 * gamedata table
   * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used
@@ -42,6 +46,12 @@ This is the centralized repo containing everything related to the project.
 * Leaderboard
 
 ## <a name="done"></a> Changelog
+
+On 15/11/2013:
+
+* Removed: Level Data (BS!). Created a simpler md file instead.
+
+On 14/11/2013:
 
 * Added: Level 3 - The invisibility cloak
 * Updated: Levels 1,2 to use data from _hpWorld
