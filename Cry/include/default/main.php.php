@@ -1,0 +1,1 @@
+<h1>Default web page</h1>
