@@ -1,9 +1,9 @@
 <?php
 	// Database connection values
 	define('DB_HOST', 'localhost');
-	define('DB_NAME', 'hack');
-	define('DB_USERNAME', 'root');
-	define('DB_PASSWORD', 'kgggdkp2692');
+	define('DB_NAME', 'test');
+	define('DB_USERNAME', 'dufferzafar');
+	define('DB_PASSWORD', 'plok');
 
 	// Connect and Select Database
 	@mysql_connect(DB_HOST, DB_USERNAME, DB_PASSWORD) or die('dbConnect.php: Connection Failed');
