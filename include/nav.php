@@ -36,14 +36,14 @@
       <?php  } else {//Visible only on Main Game Window ?>
       <li id="navSeparator2" class="divider-vertical"></li>
       <li id="navUserPopup" class="dropdown">
-        <a class="dropdown-toggle" href="#"  data-toggle="dropdown"><i class="icon-user"></i><strong class="caret"></strong></a>
+        <a class="dropdown-toggle" href="#"  data-toggle="dropdown"><i class="icon-user"></i><?php echo $_SESSION['user']; ?><strong class="caret"></strong></a>
         <div class="dropdown-menu span3 " style="padding: 15px; padding-bottom: 0px;">
           <form method="post" action="login" accept-charset="UTF-8">
             <div class="row pull-right">
               <div class="span1"><img src="/cryptex/assets/img/avatar.svg" alt="avatar"></div>
             </div>
             <!-- <label><span class=" badge badge-info">Level : 1000</span></label> -->
-            <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['usser'];?></h4>
+            <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
             <i class="icon-bookmark"></i> Level :<?php echo $_SESSION['level'];?><br>
             <i class="icon-star"></i> Score : <?php echo $_SESSION['score'];?><br>
             <i class="icon-gift"></i> Hints Taken : <?php echo $_SESSION['hints'];?>
