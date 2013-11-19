@@ -1,4 +1,4 @@
-
+<?php include "_login.php"; ?>
    <div class="span4 offset4 well"  style="margin-top: 95px;">
     <form id="submitForm">
       <legend>Please Sign In</legend>

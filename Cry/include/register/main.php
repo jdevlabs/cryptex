@@ -1,4 +1,4 @@
-
+<?php include "_register.php"; ?>
 
  <div class="span4 offset4 well "  style="margin-top: 100px;">
     <form id="submitForm">
