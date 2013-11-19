@@ -1,7 +1,6 @@
 <?php 
 
 
-
 require "config/_config.php" ; 
 
 if($_GET['pid'] == "facebook" || $_GET['pid']=="facebook/")
