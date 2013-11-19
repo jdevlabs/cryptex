@@ -1,7 +1,7 @@
 <?php 
 $flag=0;
-$file=$_SERVER['DOCUMENT_ROOT']."/include/".$_GET['pid']."/main.php" ;
-echo $file ;
+$file=$_SERVER['DOCUMENT_ROOT']."/cryptex/Cry/include/".$_GET['pid']."/main.php" ;
+
 $bool=file_exists($file);
 
 echo '<br/><br/></br>' ; 
