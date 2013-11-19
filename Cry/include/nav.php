@@ -43,14 +43,14 @@
               <div class="span1"><img src="/cryptex/assets/img/avatar.svg" alt="avatar"></div>
             </div>
             <!-- <label><span class=" badge badge-info">Level : 1000</span></label> -->
-            <h4 style="margin-bottom: 15px;">theShivamRana</h4>
-            <i class="icon-bookmark"></i> Level : 13<br>
-            <i class="icon-star"></i> Score : 11000<br>
-            <i class="icon-gift"></i> Hints Taken : 3
+            <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['usser'];?></h4>
+            <i class="icon-bookmark"></i> Level :<?php echo $_SESSION['level'];?><br>
+            <i class="icon-star"></i> Score : <?php echo $_SESSION['score'];?><br>
+            <i class="icon-gift"></i> Hints Taken : <?php echo $_SESSION['hints'];?>
             <li class="divider"></li>
             <li>
               <a href="/auth/logout"><i class="icon-list"></i> Leaderboard</a>
-              <a href="/auth/logout" class="pull-right"><i class="icon-off"></i> Logout</a>
+              <a href="logout.php" class="pull-right"><i class="icon-off"></i> Logout</a>
             </li>
           </form>
         </div></li>

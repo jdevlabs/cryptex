@@ -1,4 +1,4 @@
-<?php if (isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
+<?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
 
 
 <script> document.title = "Cryptex | Level " <?php echo '+ "' . $current_level . '"' ?> </script>
