@@ -6,5 +6,4 @@ include_once "_connect.php";
 include_once "_dbFunctions.php"; 
 include "_helpers.php" ;
 include "_hpWorld.php" ;
-include "_modals.php" ;
 ?>

@@ -1,7 +1,8 @@
 <?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
-<script> document.title = "Cryptex | Level " <?php echo '+ "' . $current_level . '"' ?> </script>
 
-<?php
+<script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
+<?php include "_modals.php" ; 
+
   $level = getField("gamedata", "level", $current_user_id);
   $qlevel = getField("gamedata", "qlevel", $current_user_id);
 
