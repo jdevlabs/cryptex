@@ -6,7 +6,9 @@ if(isset($_POST['user'],  $_POST['pass']))
 	// echo $uName; echo $name; echo $pass;
 
 	// Check whether the user already exists
-	$result  = mysql_query("SELECT pass,userid FROM user WHERE username = '$uName'");
+	$q= "SELECT pass,userid FROM user WHERE username = '$uName'" ;
+	echo $q ;
+	$result  = mysql_query($q);
 	if (mysql_num_rows($result) > 0)
 	{
 		$row = mysql_fetch_row($result);

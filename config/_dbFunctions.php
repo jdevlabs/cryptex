@@ -15,7 +15,7 @@ require('_connect.php');
  */
 function getField($table, $field, $userid)
 {
-  $result  = mysql_query("SELECT `$field` FROM `$table` WHERE `userid` = $userid");
+  $result  = mysql_query("SELECT $field FROM $table WHERE userid = $userid");
   $row = mysql_fetch_row($result);
   return $row[0];
 }
