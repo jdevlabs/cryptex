@@ -47,6 +47,10 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="done"></a> Changelog
 
+On 19/11/2013:
+
+  * Hammad Hellulajah!!
+
 On 15/11/2013:
 
 * Removed: Level Data (BS!). Created a simpler md file instead.

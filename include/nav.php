@@ -1,20 +1,17 @@
-
-
-
   <div class="navbar"><div class="navbar-inner"><div class="container-fluid">
   <a class="brand" href="index.php" name="top">Cryptex 2</a>
   <div class="nav-collapse collapse">
     <ul class="nav">
       <li class="divider-vertical"></li><li><a href="index.php"><i class="icon-home"></i> Home</a></li>
       <li class="divider-vertical"></li><li><a href="#"><i class="icon-list"></i> Leaderboard</a></li>
-    <?php 
-      if($_SESSION['user'] != "Annon") 
-      echo '<li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>'; 
-    ?>
+  <?php
+      if($_SESSION['user'] != "Anon")
+      echo '<li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>';
+  ?>
     </ul>
     <ul class="nav pull-right">
-      <?php 
-      if($_SESSION['user'] == "Annon") {?>
+  <?php
+      if($_SESSION['user'] == "Anon") {?>
       <li class="divider-vertical"></li>
       <li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
       <li id="navSignUp" style="display:none;" ><a href="#">Sign Up</a></li>
@@ -33,7 +30,7 @@
           </form>
         </div>
       </li>
-      <?php  } else {//Visible only on Main Game Window ?>
+  <?php  } else {//Visible only on Main Game Window ?>
       <li id="navSeparator2" class="divider-vertical"></li>
       <li id="navUserPopup" class="dropdown">
         <a class="dropdown-toggle" href="#"  data-toggle="dropdown"><i class="icon-user"></i><?php echo $_SESSION['user']; ?><strong class="caret"></strong></a>
@@ -54,6 +51,6 @@
             </li>
           </form>
         </div></li>
-        <?php } ?>
+  <?php } ?>
     </ul>
   </div></div></div></div>
