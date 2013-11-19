@@ -31,5 +31,5 @@ elseif(isset($_GET['pid']))
   {
     include "default/main.php" ; 
   }
-  ?>
+?>
   

@@ -49,7 +49,7 @@
             <i class="icon-gift"></i> Hints Taken : <?php echo $_SESSION['hints'];?>
             <li class="divider"></li>
             <li>
-              <a href="/auth/logout"><i class="icon-list"></i> Leaderboard</a>
+              <a href="##"><i class="icon-list"></i> Leaderboard</a>
               <a href="logout.php" class="pull-right"><i class="icon-off"></i> Logout</a>
             </li>
           </form>
