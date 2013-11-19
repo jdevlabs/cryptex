@@ -16,5 +16,6 @@ if(isset($_POST['username'], $_POST['name'], $_POST['password']))
 	$result =  mysql_query("INSERT INTO user (username, pass) VALUES('$uName', '$pass')");
 	if ($result)
 		echo "Inserted to DB";
+
 }
 ?>

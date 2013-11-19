@@ -24,5 +24,4 @@ if(isset($_POST['username'],  $_POST['password']))
 	else
 		echo "User Does Not Exists";
 }
-else
 ?>
