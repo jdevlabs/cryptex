@@ -1,9 +1,9 @@
 <?php
 
-if(isset($_POST['username'], $_POST['name'], $_POST['password']))
+if(isset($_POST['user'], $_POST['name'], $_POST['password']))
 {
-	$uName = $_POST['username']; $name = $_POST['name'];
-	$pass = $_POST['password'];
+	$uName = $_POST['user']; $name = $_POST['name'];
+	$pass = $_POST['pass'];
 	// echo $uName; echo $name; echo $pass;
 
 	// Check whether the user already exist
