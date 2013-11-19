@@ -1,7 +1,7 @@
 <?php include "_register.php"; ?>
 
  <div class="span4 offset4 well "  style="margin-top: 100px;">
-    <form id="submitForm">
+    <form action="" method = "post" >
       <legend>Registration</legend>
       <div id="alertMsg" class="alert" style="display: none;"></div>
       <label>Username</label>
