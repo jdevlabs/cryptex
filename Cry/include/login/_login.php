@@ -10,8 +10,14 @@ if(isset($_POST['username'],  $_POST['password']))
 	if (mysql_num_rows($result) > 0)
 	{
 		$row = mysql_fetch_row($result);
-		if ($pass == $row[0])
+		if ($pass == $row[0]){
 			echo "Successfully Logged In :)";
+			 $_SESSION['loggedin']=1;
+			 $_SESSION['user']=$uName;
+  			 $_SESSION['level']=0;
+             $_SESSION['score']=0;
+             $_SESSION['hints']=0;
+             }
 		else
 			echo "$row[0] = Password is Incorrect";
 	}

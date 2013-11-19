@@ -1,6 +1,6 @@
 <?php include "_login.php"; ?>
    <div class="span4 offset4 well"  style="margin-top: 95px;">
-    <form id="submitForm">
+    <form action="" method = "post" >
       <legend>Please Sign In</legend>
       <!-- <div class="alert alert-error">
       <a class="close" data-dismiss="alert" href="#">X</a>Incorrect Username or Password!
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <button style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">Sign in</button>
+      <input value="SignIn" style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">
       <hr>
       <button style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">Login with Facebook</button>
   </form>
