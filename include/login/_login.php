@@ -21,6 +21,7 @@ if(isset($_POST['user'],  $_POST['pass']))
              $_SESSION['score']=0;
              $_SESSION['hints']=0;
              $_SESSION['userid'] = $row[1];
+             echo "<a href='index.php'>Click here to continue </a>"; 
              }
 		else
 			echo "$row[0] = Password is Incorrect";
