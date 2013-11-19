@@ -1,7 +1,7 @@
 <?php 
 $flag=0;
 $file=$_SERVER['DOCUMENT_ROOT']."/cryptex/Cry/include/".$_GET['pid']."/main.php" ;
-$current_user_id = $_SESSION['userid']
+$current_user_id = $_SESSION['userid'];
 if ($_SESSION['loggedin']== 1)
   $_SESSION['level'] = getField("gamedata", "level", $current_user_id);
 $bool=file_exists($file);
