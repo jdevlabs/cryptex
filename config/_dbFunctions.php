@@ -1,5 +1,4 @@
 <?php
-require('_connect.php');
 
 // echo getField("sds", "pass", 1);
 
