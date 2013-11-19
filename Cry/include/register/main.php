@@ -15,7 +15,7 @@
       <label>Re-enter Password</label>
       <input type="password" id="cPass" class="span4" name="cpassword" placeholder="Confirm password" required>
 
-      <button style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">Register me</button>
+      <input value="Register Me" style="margin-top: 10px;" type="submit" class="btn btn-info btn-block">
       <button style="margin-top: 20px;" name="Register" class="btn btn-info btn-block">Login with Facebook</button>
     </form>
   </div>
