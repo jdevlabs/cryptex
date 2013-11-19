@@ -16,7 +16,7 @@ $bool=file_exists($file);
 if (!$bool) 
   $flag=10;
 
-if ($_SESSION['loggedin']==1)
+if ($_SESSION['loggedin']==1 && !isset($_GET['pid']))
   {
     include "".$_SESSION['level']."/main.php" ; 
   }
