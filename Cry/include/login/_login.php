@@ -11,13 +11,12 @@ if(isset($_POST['username'],  $_POST['password']))
 	{
 		$row = mysql_fetch_row($result);
 		if ($pass == $row[0])
-			die("Successfully Logged In :)");
+			echo "Successfully Logged In :)";
 		else
-			die("$row[0] = Password is Incorrect");
+			echo "$row[0] = Password is Incorrect";
 	}
 	else
-		die("User Does Not Exists");
+		echo "User Does Not Exists";
 }
 else
-	die("Send Some Params Motherfucker");
 ?>
