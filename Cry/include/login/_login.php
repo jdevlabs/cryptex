@@ -6,7 +6,7 @@ if(isset($_POST['user'],  $_POST['pass']))
 	// echo $uName; echo $name; echo $pass;
 
 	// Check whether the user already exists
-	$result  = mysql_query("SELECT pass FROM user WHERE username = '$uName'");
+	$result  = mysql_query("SELECT pass,userid FROM user WHERE username = '$uName'");
 	if (mysql_num_rows($result) > 0)
 	{
 		$row = mysql_fetch_row($result);
@@ -17,6 +17,7 @@ if(isset($_POST['user'],  $_POST['pass']))
   			 $_SESSION['level']=0;
              $_SESSION['score']=0;
              $_SESSION['hints']=0;
+             $_SESSION['userid'] = $row[1];
              }
 		else
 			echo "$row[0] = Password is Incorrect";
