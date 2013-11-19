@@ -7,11 +7,12 @@
   <?php if ($_SESSION['loggedin'] != 1 ) { ?>
   <div class="row">
     <div class="span11 offset1" style="margin-top: 125px;">
-      <form name="input" action="#" method="POST">
+      <form name="input" action="?pid=login" method="POST">
       Username: <input type="text" name="user">
       Password: <input type="text" name="pass">
       <input type="submit" value="Submit">
       </form>
-    </div> </div>
+    </div> 
+  </div>
   <?php } ?>
   </div>

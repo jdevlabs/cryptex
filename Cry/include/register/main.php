@@ -1,7 +1,7 @@
 <?php include "_register.php"; ?>
 
 
-<?php if ($_SESSION['loggedin'] == 1 ) { ?>
+<?php if ($_SESSION['loggedin'] != 1 ) { ?>
  <div class="span4 offset4 well "  style="margin-top: 100px;">
    <form name="input" action="#" method="POST">
 Username: <input type="text" name="user"><br/>
