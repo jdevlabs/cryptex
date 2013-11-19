@@ -14,5 +14,5 @@
 	// if (!$link)
 	    // die('Could not connect:     ' . mysql_error());
 	// echo 'Connected successfully';
-	// mysql_close($link);
+	// mysql_close($link)
 ?>
