@@ -1,12 +1,19 @@
 <?php 
+if(isset($_GET['debug']))
+    print_r($_SESSION);
 $flag=0;
 $file=$_SERVER['DOCUMENT_ROOT']."/cryptex/Cry/include/".$_GET['pid']."/main.php" ;
+
 $current_user_id = $_SESSION['userid'];
 if ($_SESSION['loggedin']== 1)
-  $_SESSION['level'] = getField("gamedata", "level", $current_user_id);
+  {
+  $result  = mysql_query("SELECT `level` FROM `gamedata` WHERE `userid` = $current_user_id");
+  $row = mysql_fetch_row($result);
+  $_SESSION['level'] = $row[0];
+  }
+  
 $bool=file_exists($file);
 echo "<br/><br/><br/><br/>";
-
 if (!$bool) 
   $flag=10;
 
