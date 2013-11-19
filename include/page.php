@@ -13,7 +13,6 @@ if ($_SESSION['loggedin']== 1)
   }
   
 $bool=file_exists($file);
-echo "<br/><br/><br/><br/>";
 if (!$bool) 
   $flag=10;
 
