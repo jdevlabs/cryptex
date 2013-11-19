@@ -15,5 +15,5 @@
 	    // die('Could not connect:     ' . mysql_error());
 	// echo 'Connected successfully';
 	// mysql_close($link)
-	require "_dbFunctions";
+	require "_dbFunctions.php";
 ?>
