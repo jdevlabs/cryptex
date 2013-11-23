@@ -1,6 +1,5 @@
 $(document).ready(function()
 {
-	$msg = $("#alertMsg");
 	$('#submitForm').submit(function(e)
 	{
 
@@ -17,7 +16,7 @@ $(document).ready(function()
 			success: function(data, tStatus)
 			{
 				// alert(data);
-        if (data == "Successfully logged in")
+        if (data.indexOf("Successfully logged in") > 0 )
         {
           // We've logged in, now reload the page.
           // Everything else will be taken care of
@@ -26,7 +25,6 @@ $(document).ready(function()
         else
         {
           //Ooopsie
-          // $msg.addClass('alert-error').html("<strong>Passwords :</strong> Think of something.").show();
           $("#submitForm").vibrate();
         }
 			},

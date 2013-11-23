@@ -10,6 +10,7 @@
 
   require "include/header.php";
   require "include/nav.php";
+  require "include/navmod.php";
 
   // if($_SESSION['role'] == 1 )
     // include "include/admin-nav.php" ;

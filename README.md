@@ -51,13 +51,16 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 23/11/2013:
 
-  * Vibrating Main Form (vibrate.js)
-  * Ajax login redirection fixes
-  * Nicer Main login UI
+* Modified: nav-bar
+  * Register for 'Anon' Users
+  * Contact and Hints Modal
+* Added: Vibrating Main Form (vibrate.js)
+* Modified: Ajax login redirection fixes
+* Modified: Nicer Main login UI
 
 On 19/11/2013:
 
-  * Hammad Hellulajah!!
+* Hammad Hellulajah!!
 
 On 15/11/2013:
 
@@ -91,9 +94,14 @@ Before 14/11/2013:
 
 ## <a name="notes"></a> Notes for Developers
 
+* No matter what you do - write __legible code__
+  * 2 Space indentaion
+
 * Files beginning with an **underscore** mostly contain helper functions and just work as include files.
 
-* The **ajax** folder contains the js ajax handlers. Their php counterparts are kept in **include\login** && **include\register**.
+* The **assets\js** folder contains the js ajax handlers (**_login.js** && **register.js**)
+
+* Their php counterparts are kept in **include\login** && **include\register**.
 
 * **_login.js** is the ajax handler for login functions.
   * contains the form submit handler
@@ -105,9 +113,11 @@ Before 14/11/2013:
   * sets the $_SESSION variables 
   * and passes on a flag to the JS handler via _echo_
 
-* **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
+* **assets** also contains 3rd party stuff like Bootstrap, jQuery etc. Add your own code into respective folders.
 
-* Minify (or obfuscate) all javascript at the end of development. Post Production.
+* All javascript will be minified (or obfuscated) at the end of development.
+
+* Once the setup is on server, special care should be taken to ensure that none of the folders like includes etc are accessible by altering the URL.
 
 ## <a name="ideas"></a> Ideas
 
