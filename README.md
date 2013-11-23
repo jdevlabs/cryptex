@@ -1,4 +1,4 @@
-# Cryptex v0.4.3
+# Cryptex v0.5
 
 An online hacking and treasure hunting Game.
 
@@ -16,9 +16,16 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="now"></a> To Do ASAP
 
+* Verify level answers via Ajax ?
+
+* Hints
+  * JS - Ajax call. Recieve Data.
+  * PHP - $_SESSION modifications. Send Data.
+
+* Load avatar data on every level.
+
 * More Levels
 * Add Score Handling
-* Hints ?
 
 ## <a name="todo"></a>Add Later
 
@@ -32,8 +39,6 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used
   * Update score after level completion
 
-* Load *avatar data* using jQ/Ajax on every level.
-
 * Hints UI
   * Modals
   * Tabs (Hint 1 | Hint 2 | Hint 3)
@@ -42,8 +47,6 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 * Login/Register
   * Facebook Integration (php fb api)
   * Add a new row to *gamedata*
-  * Create /logout.php
-  * On-the-fly form validation (html+jq)
 
 * Leaderboard
 
@@ -51,6 +54,9 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 23/11/2013:
 
+* Refactored: page.php
+* Added: On POST Answer handler
+* Fixed: $_Session variables in level 1
 * Modified: nav-bar
   * Register for 'Anon' Users
   * Contact and Hints Modal
@@ -96,6 +102,8 @@ Before 14/11/2013:
 
 * No matter what you do - write __legible code__
   * 2 Space indentaion
+
+* Every single php file should be able to handle direct execution, in which case, either redirect to a proper place or show an echo message.
 
 * Files beginning with an **underscore** mostly contain helper functions and just work as include files.
 

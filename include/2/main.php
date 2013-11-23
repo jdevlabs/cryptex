@@ -1,10 +1,10 @@
 <?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
 
 <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
-<?php include "_modals.php" ; 
+<?php
 
-  $level = getField("gamedata", "level", $current_user_id);
-  $qlevel = getField("gamedata", "qlevel", $current_user_id);
+  $level = getField("gamedata", "level", $_SESSION['userid']);
+  $qlevel = getField("gamedata", "qlevel", $_SESSION['userid']);
 
   // The ques has not yet been generated.
   if ($level != $qlevel)
@@ -13,20 +13,20 @@
     $ques = ceaserCipher(getRandomFamily('Weasley'), 13);
 
     // Save question/answer pair to db.
-    updateField("gamedata", "ques", $ques, $current_user_id);
-    updateField("gamedata", "ans", ceaserCipher($ques, 13), $current_user_id);
+    updateField("gamedata", "ques", $ques, $_SESSION['userid']);
+    updateField("gamedata", "ans", ceaserCipher($ques, 13), $_SESSION['userid']);
 
     // Set Q/A Updated to this level
-    updateField("gamedata", "qlevel", '2', $current_user_id);
+    updateField("gamedata", "qlevel", '2', $_SESSION['userid']);
   }
   else
-    $ques = getField("gamedata", "ques", $current_user_id);
+    $ques = getField("gamedata", "ques", $_SESSION['userid']);
 
 ?>
 
   <div class="row span4 offset3" style="margin-top: 120px;">
     <div class="span8">
-      <h5><i class="icon icon-fire"></i> Level <?php echo $current_level; ?></h5>
+      <h5><i class="icon icon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
         Harry enters the room to find Seamus sitting ready with another absurd riddle of his. <br><br>

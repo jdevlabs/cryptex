@@ -15,16 +15,20 @@ if(isset($_POST['user'],  $_POST['pass']))
       echo ("Successfully logged in");
       $_SESSION['loggedin'] = 1;
       $_SESSION['user'] = $uName;
+      $_SESSION['userid'] = $row[1];
       $_SESSION['level'] = 0;
       $_SESSION['score'] = 0;
       $_SESSION['hints'] = 0;
-      $_SESSION['userid'] = $row[1];
       // header("Location: /cryptex/index.php");
-   }
-  else
-    echo "Either Username or Password is Incorrect";
+    }
+    else
+      echo "Either Username or Password is Incorrect";
 	}
 	else
 		echo "User Does Not Exists";
+}
+else
+{
+  echo "Bitch Please!";
 }
 ?>
