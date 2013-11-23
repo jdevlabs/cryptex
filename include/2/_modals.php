@@ -60,7 +60,9 @@ $('#navContact').click(function(event) {
   <div class="modal-footer">
     <div class="control-group">
       <div class="controls">
-        <?php //Todo: Contact Us CodeBehind ?>
+        <?php
+          //Todo: Contact Us CodeBehind *Low*
+        ?>
         <button id="SOS" class="btn btn-default btn-success">Help Me Out!</button>
         <button data-dismiss="modal" class="btn btn-danger">Nevermind</button>
       </div>

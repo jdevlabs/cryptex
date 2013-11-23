@@ -5,5 +5,6 @@
 
   <!-- Ajax Handlers -->
   <script type="text/javascript" src="ajax/_login.js"></script>
+  <script type="text/javascript" src="assets/js/vibrate.js"></script>
 </body>
 </html>

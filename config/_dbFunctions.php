@@ -2,15 +2,15 @@
 function bug($e)
 {
 	echo "<pre>";
-	echo $e ; 
+	echo $e ;
 	echo "</pre>";
 }
 // echo getField("sds", "pass", 1);
 
+// Todo: Fix All dbFunctions *HIGH*
+
 /**
  * Retrieves a field from the table for that particular userid
- *
- * TODO: Error handling.
  *
  * @param  [string] $table  [The db table to fetch from]
  * @param  [string] $field  [Field to fetch]
@@ -27,8 +27,6 @@ function getField($table, $field, $userid)
 /**
  * Insert fields into a table. Quickly.
  *
- * TODO: Support multiple fields. Error Handling.
- *
  * @param [string] $table  [The Table]
  * @param [string] $fields [ONE Field]
  * @param [string] $values [ONE Value]
@@ -40,8 +38,6 @@ function insertField($table, $field, $values)
 
 /**
  * Updates the given field with new value
- *
- * TODO: Return Error Codes
  *
  * @param  [string] $table  []
  * @param  [string] $field  []

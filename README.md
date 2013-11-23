@@ -1,15 +1,17 @@
-# Cryptex v0.4
+# Cryptex v0.4.3
 
 An online hacking and treasure hunting Game.
 
 This is the centralized repo containing everything related to the project.
+
+For notes on AJAX and other structural information, have a look at the Notes at the end of the readme.
 
 ## Table of Contents
 
 * [Todo ASAP](#now)
 * [To be added later](#todo)
 * [Changelog](#changelog)
-* [Notes](#notes)
+* [Some Notes for Developers](#notes)
 * [Ideas](#ideas)
 
 ## <a name="now"></a> To Do ASAP
@@ -47,6 +49,11 @@ This is the centralized repo containing everything related to the project.
 
 ## <a name="done"></a> Changelog
 
+On 23/11/2013:
+
+  * Ajax login redirection fixes
+  * Nicer Main login UI
+
 On 19/11/2013:
 
   * Hammad Hellulajah!!
@@ -81,17 +88,25 @@ Before 14/11/2013:
 
   * Ajax/PHP for Register & Login
 
-## <a name="notes"></a> Notes
+## <a name="notes"></a> Notes for Developers
 
 * Files beginning with an **underscore** mostly contain helper functions and just work as include files.
 
-* The **ajax** folder contains the js ajax handlers. Their php counterparts are kept in **db**.
+* The **ajax** folder contains the js ajax handlers. Their php counterparts are kept in **include\login** && **include\register**.
+
+* **_login.js** is the ajax handler for login functions.
+  * contains the form submit handler
+  * which sends an async request to _login.php with form data
+  * handles the response from the php file
+
+* **_login.php** does the backend stuff of login
+  * recieves the data
+  * sets the $_SESSION variables 
+  * and passes on a flag to the JS handler via _echo_
 
 * **assets** should only contain 3rd party stuff like Bootstrap, jQuery etc. Refrain from adding your own code.
 
 * Minify (or obfuscate) all javascript at the end of development. Post Production.
-
-* Index.php -> Login.php -> 
 
 ## <a name="ideas"></a> Ideas
 
