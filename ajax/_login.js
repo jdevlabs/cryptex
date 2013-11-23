@@ -26,11 +26,8 @@ $(document).ready(function()
         else
         {
           //Ooopsie
-          // alert("Booyah!");
           // $msg.addClass('alert-error').html("<strong>Passwords :</strong> Think of something.").show();
-          // $("#submitForm").effect("shake");
-          // var conf = { frequency: 5000,  spread: 5,  duration: 500  };
-          $("#login").vibrate();
+          $("#submitForm").vibrate();
         }
 			},
 			error:function(jqXHR, tStatus, errorThrown)

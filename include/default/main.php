@@ -6,7 +6,7 @@
   </div>
   <?php if ($_SESSION['loggedin'] != 1 ) { ?>
   <div class="row">
-    <div id = "login" class="span11 offset1" style=" margin-left: 100px; margin-top: 125px;">
+    <div class="span11 offset1" style=" margin-left: 100px; margin-top: 125px;">
       <form class="form-inline" name="input" id="submitForm" action="?pid=login" method="POST">
       <label>Let's Login Hackerboy!</label>
       <input style="margin-left: 15px;" class="span4" type="text" id="uname" name="user" placeholder="Your Username" required autofocus>

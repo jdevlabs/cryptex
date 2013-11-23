@@ -51,6 +51,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 23/11/2013:
 
+  * Vibrating Main Form (vibrate.js)
   * Ajax login redirection fixes
   * Nicer Main login UI
 
