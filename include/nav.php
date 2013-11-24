@@ -6,7 +6,7 @@
   <div class="nav-collapse collapse">
     <ul class="nav">
       <li class="divider-vertical"></li><li><a href="/"><i class="icon-home"></i> Home</a></li>
-      <li class="divider-vertical"></li><li><a href="/leaderboard"><i class="icon-list"></i> Leaderboard</a></li>
+      <li class="divider-vertical"></li><li><a href="?pid=leaderboard"><i class="icon-list"></i> Leaderboard</a></li>
 <?php if($_SESSION['loggedin'] == 1) { ?>
       <li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>
 <?php } ?>
@@ -17,9 +17,10 @@
       <li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider-vertical"></li>
-      <li><a href="/?pid=facebook"><i class="icon-user"></i> Login With Facebook</a></li>
-      <li><a href="/register"><i class="icon-user"></i> Register</a></li>
-      <li><a href="/login"><i class="icon-user"></i> Login</a></li>
+      <li><a href="?pid=facebook"><i class="icon-thumbs-up"></i> Login With Facebook</a></li>
+      <li class="divider-vertical"></li>
+      <li><a href="?pid=register"><i class="icon-user"></i> Register</a></li>
+      <!-- <li><a href="/login"><i class="icon-user"></i> Login</a></li> -->
 <?php  } else {?>
       <li id="navSeparator2" class="divider-vertical"></li>
       <li id="navUserPopup" class="dropdown">
@@ -46,4 +47,4 @@
   </div>
 
   </div></div></div>
-<!-- Navbar Ends -->
+<!-- Navbar Ends

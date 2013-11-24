@@ -2,7 +2,7 @@
 
 An online hacking and treasure hunting game.
 
-The current 'master' branch is live on [ThinkDiff](http://cryptex.thinkdiff.co.in). But there is still miles to go.
+The current 'master' branch is live on [ThinkDiff](http://cryptex.thinkdiff.co.in). But there are still miles to go.
 
 This is the centralized repo containing everything related to the project.
 
@@ -18,7 +18,11 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="road"></a> Roadmap
 
+* __Move to Bootstrap 3.0__
+  * Fix what breaks!
+
 * Registration (__v0.5.2__)
+  * SQL Injection. Hashed Passwords.
   * _register.js
   * _register.php
 
@@ -65,6 +69,8 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 24/11/2013:
 
+* 
+* Hammad did some changes again :|
 * Created Roadmap. Updated Readme.
 
 On 23/11/2013:
