@@ -1,0 +1,43 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteRule ^([a-zA-Z0-9]+)$ index.php?pid=$1
+#RewriteRule ^([a-zA-Z0-9]+)/$ index.php?pid=$1
+#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3
+#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/ index.php?pid=$1&$2=$3
+
+#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3&$4=$5
+#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3&$4=$5
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI}  ^/([^/]+)/?([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?   [NC]
+RewriteRule .*    index.php?pid=%1&%2=%3&%4=%5 [L]
+
+
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+
+ErrorDocument 404 /404
+
+AddType application/x-javascript .js
+AddType application/vnd.ms-fontobject .eot
+AddType application/octet-stream .otf .ttf
+AddType font/otf .otf
+AddType font/opentype .woff
+AddDefaultCharset UTF-8
+AddType image/gif .gif
+AddType image/jpeg .jpeg .jpg
