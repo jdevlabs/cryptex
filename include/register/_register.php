@@ -13,7 +13,7 @@ if(isset($_POST['user'], $_POST['name'], $_POST['password']))
 		bug("User Already Exists $uName");
 
 	//Insert User
-	$query = "INSERT INTO `user`(`userid`, `username`, `pass`) VALUES ('".$uName."','".$pass."')";
+	$query = "INSERT INTO `user`(`username`, `pass`) VALUES ('".$uName."','".$pass."')";
 	$result =  mysql_query($query);
 	if ($result)
 		bug("Inserted to DB");
