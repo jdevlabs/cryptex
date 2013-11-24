@@ -2,7 +2,7 @@
 
 An online hacking and treasure hunting game.
 
-The current 'master' branch is live on [Engineerinme](http://www.engineerinme.com/cryptex). But there is still miles to go.
+The current 'master' branch is live on [ThinkDiff](http://cryptex.thinkdiff.co.in). But there is still miles to go.
 
 This is the centralized repo containing everything related to the project.
 
