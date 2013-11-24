@@ -69,8 +69,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 24/11/2013:
 
-* 
-* Hammad did some changes again :|
+* Hammad added a basic leaderboard.
 * Created Roadmap. Updated Readme.
 
 On 23/11/2013:
