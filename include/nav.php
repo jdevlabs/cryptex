@@ -8,7 +8,7 @@
     <ul class="nav">
       <li class="divider-vertical"></li><li><a href="index.php"><i class="icon-home"></i> Home</a></li>
       <li class="divider-vertical"></li><li><a href="#"><i class="icon-list"></i> Leaderboard</a></li>
-<?php if($_SESSION['user'] != "Anon") { ?>
+<?php if($_SESSION['loggedin'] != 1) { ?>
       <li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>
 <?php } ?>
     </ul>
@@ -16,9 +16,10 @@
     <ul class="nav pull-right">
       <li class="divider-vertical"></li>
       <li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
-<?php  if($_SESSION['user'] == "Anon") {?>
+<?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider-vertical"></li>
       <li><a href="?pid=register"><i class="icon-user"></i> Register</a></li>
+      <li><a href="?pid=login"><i class="icon-user"></i> Login</a></li>
 <?php  } else {?>
       <li id="navSeparator2" class="divider-vertical"></li>
       <li id="navUserPopup" class="dropdown">

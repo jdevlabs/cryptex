@@ -1,6 +1,6 @@
 <?php
 // Apply validations 
-if(isset($_POST['user'], $_POST['name'], $_POST['password'],$_POST['email']))
+if(isset($_POST['user'], $_POST['name'], $_POST['pass'],$_POST['email']))
 {
 	$uName = $_POST['user']; 
 	$name = $_POST['name'];
@@ -15,9 +15,10 @@ if(isset($_POST['user'], $_POST['name'], $_POST['password'],$_POST['email']))
 
 	//Insert User
 	$query = "INSERT INTO `user`(`username`, `pass` , `email` , `name`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."')";
+	//bug($query);
 	$result =  mysql_query($query);
 	if ($result)
-		bug("Inserted to DB");
+		bug("Registered User ");
 	else
 		bug("Unable to Insert into DB please try later  ".mysql_error());
 
@@ -25,17 +26,19 @@ if(isset($_POST['user'], $_POST['name'], $_POST['password'],$_POST['email']))
 else
 {
 
-	if (isset($_POST))
+	if (isset($_POST['sent']))
 	{
+		if($_POST['sent']== 'sent')
 		if(!isset($_POST['user']))
 			bug("Enter Username ");
-		if(!isset($_POST['password']))
+		if(!isset($_POST['pass']))
 			bug("Enter password ");
 		if(!isset($_POST['name']))
 			bug("Enter name ");
 		if(!isset($_POST['email']))
 			bug("Enter email ");
 	}
+
 
 }
 ?>

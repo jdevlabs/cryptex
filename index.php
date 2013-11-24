@@ -1,15 +1,17 @@
 <?php
 
 //Debug Function 
+  
+  require "config/_config.php" ;
+
+  //Todo: Understand what this is?
   function bug($e)
   {
     echo "<pre>";
     echo $e ;
     echo "</pre>";
   }
-  require "config/_config.php" ;
-
-  //Todo: Understand what this is?
+  
    if($_GET['pid'] == "facebook" || $_GET['pid']=="facebook/")
      {
        require "include/facebook/main.php" ;
