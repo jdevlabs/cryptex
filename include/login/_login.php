@@ -13,22 +13,24 @@ if(isset($_POST['user'],  $_POST['pass']))
 		if (md5($pass) == $row[0])
     {
       //Todo: Update all values from db
-      echo ("Successfully logged in");
+      bug("Successfully logged in");
       $_SESSION['loggedin'] = 1;
       $_SESSION['user'] = $uName;
       $_SESSION['userid'] = $row[1];
       $_SESSION['level'] = 0;
       $_SESSION['score'] = 0;
       $_SESSION['hints'] = 0;
+      bug("<a href='index.php'>Click Here to Continue </a>");
       header("Location: index.php");
     }
     else
       echo "Either Username or Password is Incorrect";
 	}
 	else
-		echo "User Does Not Exists";}
+		echo "User Does Not Exists";
+}
 else
 {
- bug("Please Login to continue ")
+ bug("Please Login to continue ");
 }
 ?>

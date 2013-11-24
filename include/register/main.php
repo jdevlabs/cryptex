@@ -6,6 +6,7 @@
    <form name="input" action="#" method="POST">
 Username: <input type="text" name="user"><br/>
 Name: <input type="text" name="name"><br/>
+Email: <input type="text" name="email"><br/>
 Password: <input type="text" name="pass"><br/>
 <input type="submit" value="Submit">
 </form>
