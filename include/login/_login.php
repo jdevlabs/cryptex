@@ -26,10 +26,9 @@ if(isset($_POST['user'],  $_POST['pass']))
       echo "Either Username or Password is Incorrect";
 	}
 	else
-		echo "User Does Not Exists";
-}
+		echo "User Does Not Exists";}
 else
 {
-  echo "Bitch Please!";
+ bug("Please Login to continue ")
 }
 ?>

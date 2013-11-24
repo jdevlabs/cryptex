@@ -1,4 +1,12 @@
 <?php
+
+//Debug Function 
+  function bug($e)
+  {
+    echo "<pre>";
+    echo $e ;
+    echo "</pre>";
+  }
   require "config/_config.php" ;
 
   //Todo: Understand what this is?

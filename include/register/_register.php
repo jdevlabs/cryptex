@@ -10,12 +10,15 @@ if(isset($_POST['user'], $_POST['name'], $_POST['password']))
 	// $result  = mysql_query("SELECT count(userid) FROM user WHERE username = '$uName'");
 	$result  = mysql_query("SELECT pass FROM user WHERE username = '$uName'");
 	if ( mysql_num_rows($result) > 0 )
-		echo "User Already Exists $uName";
+		bug("User Already Exists $uName");
 
 	//Insert User
-	$result =  mysql_query("INSERT INTO user (username, pass) VALUES('$uName', '$pass')");
+	$query = "INSERT INTO `user`(`userid`, `username`, `pass`) VALUES ('".$uName."','".$pass."')";
+	$result =  mysql_query($query);
 	if ($result)
-		echo "Inserted to DB";
+		bug("Inserted to DB");
+	else
+		bug("Unable to Insert into DB please try later  ".mysql_error());
 
 }
 ?>
