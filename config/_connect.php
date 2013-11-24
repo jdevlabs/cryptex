@@ -2,9 +2,9 @@
 // Database connection values
 // Note: Database parameters on the server are different
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'test');
-define('DB_USERNAME', 'dufferzafar');
-define('DB_PASSWORD', 'plok');
+define('DB_NAME', 'thinkdif_cryptex');
+define('DB_USERNAME', 'thinkdif');
+define('DB_PASSWORD', 'kgggdkp1992');
 
 // Connect and Select Database
 mysql_connect(DB_HOST, DB_USERNAME, DB_PASSWORD) or die('dbConnect.php: Connection Failed'.mysql_error());

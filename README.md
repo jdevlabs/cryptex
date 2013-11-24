@@ -18,8 +18,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="road"></a> Roadmap
 
-* Login & Registration (__v0.5.2__)
-  * SQL Injection. Hashed Passwords
+* Registration (__v0.5.2__)
   * _register.js
   * _register.php
 
@@ -66,7 +65,6 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 On 24/11/2013:
 
-* Haamad fixed some things, broke the others :(
 * Created Roadmap. Updated Readme.
 
 On 23/11/2013:

@@ -1,12 +1,25 @@
 <?php
-  $file = $_SERVER['DOCUMENT_ROOT']."/cryptex/include/".$_GET['pid']."/main.php" ;
-  $bool = file_exists($file);
 
-  //BUG: Any level can be accessed by passing suitable pid
+  $arr = array(1, 2, 3, 4,5,6,7,8,9,10,11,12,13);
+  $file = $_SERVER['DOCUMENT_ROOT']."/include/".$_GET['pid']."/main.php" ;
+  $bool = file_exists($file);
+  //bug($file);
+  //Note: Any level can be accessed by passing the correct pid # corrected
+	
   if (isset($_GET['pid']))
   {
     if($bool)
-      include "".$_GET['pid']."/main.php" ;
+      {
+      foreach ($arr as $value) 
+      	if ($value == $_GET['pid']){
+      		$flag =1 ; 
+      		break;
+      	}
+      	if ($flag == 1 )        
+      		include "404/main.php" ;
+      	else      		
+      		include "".$_GET['pid']."/main.php" ;
+      }
     else
       include "404/main.php" ;
   }
@@ -17,19 +30,21 @@
       $current_userid = $_SESSION['userid'];
 
       $query  = "SELECT `level` FROM `gamedata` WHERE `userid` = $current_userid";
-      $result = mysql_query($query);
+      
+      if (mysql_num_rows(mysql_query($query)) < 1)
+      {
+        $q="INSERT INTO `gamedata`(`userid`, `level`) VALUES ( $current_userid, 1)";
 
-      // Todo: Would be added in the registeration handler...
-      // so the db is updated as soon as a user registers.
-      // if (mysql_num_rows(mysql_query($query)) < 1)
-      // {
-      //   $q="INSERT INTO `gamedata`(`userid`, `level`) VALUES ( $current_userid, 1)";
-
-      //   mysql_query($q);
-      //   $result = mysql_query($query);
-      //   //echo mysql_error();
-      // }
-
+        mysql_query($q);
+        $result = mysql_query($query);
+        //echo mysql_error();
+      }
+      else
+      {
+        $result = mysql_query($query);
+      }
+      
+        
       $row = mysql_fetch_row($result);
 
       $_SESSION['level'] = $row[0];
@@ -65,4 +80,3 @@
   // if(isset($_GET['debug']))
   //     print_r($_SESSION);
 ?>
-
