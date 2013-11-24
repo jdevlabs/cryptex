@@ -1,6 +1,6 @@
 <?php
 // Database connection values
-// Todo: Match them with the server *Low*
+// Note: Database parameters on the server are different
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'test');
 define('DB_USERNAME', 'dufferzafar');

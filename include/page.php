@@ -2,6 +2,8 @@
   $file = $_SERVER['DOCUMENT_ROOT']."/cryptex/include/".$_GET['pid']."/main.php" ;
   $bool = file_exists($file);
 
+  //Note: Any level can be accessed by passing the correct pid
+
   if (isset($_GET['pid']))
   {
     if($bool)
@@ -35,7 +37,7 @@
           updateField("gamedata", "level", $_SESSION['level'] + 1, $current_userid);
 
           // Reload From Database.
-          // Todo: Equal to $_SESSION['level']++ ?
+          // Note: Equal to $_SESSION['level']++ ?
           $_SESSION['level'] = intval(getField("gamedata", "level", $current_userid));
         }
       }

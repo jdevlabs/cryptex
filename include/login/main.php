@@ -1,6 +1,6 @@
 <?php include "_login.php"; ?>
 <?php
-  //Todo: Is this file required? Isn't main page enough?
+  //Note: Is login/main.php required? Isn't main page enough?
 ?>
 <?php if ($_SESSION['loggedin'] != 1 ) { ?>
   <div class="span4 offset4 well" style="margin-top: 95px;">

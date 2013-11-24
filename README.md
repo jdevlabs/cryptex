@@ -1,6 +1,8 @@
 # Cryptex v0.5
 
-An online hacking and treasure hunting Game.
+An online hacking and treasure hunting game.
+
+The current 'master' branch is live on [Engineerinme](http://www.engineerinme.com/cryptex). But there is still miles to go.
 
 This is the centralized repo containing everything related to the project.
 
@@ -8,26 +10,46 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## Table of Contents
 
-* [Todo ASAP](#now)
+* [Roadmap](#road)
 * [To be added later](#todo)
 * [Changelog](#changelog)
 * [Some Notes for Developers](#notes)
-* [Ideas](#ideas)
+* [Random Ideas](#ideas)
 
-## <a name="now"></a> To Do ASAP
+## <a name="road"></a> Roadmap
 
-* Verify level answers via Ajax ?
+* Registration (__v0.5.2__)
+  * _register.js
+  * _register.php
 
-* Hints
-  * JS - Ajax call. Recieve Data.
-  * PHP - $_SESSION modifications. Send Data.
+* User Gamedata (__v0.5.5__)
+  * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used -> db table
+  * From db to $_Session variables -> session.php, login.php ?
+  * Update values after level completion -> page.php
+  * Reflect update in avatar -> nav.php
 
-* Load avatar data on every level.
+* Reset Progress (__v0.5.7__)
+  * Confirmation modal (Are you sure?)
+  * reset.php (ajax call?)
+  * Ajax-ify (logout.php)
 
-* More Levels
-* Add Score Handling
+* The Leaderboard (__v0.6__)
+  * /leaderboard.php
+  * Bootstrap tables
+  * Pagination (50 rows per page)
+
+* Hints (__v0.6.3__)
+  * Modal UI. Tabs (Hint 1 | Hint 2 | Hint 3)
+  * _hints.JS  - Ajax call. Recieve Data.
+  * _hints.PHP - Session modifications. Send Data from db.
+  * Hints in db.
+
+* Ajax-ify answer check (__v0.6.5__)
+* _answer.js & _answer.php 
 
 ## <a name="todo"></a>Add Later
+
+* More Levels
 
 * _hpWorld.php
   * Add families from lexicon
@@ -35,22 +57,15 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * _dbFunctions.php
 
-* gamedata table
-  * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used
-  * Update score after level completion
-
-* Hints UI
-  * Modals
-  * Tabs (Hint 1 | Hint 2 | Hint 3)
-  * Hints per level. In every lvl file?
-
 * Login/Register
   * Facebook Integration (php fb api)
   * Add a new row to *gamedata*
 
-* Leaderboard
-
 ## <a name="done"></a> Changelog
+
+On 24/11/2013:
+
+* Created Roadmap. Updated Readme.
 
 On 23/11/2013:
 
@@ -66,7 +81,10 @@ On 23/11/2013:
 
 On 19/11/2013:
 
-* Hammad Hellulajah!!
+* Hammad did a complete overhaul of basically everything.
+* Gave a new file structure.
+* Added $_Session variables to handle user data.
+* But in the process broke a few things and wrote some real bad code.
 
 On 15/11/2013:
 
@@ -131,7 +149,6 @@ Before 14/11/2013:
 
 * Questions could be themed. Harry Potter?
 * A Random quote on every page. Hack this site has them.
-
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dZ-Corp/cryptex/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

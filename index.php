@@ -1,7 +1,7 @@
 <?php
   require "config/_config.php" ;
 
-  //Todo: Understand what this is?
+  //Note: Why is this (and pid) required?
   // if($_GET['pid'] == "facebook" || $_GET['pid']=="facebook/")
   //   {
   //     require "include/facebook/main.php" ;

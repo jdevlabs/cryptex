@@ -1441,7 +1441,7 @@
   }
 
 
-  /* NOTE: POPOVER EXTENDS BOOTSTRAP-TOOLTIP.js
+  /* POPOVER EXTENDS BOOTSTRAP-TOOLTIP.js
      ========================================== */
 
   Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype, {
