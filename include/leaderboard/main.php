@@ -1,10 +1,6 @@
 <div class="container">
-<!-- <div class="row">
-  <center><h3>Leader Board </h3></center>
-  <br/><br/><br/>
-</div> -->
 <div class ="panel panel-default">
-    <div class="panel-heading">Panel heading</div>
+    <div class="panel-heading">The Leaderboard</div>
   <!-- <center> -->
     <table class="table table-hover">
     <thead>
