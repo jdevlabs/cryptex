@@ -1,24 +1,9 @@
 # -FrontPage-
 
-IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
 RewriteEngine On
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-
-#RewriteRule ^([a-zA-Z0-9]+)$ index.php?pid=$1
-#RewriteRule ^([a-zA-Z0-9]+)/$ index.php?pid=$1
-#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3
-#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/ index.php?pid=$1&$2=$3
-
-#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3&$4=$5
-#RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+) index.php?pid=$1&$2=$3&$4=$5
-
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI}  ^/([^/]+)/?([^/]*)?/?([^/]*)?/?([^/]*)?/?([^/]*)?/?   [NC]
-RewriteRule .*    index.php?pid=%1&%2=%3&%4=%5 [L]
-
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?pid=$1
+RewriteRule ^([a-zA-Z0-9]+)/$ index.php?pid=$1
 
 
 <Limit GET POST>
@@ -31,7 +16,9 @@ order deny,allow
 deny from all
 </Limit>
 
-ErrorDocument 404 /404
+
+AuthUserFile /home/thinkdif/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/thinkdif/public_html/_vti_pvt/service.grp
 
 AddType application/x-javascript .js
 AddType application/vnd.ms-fontobject .eot

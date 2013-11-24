@@ -1,0 +1,6 @@
+[24-Nov-2013 08:56:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'thinkdif'@'localhost' (using password: NO) in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 9
+[24-Nov-2013 08:56:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 9
+[24-Nov-2013 08:56:36] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 10
+[24-Nov-2013 08:56:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'thinkdif'@'localhost' (using password: NO) in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 9
+[24-Nov-2013 08:56:46] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 9
+[24-Nov-2013 08:56:46] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/thinkdif/public_html/cryptex/include/login/_login.php on line 10
