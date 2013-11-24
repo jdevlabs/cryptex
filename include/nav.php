@@ -30,30 +30,31 @@
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider"></li>
       <li><a href="?pid=facebook"><i class="glyphicon glyphicon-thumbs-up"></i> Login With Facebook</a></li>
-      <li class="divider-vertical"></li>
+      <li class="divider"></li>
       <li><a href="?pid=register"><i class="glyphicon glyphicon-user"></i> Register</a></li>
       <!-- <li><a href="/login"><i class="glyphicon glyphicon-user"></i> Login</a></li> -->
 <?php  } else {?>
-      <li id="navSeparator2" class="divider-vertical"></li>
-      <li id="navUserPopup" class="dropdown">
-        <a class="dropdown-toggle" href="#"  data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i><?php echo $_SESSION['user']; ?><strong class="caret"></strong></a>
-        <div class="dropdown-menu col-md-3 " style="padding: 15px; padding-bottom: 0px;">
-          <form method="post" action="login" accept-charset="UTF-8">
-            <div class="row pull-right">
-              <div class="col-md-1"><img src="/assets/img/avatar.svg" alt="avatar"></div>
-            </div>
-            <!-- <label><col-md- class=" badge badge-info">Level : 1000</col-md-></label> -->
-            <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
-            <i class="glyphicon glyphicon-bookmark"></i> Level :<?php echo $_SESSION['level'];?><br>
-            <i class="glyphicon glyphicon-star"></i> Score : <?php echo $_SESSION['score'];?><br>
-            <i class="glyphicon glyphicon-gift"></i> Hints Taken : <?php echo $_SESSION['hints'];?>
-            <li class="divider"></li>
-            <li>
-              <a href="##"><i class="glyphicon glyphicon-list"></i> Leaderboard</a>
-              <a href="logout.php" class="pull-right"><i class="glyphicon glyphicon-off"></i> Logout</a>
-            </li>
-          </form>
-        </div></li>
+      <li class="divider"></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" href="#"  data-toggle="dropdown">
+          <i class="glyphicon glyphicon-user"></i><?php echo '  ' . $_SESSION['user'] . '  '; ?>
+          <strong class="caret"></strong>
+        </a>
+        <ul class="dropdown-menu col-lg-7" style="padding: 15px; padding-bottom: 15px;">
+          <div class="row col-md-12 col-md-pull-right"><img src="assets/img/avatar.svg" alt="avatar"></div>
+
+          <div class="row col-md-pull-left">
+          </div>
+          <!-- <label><col-md- class=" badge badge-info">Level : 1000</col-md-></label> -->
+          <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
+          <i class="glyphicon glyphicon-bookmark"></i> Level :<?php echo '  ' . $_SESSION['level'];?><br>
+          <i class="glyphicon glyphicon-star"></i> Score : <?php echo '  ' . $_SESSION['score'];?><br>
+          <i class="glyphicon glyphicon-gift"></i> Hints Taken : <?php echo '  ' . $_SESSION['hints'];?>
+          <li class="divider"></li>
+          <a href="##"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
+          <a href="logout.php" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
+        </ul>
+        </li>
 <?php } ?>
     </ul>
   </div>
