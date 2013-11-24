@@ -6,7 +6,7 @@
   <div class="nav-collapse collapse">
     <ul class="nav">
       <li class="divider-vertical"></li><li><a href="/"><i class="icon-home"></i> Home</a></li>
-      <li class="divider-vertical"></li><li><a href="#"><i class="icon-list"></i> Leaderboard</a></li>
+      <li class="divider-vertical"></li><li><a href="/leaderboard"><i class="icon-list"></i> Leaderboard</a></li>
 <?php if($_SESSION['loggedin'] == 1) { ?>
       <li class="divider-vertical"></li><li><a id="navHint" href="#"><i class="icon-gift"></i> Hints</a></li>
 <?php } ?>
@@ -17,7 +17,7 @@
       <li><a id="navContact" href="#"><i class="icon-envelope"></i> Contact</a></li>
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider-vertical"></li>
-      <li><a href="/facebook"><i class="icon-user"></i> Login With Facebook</a></li>
+      <li><a href="/?pid=facebook"><i class="icon-user"></i> Login With Facebook</a></li>
       <li><a href="/register"><i class="icon-user"></i> Register</a></li>
       <li><a href="/login"><i class="icon-user"></i> Login</a></li>
 <?php  } else {?>
@@ -27,7 +27,7 @@
         <div class="dropdown-menu span3 " style="padding: 15px; padding-bottom: 0px;">
           <form method="post" action="login" accept-charset="UTF-8">
             <div class="row pull-right">
-              <div class="span1"><img src="/cryptex/assets/img/avatar.svg" alt="avatar"></div>
+              <div class="span1"><img src="/assets/img/avatar.svg" alt="avatar"></div>
             </div>
             <!-- <label><span class=" badge badge-info">Level : 1000</span></label> -->
             <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>

@@ -7,8 +7,6 @@ function login($email)
 			  if (mysql_num_rows($result) > 0)
 				{
 					$row = mysql_fetch_row($result);
-					if (md5($pass) == $row[0])
-    				{
       					//Todo: Update all values from db
       					echo ("Successfully logged in");
       					$_SESSION['loggedin'] = 1;
@@ -17,11 +15,10 @@ function login($email)
       					$_SESSION['level'] = 0;
       					$_SESSION['score'] = 0;
       					$_SESSION['hints'] = 0;
-      					header("Location: index.php");
-    				}
-    				else
-      					echo "Either Username or Password is Incorrect";
-				}
+      					echo '<meta http-equiv="refresh" content="0; URL=index.php"><center><h1>Logged In , Redirecting to home</h1></center>' ;
+
+      				}
+    				
 			else 
 				return 0; 
 }
@@ -59,10 +56,8 @@ if ($user) {
 		} 
 	}
     else {
-    $login_url = $facebook->getLoginUrl(array( 'scope' => 'email'));	
-	
-	echo '<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>' ;
-
+    $login_url = $facebook->getLoginUrl(array( 'scope' => 'email'));		
+    bug('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>');
 	}
 
        
