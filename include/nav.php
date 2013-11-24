@@ -19,7 +19,6 @@
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider-vertical"></li>
       <li><a href="?pid=register"><i class="icon-user"></i> Register</a></li>
-      <li><a href="?pid=login"><i class="icon-user"></i> Login</a></li>
 <?php  } else {?>
       <li id="navSeparator2" class="divider-vertical"></li>
       <li id="navUserPopup" class="dropdown">

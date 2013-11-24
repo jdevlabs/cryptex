@@ -1,8 +1,8 @@
 <?php
-// Apply validations 
+// Apply validations
 if(isset($_POST['user'], $_POST['name'], $_POST['pass'],$_POST['email']))
 {
-	$uName = $_POST['user']; 
+	$uName = $_POST['user'];
 	$name = $_POST['name'];
 	$pass = md5($_POST['pass']);
 	$email = $_POST['email'];
