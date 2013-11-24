@@ -50,7 +50,7 @@ If you can keep it under 140 words, we'll send you the Nimbus 2000.</textarea>
       </form>
     </div>
     <div class="modal-footer">
-      <div class="control-group">
+      <div class="form-group">
         <div class="controls">
           <?php
             //Todo: Contact Us CodeBehind *Low*

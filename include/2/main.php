@@ -24,9 +24,9 @@
 
 ?>
 
-  <div class="row span4 offset3" style="margin-top: 120px;">
-    <div class="span8">
-      <h5><i class="icon icon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
+  <div class="row col-md-4 col-md-offset-3" style="margin-top: 120px;">
+    <div class="col-md-8">
+      <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
         Harry enters the room to find Seamus sitting ready with another absurd riddle of his. <br><br>
@@ -41,7 +41,7 @@
       <hr>
       <form class="form-horizontal" method="POST">
         <div class="form-group">
-            <input name="answer" type="text" class="span7" name="answer" placeholder="Umm... It means...">
+            <input name="answer" type="text" class="col-md-7" name="answer" placeholder="Umm... It means...">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>

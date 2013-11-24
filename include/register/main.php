@@ -2,7 +2,7 @@
 
 
 <?php if ($_SESSION['loggedin'] != 1 ) { ?>
- <div class="span4 offset4 well "  style="margin-top: 100px;">
+ <div class="col-md-4 col-md-offset-4 well "  style="margin-top: 100px;">
    <form name="input" action="#" method="POST">
 Username: <input type="text" name="user"><br/>
 Name: <input type="text" name="name"><br/>
