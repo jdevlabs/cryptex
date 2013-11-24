@@ -17,7 +17,22 @@
     {
       $current_userid = $_SESSION['userid'];
 
-      $result  = mysql_query("SELECT `level` FROM `gamedata` WHERE `userid` = $current_userid");
+      $query  = "SELECT `level` FROM `gamedata` WHERE `userid` = $current_userid";
+      
+      if (mysql_num_rows(mysql_query($query)) < 1)
+      {
+        $q="INSERT INTO `gamedata`(`userid`, `level`) VALUES ( $current_userid, 1)";
+
+        mysql_query($q);
+        $result = mysql_query($query);
+        //echo mysql_error();
+      }
+      else
+      {
+        $result = mysql_query($query);
+      }
+      
+        
       $row = mysql_fetch_row($result);
 
       $_SESSION['level'] = $row[0];
