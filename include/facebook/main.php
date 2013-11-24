@@ -27,7 +27,7 @@ function login($email)
 }
 function insert($userinfo)
    $query = "INSERT INTO `user`( `username`,`email`,`name`) VALUES ('".$userinfo['first_name'].$userinfo['last_name']."','".$userinfo['email']."','".$userinfo['first_name']."')";
-   if(mysql_query($query)==FALSE || mysql_query($query1)==FALSE)
+   if(mysql_query($query)==FALSE )
    bug("Error Inserting In Database ");
      
 if( login($userinfo['email'] , 1 ) == 0 )
