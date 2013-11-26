@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
   $('#navHint').click(function(event) {
-    $('#hintsModal').modal('show');
+      $('#hintsModal').modal('show');
     event.preventDefault();
   });
 

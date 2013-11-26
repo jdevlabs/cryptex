@@ -55,6 +55,10 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * More Levels
 
+* Use cheet.js to add easter eggs. yay!
+  * Konami code
+  * Something HP related?
+
 * _hpWorld.php
   * Add families from lexicon
   * GetRandomString()

@@ -1,7 +1,7 @@
 
 <!-- Modal Dialogs Begin -->
 <?php  if($_SESSION['user'] != "Anon") { ?>
-  <div id="hintsModal" class="modal hide fade" tabindex="-1" role="dialog">
+  <div id="hintsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="hintsModal" aria-hidden="true">
     <div class="modal-header">
       <a href="#" class="close" data-dismiss="modal">x</a>
       <h4>Hints on Sale!</h4>
@@ -34,32 +34,36 @@
   </div>
 
 <?php } ?>
-  <div id="contactModal" class="modal hide fade" tabindex="-1" role="dialog">
-    <div class="modal-header">
-      <a href="#" class="close" data-dismiss="modal">x</a>
-      <h4>Contact the administrators</h4>
-      <p>Experiencing a problem? We're here to help, just let us know.</p>
-      <p>Don't have a problem but still want to talk to us? We'll love to hear from you.</p>
-    </div>
-    <div class="modal-body">
-      <form >
-        <textarea id="prob" name="prob" rows="8" style="width: 515px;">
+  <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href="#" class="close" data-dismiss="modal">x</a>
+          <h4>Contact the administrators</h4>
+          <p>Experiencing a problem? We're here to help, just let us know.</p>
+          <p>Don't have a problem but still want to talk to us? We'll love to hear from you.</p>
+        </div>
+        <div class="modal-body">
+          <form class="col-sm-12">
+            <textarea id="prob" name="prob" rows="8" style="width: 515px;">
 Enter a brief description of the problem you are experiencing.
 
 If you can keep it under 140 words, we'll send you the Nimbus 2000.</textarea>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <div class="form-group">
-        <div class="controls">
-          <?php
-            //Todo: Contact Us CodeBehind *Low*
-          ?>
-          <button id="SOS" class="btn btn-default btn-success">Help Me Out!</button>
-          <button data-dismiss="modal" class="btn btn-danger">Nevermind</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+            <div class="controls">
+              <?php
+                //Todo: Contact Us CodeBehind *Low*
+              ?>
+              <button id="SOS" class="btn btn-default btn-success">Help Me Out!</button>
+              <button data-dismiss="modal" class="btn btn-danger">Nevermind</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+  </div>
   </div>
 <!-- Modal Dialogs End -->
 
