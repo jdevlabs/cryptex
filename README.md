@@ -1,4 +1,4 @@
-# Cryptex v0.5
+# Cryptex v0.5.3
 
 An online hacking and treasure hunting game.
 
@@ -18,39 +18,40 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="road"></a> Roadmap
 
-* Add a footer..
-
-* Registration (__v0.5.2__)
+* Registration 
   * SQL Injection. Hashed Passwords.
   * _register.js
   * _register.php
 
-* User Gamedata (__v0.5.5__)
+* User Gamedata
   * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used -> db table
   * From db to $_Session variables -> session.php, login.php ?
   * Update values after level completion -> page.php
   * Reflect update in avatar -> nav.php
 
-* Reset Progress (__v0.5.7__)
+* Reset Progress
   * Confirmation modal (Are you sure?)
   * reset.php (ajax call?)
   * Ajax-ify (logout.php)
 
-* The Leaderboard (__v0.6__)
+* The Leaderboard
   * /leaderboard.php
   * Bootstrap tables
   * Pagination (50 rows per page)
 
-* Hints (__v0.6.3__)
+* Hints
   * Modal UI. Tabs (Hint 1 | Hint 2 | Hint 3)
   * _hints.JS  - Ajax call. Recieve Data.
   * _hints.PHP - Session modifications. Send Data from db.
   * Hints in db.
 
-* Ajax-ify answer check (__v0.6.5__)
-* _answer.js & _answer.php 
+* Ajax-ify answer check
+  * _answer.js & _answer.php 
 
 ## <a name="todo"></a>Add Later
+
+* Convert modal dialogs to bootboxes. ?
+* Add a footer.
 
 * More Levels
 
@@ -62,17 +63,13 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * Add families from lexicon
   * GetRandomString()
 
-* _dbFunctions.php
-
-* Login/Register
-  * Facebook Integration (php fb api)
-  * Add a new row to *gamedata*
-
 ## <a name="done"></a> Changelog
 
 On 28/11/2013:
 
-* Working on Score Reset. 
+* Added: Bootbox to ask confirmation before reset.
+* Merged: Similar $().click() functions into a single js file.
+* Ajaxified: Reset and Logout options. Don't know if this is good idea.
 
 From 25-28/11/2013:
 

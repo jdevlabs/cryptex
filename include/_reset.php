@@ -1,13 +1,10 @@
 <?php
-  require '../../config/_connect.php';
-  require '../../config/_session.php';
+  require '../config/_connect.php';
+  require '../config/_session.php';
+  require '../config/_dbFunctions.php';
 
+  updateField("gamedata", "level", '1', $_SESSION['userid']);
+  updateField("gamedata", "qlevel", '', $_SESSION['userid']);
 
-  echo("Successfully logged in");
-  $_SESSION['loggedin'] = 0;
-  $_SESSION['user'] = "Anon";
-  $_SESSION['level'] = 0;
-  $_SESSION['score'] = 0;
-  $_SESSION['hints'] = 0;
-  $_SESSION['userid'] = 0;
+  echo("Reset Successful");
 ?>

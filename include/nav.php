@@ -52,8 +52,8 @@
           <i class="glyphicon glyphicon-star"></i> Score : <?php echo '  ' . $_SESSION['score'];?><br>
           <i class="glyphicon glyphicon-gift"></i> Hints Taken : <?php echo '  ' . $_SESSION['hints'];?>
           <li class="divider"></li>
-          <a href="##"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
-          <a href="logout.php" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
+          <a href="" id="resetProgress"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
+          <a href="" id="logout" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
         </ul>
         </li>
 <?php } ?>
