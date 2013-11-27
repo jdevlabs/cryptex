@@ -25,24 +25,28 @@
 ?>
 
   <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
-
-  <div class="row" style="margin-top: 120px;">
-    <div class="col-md-8 col-md-offset-3">
+  <div class="container">
+    <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
-        The Cloak of Invisibility is a magical artefact used to render the wearer invisible.
-        It ended up in the hands of James Potter, the father of Harry Potter.
+        The Invisibility Cloak is a magical artefact used to render the wearer invisible.
+        It ended up in the hands of James Potter, the father of Harry Potter...
         After James was killed, the Cloak was left in Dumbledore's possession. <br><br>
-        Ten years later, Dumbledore gave Harry Potter the Cloak of Invisibility as a Christmas present anonymously and told him to "use it well." <br><br>
+        Ten years later, Dumbledore gave it to Harry Potter as a Christmas present anonymously and told him to "use it well." <br><br>
         It's your turn now, there is something hidden on this webpage, let's see if you can uncover it.
       </p>
       <p style="color:white"> <?php echo $ques ?> </p>
       <hr>
-      <form class="form-horizontal" method="POST">
-        <div class="form-group">
-            <input name="answer" type="text" class="col-md-7" name="answer" placeholder="You can't see me...">
-            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="row col-sm-offset-2">
+      <form method="POST">
+        <div class="col-sm-7">
+          <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+        </div>
+        <div class="col-sm-2">
+          <button type="submit" class="btn btn-primary form-control">Submit</button>
         </div>
       </form>
     </div>
+  </div>

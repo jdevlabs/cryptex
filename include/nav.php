@@ -1,3 +1,4 @@
+<!-- I, Contain -->
 <div class="container">
 <!-- Navbar Begins -->
 <nav class="navbar navbar-default" role="navigation">
@@ -15,7 +16,7 @@
   <div class="collapse navbar-collapse" id="mainNavBar">
     <ul class="nav navbar-nav">
       <li class="divider"></li>
-      <li><a href="/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+      <li><a href="index.php"><i class="glyphicon glyphicon-home"></i> Home</a></li>
       <li class="divider"></li>
       <li><a href="?pid=leaderboard"><i class="glyphicon glyphicon-list"></i> Leaderboard</a></li>
 <?php if($_SESSION['loggedin'] == 1) { ?>

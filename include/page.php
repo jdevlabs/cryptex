@@ -62,7 +62,6 @@
         if ($postAns == $ans)
         {
           // echo("Level Cleared");
-
           // Update the current level
           updateField("gamedata", "level", $_SESSION['level'] + 1, $current_userid);
 

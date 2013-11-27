@@ -1,6 +1,5 @@
 <?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
 
-<script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
 <?php
 
   $level = getField("gamedata", "level", $_SESSION['userid']);
@@ -24,8 +23,9 @@
 
 ?>
 
-  <div class="row col-md-4 col-md-offset-3" style="margin-top: 120px;">
-    <div class="col-md-8">
+  <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
+  <div class="container">
+    <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
@@ -36,13 +36,17 @@
         "Let's just cut to the chase please Seamus, I'm really tired." <br><br>
         "OK, tell me what  <?php echo '"' . $ques . '"' ?> means and I won't bug you for the day."
       </p>
-
-
       <hr>
-      <form class="form-horizontal" method="POST">
-        <div class="form-group">
-            <input name="answer" type="text" class="col-md-7" name="answer" placeholder="Umm... It means...">
-            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="row col-sm-offset-2">
+      <form method="POST">
+        <div class="col-sm-7">
+          <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+        </div>
+        <div class="col-sm-2">
+          <button type="submit" class="btn btn-primary form-control">Submit</button>
         </div>
       </form>
     </div>
+  </div>
+

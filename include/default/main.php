@@ -8,16 +8,16 @@
   <div class="row col-sm-offset-1" style="margin-top: 100px;" >
     <form id="submitForm" method="POST">
       <div align="center" class="col-sm-3">
-        <label  style="margin-top: 5px;">Let's Login Hackerboy!</label>
+        <label style="margin-top: 5px;">Let's Login Hackerboy!</label>
       </div>
       <div class="col-sm-3">
-        <input class="form-control" type="text" name="user" placeholder="Your Username" required autofocus>
+        <input name="user"type="text" placeholder="Your Username" class="form-control"  required autofocus>
       </div>
       <div class="col-sm-3">
-        <input  class="form-control" type="text" name="pass" placeholder="Your Password" required>
+        <input name="pass" type="text" placeholder="Your Password" class="form-control" required>
       </div>
       <div class="col-sm-1">
-        <button class="btn btn-primary" type="submit">Sign in</button>
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </div>
     </form>
   </div>
