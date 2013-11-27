@@ -27,21 +27,24 @@
 ?>
 
   <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
-  <div class="row col-md-4 col-md-offset-3" style="margin-top: 120px;">
-    <div class="col-md-8">
-      <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
-      <hr>
-      <p id="quesData">
-        The big fat lady asks Harry for the password to the gryffindor's common room but harry has yet again forgotten it. <br><br>
-        Luckily, Harry knew that this could happen, so he wrote down the password in this file somewhere. <br><br>
-        Can you please fecth it for him?
-      </p>
+  <div class="container">
+    <div class="row col-lg-4 col-lg-offset-3" style="margin-top: 120px;">
+      <div class="col-lg-8">
+        <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
+        <hr>
+        <p id="quesData">
+          The big fat lady asks Harry for the password to the gryffindor's common room but harry has yet again forgotten it. <br><br>
+          Luckily, Harry knew that this could happen, so he wrote down the password in this file somewhere. <br><br>
+          Can you please fecth it for him?
+        </p>
 
-      <hr>
-      <form class="form-horizontal" method="POST">
-        <div class="form-group">
-            <input name="answer" type="text" class="col-md-7" name="answer" placeholder="Tha Big Fat Lady is waiting...">
+        <hr>
+        <form class="form-inline" method="POST">
+          <div class="form-group">
+            <input name="answer" type="text" class="col-lg-7" name="answer" placeholder="Tha Big Fat Lady is waiting...">
             <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>

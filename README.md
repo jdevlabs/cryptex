@@ -20,6 +20,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * __Move to Bootstrap 3.0__
   * Fix what breaks!
+  * Add a footer..
 
 * Registration (__v0.5.2__)
   * SQL Injection. Hashed Passwords.
