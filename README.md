@@ -18,9 +18,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="road"></a> Roadmap
 
-* __Move to Bootstrap 3.0__
-  * Fix what breaks!
-  * Add a footer..
+* Add a footer..
 
 * Registration (__v0.5.2__)
   * SQL Injection. Hashed Passwords.
@@ -71,6 +69,14 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * Add a new row to *gamedata*
 
 ## <a name="done"></a> Changelog
+
+On 28/11/2013:
+
+* Working on Score Reset. 
+
+From 25-28/11/2013:
+
+* Moved everything to bootstrap 3. whew!
 
 On 24/11/2013:
 
