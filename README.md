@@ -2,9 +2,9 @@
 
 An online hacking and treasure hunting game.
 
-The current 'master' branch is live on [ThinkDiff](http://cryptex.thinkdiff.co.in). But there are still miles to go.
+The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
-This is the centralized repo containing everything related to the project.
+There is also a version hosted on [thinkdiff](http://cryptex.thinkdiff.co.in/). Again, there may be loads of bugs. Please file an issue and help us out.
 
 For notes on AJAX and other structural information, have a look at the Notes at the end of the readme.
 
@@ -18,8 +18,9 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="road"></a> Roadmap
 
+* SQL Injection. Hashed Passwords.
+
 * Registration 
-  * SQL Injection. Hashed Passwords.
   * _register.js
   * _register.php
 
@@ -29,14 +30,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * Update values after level completion -> page.php
   * Reflect update in avatar -> nav.php
 
-* Reset Progress
-  * Confirmation modal (Are you sure?)
-  * reset.php (ajax call?)
-  * Ajax-ify (logout.php)
-
 * The Leaderboard
-  * /leaderboard.php
-  * Bootstrap tables
   * Pagination (50 rows per page)
 
 * Hints
@@ -50,12 +44,11 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="todo"></a>Add Later
 
-* Convert modal dialogs to bootboxes. ?
 * Add a footer.
 
 * More Levels
 
-* Use cheet.js to add easter eggs. yay!
+* Use cheet.js to add easter eggs.
   * Konami code
   * Something HP related?
 
@@ -66,6 +59,8 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 ## <a name="done"></a> Changelog
 
 On 28/11/2013:
+
+* Working on registration form.
 
 * Added: Bootbox to ask confirmation before reset.
 * Merged: Similar $().click() functions into a single js file.
@@ -131,8 +126,8 @@ Before 14/11/2013:
 
 ## <a name="notes"></a> Notes for Developers
 
-* No matter what you do - write __legible code__
-  * 2 Space indentaion
+* Note: Show full names in the leaderboard instead of usernames?
+* Note: Remove all debugging related help like mysql_error()
 
 * Every single php file should be able to handle direct execution, in which case, either redirect to a proper place or show an echo message.
 

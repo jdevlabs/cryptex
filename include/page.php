@@ -34,6 +34,7 @@
 
       $query  = "SELECT `level` FROM `gamedata` WHERE `userid` = $current_userid";
 
+      //Note: This shouldn't be required as the level will be set during the registration...
       if (mysql_num_rows(mysql_query($query)) < 1)
       {
         $q="INSERT INTO `gamedata`(`userid`, `level`) VALUES ( $current_userid, 1)";
