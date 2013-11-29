@@ -2,27 +2,30 @@
 
 <div class="container">
     <div class="col-md-6 col-md-offset-3 well" style="margin-top: 50px;">
-      <form id="regForm" name="input" method="POST">
+      <form id="regForm" name="input" method="POST" autocomplete="on">
         <legend> Registration </legend>
         <div class="form-group">
-          <label for="full">Full Name</label>
-          <input id="full" name="full" class="form-control" placeholder="Enter your full name" autofocus requi type="text">
+          <label class="control-label" for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" placeholder="Your full name" class="form-control" autofocus requi type="text">
         </div>
         <div class="form-group">
-          <label for="email">E-Mail ID</label>
-          <input id="email" name="email" class="form-control" placeholder="Enter your E-Mail ID" requi type="text">
+          <label class="control-label" for="email">E-Mail ID</label>
+          <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" requi type="text">
         </div>
         <div class="form-group">
-          <label for="uname">Username</label>
-          <input id="uname" name="uname" class="form-control" placeholder="Enter a username" requi type="text">
+          <label class="control-label" for="username">Username</label>
+          <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input id="username" name="username" data-toggle="popover" data-title="Username already in use" data-container="body" data-content="The username you entered is already registered.<br><br>Please choose a different one." placeholder="A sexy username" class="form-control" requi type="text">
+          </div>
         </div>
         <div class="form-group">
-          <label for="pass">Password</label>
-          <input id="pass" name="pass" class="form-control" placeholder="Enter a password" requi type="text">
+          <label class="control-label" for="password">Password</label>
+          <input id="password" name="password" placeholder="A password" class="form-control" requi type="password">
         </div>
         <div class="form-group">
-          <label for="cpass">Confirm Password</label>
-          <input id="cpass" name="cpass" class="form-control" placeholder="Re-enter password" requi type="text">
+          <label class="control-label" for="cpass">Confirm Password</label>
+          <input id="cpass" name="cpass" data-toggle="popover" data-title="Passwords don't match" data-container="body" data-content="The two passwords you entered don't match.<br><br>Please try again..." placeholder="The password again" class="form-control" requi type="password">
         </div>
         <hr>
         <div class="form-group" align="right">

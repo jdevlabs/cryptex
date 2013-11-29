@@ -49,7 +49,7 @@
           </div>
           <div class="modal-body">
             <form class="col-sm-12">
-              <textarea id="prob" name="prob" rows="8" style="width: 515px;">
+              <textarea class="form-control" id="prob" name="prob" rows="8" style="width: 515px;">
 Enter a brief description of the problem you are experiencing.
 
 If you can keep it under 140 words, we'll send you the Nimbus 2000.</textarea>

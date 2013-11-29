@@ -3,23 +3,24 @@ $(document).ready(function()
   // $msg = $("#alertMsg");
   $('#regForm').submit(function(e)
   {
-    uName = $('#uname').val();
-    full = $('#full').val(); email = $('#email').val();
-    pass = $('#pass').val(); cPass = $('#pass').val();
+    // Clear all previous error states
+    $('.form-group').removeClass('has-error');
+    $('input').popover('hide');
 
-    // Empty Fields
-    // if (uName == 'duffer')
-      // $("#uname").addClass('error');
+    // Get values from the form
+    uname = $('#username').val();
+    full = $('#fullname').val(); email = $('#email').val();
+    pass = $('#password').val(); cpass = $('#cpass').val();
 
-      // alert(uname.val());
-
-    // else if (full == '')
-    //  $msg.addClass('alert-error').html("<strong>full :</strong> Don't you have a full or something?").show();
-    // else if (pass == '')
-    //  $msg.addClass('alert-error').html("<strong>Passwords :</strong> Think of something.").show();
-    // //Both Passwords are equal
-    // else if (pass != cPass)
-    //  $msg.addClass('alert-error').html("<strong>Passwords :</strong> Passwords don't match bud!").show();
+    // alert(pass + "  " + cpass);
+    // Password matching
+    if (pass != cpass)
+    {
+      $("#password").parent().addClass('has-error');
+      $("#cpass").parent().addClass('has-error');
+      $("#cpass").popover('toggle');
+      return e.preventDefault();
+    }
 
     $.ajax({
       //The Request
@@ -28,6 +29,18 @@ $(document).ready(function()
       data: $("#regForm").serialize(),
       success: function(data, tStatus)
       {
+        if ( data.indexOf("Email already exists") != -1 )
+        {
+          $('#email').parent().addClass('has-error');
+          $('#email').popover('toggle');
+          return e.preventDefault();
+        }
+        else if ( data.indexOf("Username already exists") != -1 )
+        {
+          $('#username').parent().parent().addClass('has-error');
+          $('#username').popover('toggle');
+          return e.preventDefault();
+        }
         alert("success: " + data);
       },
       error:function(jqXHR, tStatus, errorThrown)
@@ -38,6 +51,5 @@ $(document).ready(function()
 
     // $msg.addClass('alert-success').html("<strong>Congratulations!</strong> You've successfully registered.").show();
     return e.preventDefault();
-		// return e.preventDefault();
   });
 });

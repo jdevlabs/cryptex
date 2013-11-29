@@ -16,7 +16,7 @@ $(document).ready(function()
 			success: function(data, tStatus)
 			{
 				// alert(data);
-        if (data.indexOf("Successfully logged in") > 0 )
+        if ( data.indexOf("Successfully logged in") != -1 )
         {
           // We've logged in, now reload the page.
           // Everything else will be taken care of

@@ -9,5 +9,14 @@
   <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
 
+  <script>
+  $('[data-toggle="tooltip"]').tooltip({
+    'trigger': 'manual', 'placement': 'right'
+  });
+
+  $('[data-toggle="popover"]').popover({
+    'trigger': 'manual', 'placement': 'right', 'html': true
+  });
+  </script>
 </body>
 </html>
