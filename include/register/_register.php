@@ -1,7 +1,7 @@
 <?php
 require '../../config/_connect.php';
 
-// Apply validations
+// Todo: Apply other validations like, email should be a valid address and such!
 if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['email']))
 {
   if (!empty($_POST['username']) && !empty($_POST['fullname']) && !empty($_POST['password']) && !empty($_POST['email']))

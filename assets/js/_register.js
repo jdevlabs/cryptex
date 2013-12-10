@@ -5,7 +5,7 @@ $(document).ready(function()
   {
     // Clear all previous error states
     $('.form-group').removeClass('has-error');
-    $('input').popover('hide');
+    $('input, legend').popover('hide');
 
     // Get values from the form
     uname = $('#username').val();
@@ -23,25 +23,31 @@ $(document).ready(function()
     }
 
     $.ajax({
-      //The Request
       type: "POST",
       url: "include\\register\\_register.php",
       data: $("#regForm").serialize(),
       success: function(data, tStatus)
       {
-        if ( data.indexOf("Email already exists") != -1 )
+        //Todo: Auot-Login after valid registeration?
+        if ( data.indexOf("Registeration Successful") != -1 )
+        {
+          alert('Okay.');
+        }
+        else if ( data.indexOf("Email already exists") != -1 )
         {
           $('#email').parent().addClass('has-error');
           $('#email').popover('toggle');
-          return e.preventDefault();
         }
         else if ( data.indexOf("Username already exists") != -1 )
         {
           $('#username').parent().parent().addClass('has-error');
           $('#username').popover('toggle');
-          return e.preventDefault();
         }
-        alert("success: " + data);
+        else
+        {
+          $('legend').popover('toggle');
+          // alert(data);
+        }
       },
       error:function(jqXHR, tStatus, errorThrown)
       {

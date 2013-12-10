@@ -3,7 +3,7 @@
 <div class="container">
     <div class="col-md-6 col-md-offset-3 well" style="margin-top: 50px;">
       <form id="regForm" name="input" method="POST" autocomplete="on">
-        <legend> Registration </legend>
+        <legend data-toggle="popover" data-title="Recheck form and try again" data-container="body" data-content="An error occurred while trying to register.Please recheck all the entries and try again."> Registration </legend>
         <div class="form-group">
           <label class="control-label" for="fullname">Full Name</label>
           <input id="fullname" name="fullname" placeholder="Your full name" class="form-control" autofocus requi type="text">
@@ -25,12 +25,12 @@
         </div>
         <div class="form-group">
           <label class="control-label" for="cpass">Confirm Password</label>
-          <input id="cpass" name="cpass" data-toggle="popover" data-title="Passwords don't match" data-container="body" data-content="The two passwords you entered don't match.<br><br>Please try again..." placeholder="The password again" class="form-control" requi type="password">
+          <input id="cpass" name="cpass" data-toggle="popover" data-title="Passwords don't match" data-container="body" data-content="The two passwords you entered don't match.<br><br>Please try again." placeholder="The password again" class="form-control" requi type="password">
         </div>
         <hr>
         <div class="form-group" align="right">
           <button type="submit" class="col-md-5 btn btn-primary">Register</button>
-          <button type="submit" class="col-md-6 col-md-offset-1 btn btn-success">Signup with Facebook</button>
+          <button class="col-md-6 col-md-offset-1 btn btn-success">Signup with Facebook</button>
         </div>
       </form>
     </div>
