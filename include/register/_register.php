@@ -27,6 +27,7 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['em
       }
       else
       {
+        //Todo: Email should be verified
         //Insert User as Email & Username both are unique
         $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."')";
         $r1 =  mysql_query($q);

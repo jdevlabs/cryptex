@@ -46,6 +46,8 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * Add a footer.
 
+* Rules
+
 * More Levels
 
 * Use cheet.js to add easter eggs.
@@ -57,6 +59,10 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * GetRandomString()
 
 ## <a name="done"></a> Changelog
+
+On 20/12/2013:
+
+* Hints Modal Changes
 
 On 28/11/2013:
 
