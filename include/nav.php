@@ -2,7 +2,6 @@
 <div class="container">
 <!-- Navbar Begins -->
 <nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
       <span class="sr-only">Toggle navigation</span>
@@ -12,7 +11,6 @@
     </button>
     <a class="navbar-brand" href="index.php" name="top">Cryptex 2</a>
   </div>
-  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="mainNavBar">
     <ul class="nav navbar-nav">
       <li class="divider"></li>
@@ -24,7 +22,6 @@
       <li><a id="navHint" href="#"><i class="glyphicon glyphicon-gift"></i> Hints</a></li>
 <?php } ?>
     </ul>
-
     <ul class="nav navbar-nav navbar-right">
       <li class="divider"></li>
       <li><a id="navContact" href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>

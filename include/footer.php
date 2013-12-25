@@ -1,3 +1,4 @@
+
   <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -9,6 +10,7 @@
   <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
 
+  <!-- Todo: Move this into a js file -->
   <script>
   $('[data-toggle="tooltip"]').tooltip({
     'trigger': 'manual', 'placement': 'right'

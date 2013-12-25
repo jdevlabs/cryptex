@@ -1,12 +1,4 @@
 <?php
-
-function bug($e){
-echo "<pre>";
-echo $e;
-echo "</pre>"; 
-}
-// echo getField("sds", "pass", 1);
-
 // Todo: Fix All dbFunctions *HIGH*
 
 /**

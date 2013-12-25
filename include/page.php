@@ -5,23 +5,21 @@
   $file = $_SERVER['DOCUMENT_ROOT']."/cryptex/include/".$_GET['pid']."/main.php" ;
   $bool = file_exists($file);
 
-  //Note: Any level can be accessed by passing the correct pid.
-  //Note: What is the use of 'pid' anyway?
-
+  //Todo: Only allow pid access to leaderboard/facebook etc.
   if (isset($_GET['pid']))
   {
     if($bool)
       {
       foreach ($arr as $value)
-      	if ($value == $_GET['pid'])
+        if ($value == $_GET['pid'])
         {
-      		$flag = 1 ;
-      		break;
-      	}
-      	if ($flag)
-      		include "404/main.php" ;
-      	else
-      		include "".$_GET['pid']."/main.php" ;
+          $flag = 1 ;
+          break;
+        }
+        if ($flag)
+          include "404/main.php" ;
+        else
+          include "".$_GET['pid']."/main.php" ;
       }
     else
       include "404/main.php" ;

@@ -25,7 +25,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * _register.php
 
 * User Gamedata
-  * User ID, Current Level, Current Ques, Current Ans, Current Score, Score Reached At, Hints Used -> db table
+  * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
   * From db to $_Session variables -> session.php, login.php ?
   * Update values after level completion -> page.php
   * Reflect update in avatar -> nav.php
@@ -49,6 +49,8 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 * Rules
 
 * More Levels
+
+* See intro.js, favico.js, readmore.js
 
 * Use cheet.js to add easter eggs.
   * Konami code

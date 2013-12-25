@@ -14,6 +14,7 @@
         <input name="user"type="text" placeholder="Your Username" class="form-control"  required autofocus>
       </div>
       <div class="col-sm-3">
+      <!-- Todo: type="password" -->
         <input name="pass" type="text" placeholder="Your Password" class="form-control" required>
       </div>
       <div class="col-sm-1">
