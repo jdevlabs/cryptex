@@ -31,8 +31,8 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['em
         //Insert User as Email & Username both are unique
         $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."')";
         $r1 =  mysql_query($q);
-
-        $q = "INSERT INTO `gamedata`(`level`, `qlevel`, `ques`, `ans`) VALUES ('1', '', '', '')";
+        //Note: What if one of these queries is successful and the other isn't?
+        $q = "INSERT INTO `gamedata`(`level`, `score`, `qlevel`, `ques`, `ans`) VALUES ('1', '1000', '', '', '')";
         $r2 =  mysql_query($q);
 
         if ($r1 and $r2)

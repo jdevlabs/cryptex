@@ -15,13 +15,16 @@ if(isset($_POST['user'],  $_POST['pass']))
     // if (md5($pass) == $row[0])
     if ($pass == $row[0])
     {
-      //Todo: Update all values from db
       echo("Successfully logged in");
       $_SESSION['loggedin'] = 1;
       $_SESSION['user'] = $uName;
       $_SESSION['userid'] = $row[1];;
-      $_SESSION['level'] = getField("gamedata", "level", $row[1]);
-      $_SESSION['score'] = 0;
+
+      $result = mysql_query("SELECT level, score FROM gamedata WHERE userid = '$row[1]'");
+      $row = mysql_fetch_row($result);
+
+      $_SESSION['level'] = $row[0];
+      $_SESSION['score'] = $row[1];
       $_SESSION['hints'] = 0;
     }
     else

@@ -30,27 +30,6 @@
     {
       $current_userid = $_SESSION['userid'];
 
-      $query  = "SELECT `level` FROM `gamedata` WHERE `userid` = $current_userid";
-
-      //Note: This shouldn't be required as the level will be set during the registration...
-      if (mysql_num_rows(mysql_query($query)) < 1)
-      {
-        $q="INSERT INTO `gamedata`(`userid`, `level`) VALUES ( $current_userid, 1)";
-
-        mysql_query($q);
-        $result = mysql_query($query);
-        //echo mysql_error();
-      }
-      else
-      {
-        $result = mysql_query($query);
-      }
-
-
-      $row = mysql_fetch_row($result);
-
-      $_SESSION['level'] = $row[0];
-
       //Form submitted. Check whether answer is correct.
       if (isset($_POST['answer']))
       {
@@ -61,14 +40,21 @@
         if ($postAns == $ans)
         {
           // echo("Level Cleared");
+
           // Update the current level
           updateField("gamedata", "level", $_SESSION['level'] + 1, $current_userid);
 
-          // Reload From Database.
-          // Note: Equal to $_SESSION['level']++ ?
-          $_SESSION['level'] = intval(getField("gamedata", "level", $current_userid));
+          // Update Score
+          if ($_SESSION['level'] < 4)
+          {
+            updateField("gamedata", "score", $_SESSION['score'] + 1000, $current_userid);
+          }
         }
       }
+
+      // No problem in loading values from db
+      $_SESSION['level'] = intval(getField("gamedata", "level", $current_userid));
+      $_SESSION['score'] = intval(getField("gamedata", "score", $current_userid));
 
       include "".$_SESSION['level']."/main.php" ;
     }
@@ -78,6 +64,7 @@
     }
   }
 
-  // if(isset($_GET['debug']))
-  //     print_r($_SESSION);
+  //Todo: Remove on Post-Production.
+  if(isset($_GET['debug']))
+    print_r($_SESSION);
 ?>
