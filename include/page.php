@@ -28,34 +28,6 @@
   {
     if ($_SESSION['loggedin'] == 1)
     {
-      $current_userid = $_SESSION['userid'];
-
-      //Form submitted. Check whether answer is correct.
-      if (isset($_POST['answer']))
-      {
-        $postAns = trim($_POST['answer']);
-
-        $ans = getField("gamedata", "ans", $current_userid);
-
-        if ($postAns == $ans)
-        {
-          // echo("Level Cleared");
-
-          // Update the current level
-          updateField("gamedata", "level", $_SESSION['level'] + 1, $current_userid);
-
-          // Update Score
-          if ($_SESSION['level'] < 4)
-          {
-            updateField("gamedata", "score", $_SESSION['score'] + 1000, $current_userid);
-          }
-        }
-      }
-
-      // No problem in loading values from db
-      $_SESSION['level'] = intval(getField("gamedata", "level", $current_userid));
-      $_SESSION['score'] = intval(getField("gamedata", "score", $current_userid));
-
       include "".$_SESSION['level']."/main.php" ;
     }
     else

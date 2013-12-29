@@ -7,7 +7,7 @@ $(document).ready(function()
   $('#resetProgress').click(function(e)
   {
     bootbox.dialog({
-      message: "Once you go ahead, you will lose your saved progress and you will be redirected back to level one. <br><br> So, are you really sure? ",
+      message: "Once you go ahead, you will lose your saved progress and will be redirected back to level one. <br><br> So, are you really sure? ",
       title: "Are you sure?",
       buttons: {
         danger: {
