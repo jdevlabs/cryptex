@@ -26,9 +26,6 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * User Gamedata
   * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
-  * From db to $_Session variables -> session.php, login.php ?
-  * Update values after level completion -> page.php
-  * Reflect update in avatar -> nav.php
 
 * The Leaderboard
   * Pagination (50 rows per page)
@@ -62,11 +59,16 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 ## <a name="done"></a> Changelog
 
-On 20/12/2013:
+29/12/2013:
+
+* Modified: The on POST answer check is now done before anything else. <index.php>
+* Added: Score Updates.
+
+20/12/2013:
 
 * Hints Modal Changes
 
-On 28/11/2013:
+28/11/2013:
 
 * Working on registration form.
 
@@ -78,12 +80,12 @@ From 25-28/11/2013:
 
 * Moved everything to bootstrap 3. whew!
 
-On 24/11/2013:
+24/11/2013:
 
 * Hammad added a basic leaderboard.
 * Created Roadmap. Updated Readme.
 
-On 23/11/2013:
+23/11/2013:
 
 * Refactored: page.php
 * Added: On POST Answer handler
@@ -95,18 +97,18 @@ On 23/11/2013:
 * Modified: Ajax login redirection fixes
 * Modified: Nicer Main login UI
 
-On 19/11/2013:
+19/11/2013:
 
 * Hammad did a complete overhaul of basically everything.
 * Gave a new file structure.
 * Added $_Session variables to handle user data.
 * But in the process broke a few things and wrote some real bad code.
 
-On 15/11/2013:
+15/11/2013:
 
 * Removed: Level Data (BS!). Created a simpler md file instead.
 
-On 14/11/2013:
+14/11/2013:
 
 * Added: Level 3 - The invisibility cloak
 * Updated: Levels 1,2 to use data from _hpWorld
@@ -134,7 +136,7 @@ Before 14/11/2013:
 
 ## <a name="notes"></a> Notes for Developers
 
-* Note: Show full names in the leaderboard instead of usernames?
+* Done: Show full names in the leaderboard instead of usernames.
 * Note: Remove all debugging related help like mysql_error()
 
 * Every single php file should be able to handle direct execution, in which case, either redirect to a proper place or show an echo message.

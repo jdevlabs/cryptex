@@ -10,6 +10,7 @@
   require_once "include/_helpers.php" ;
   require_once "include/_hpWorld.php" ;
 
+  // Everything else depends on the current level, so this needs to be evaluated first.
   if ($_SESSION['loggedin'] == 1)
   {
     $userid = $_SESSION['userid'];

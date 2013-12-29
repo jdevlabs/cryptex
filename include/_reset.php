@@ -1,4 +1,6 @@
 <?php
+  // Todo: Remove RESET functionality on post-production
+
   require '../config/_connect.php';
   require '../config/_dbFunctions.php';
   require '../config/_session.php';

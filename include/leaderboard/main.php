@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th>Rank</th>
-        <th>Username</th>
+        <th>Name</th>
         <th>Level</th>
         <th>Score</th>
         <th>Score Reached At</th>
@@ -14,7 +14,7 @@
     </thead>
     <tbody>
     <?php
-      $q = "SELECT * FROM `gamedata`, `user` WHERE user.userid = gamedata.userid order by level desc;";
+      $q = "SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid order by score desc;";
       $result = mysql_query($q);
       $i = 0;
       while($row = mysql_fetch_array($result))
@@ -22,9 +22,9 @@
         $i++;
         echo "<tr>";
         echo "<td>" . $i . "</td>" ;
-        echo "<td>" . $row['username'] . "</td>";
+        echo "<td>" . $row['name'] . "</td>";
         echo "<td>" . $row['level'] . "</td>";
-        echo "<td>" . '' . "</td>";
+        echo "<td>" . $row['score'] . "</td>";
         echo "<td>" . '' . "</td>";
         echo "</tr>";
       }
