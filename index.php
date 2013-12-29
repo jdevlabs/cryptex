@@ -28,7 +28,7 @@
         updateField("gamedata", "level", $_SESSION['level'] + 1, $userid);
 
         // Update Score
-        if ($_SESSION['level'] < 4)
+        if ($_SESSION['level'] <= 5)
         {
           updateField("gamedata", "score", $_SESSION['score'] + 1000, $userid);
         }

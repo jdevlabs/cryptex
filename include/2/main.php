@@ -31,10 +31,10 @@
       <p id="quesData">
         Harry enters the room to find Seamus sitting ready with another absurd riddle of his. <br><br>
         "I bet you can't solve this one" yells Seamus. <br><br>
-        "You said this last time too and the time before that and before that" said an exasperated Harry <br><br>
+        "You said this last time too" said an exasperated Harry <br><br>
         "Yeah, but this one is real..." <br><br>
         "Let's just cut to the chase please Seamus, I'm really tired." <br><br>
-        "OK, tell me what  <?php echo '"' . $ques . '"' ?> means and I won't bug you for the day."
+        "Okay, tell me what <b><?php echo "'" . $ques . "'" ?></b> means and I won't bug you for the next <b>13</b> days."
       </p>
       <hr>
     </div>

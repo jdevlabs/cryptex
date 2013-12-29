@@ -33,5 +33,5 @@ A list of levels that will be present in the game...
 ## <a name="done"></a> Changelog
 
 Level 3 - The Invisibility Cloak - View Comment/Select Test
-Level 2 - Cipher'ed - Cease Cipher
+Level 2 - Cipher'ed - Ceaser Cipher
 Level 1 - The Fat Lady - View Comment

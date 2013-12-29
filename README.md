@@ -62,7 +62,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 29/12/2013:
 
 * Modified: The on POST answer check is now done before anything else. <index.php>
-* Added: Score Updates.
+* Added: Score Updates. Reflects in Avatar Popup. Leaderboard.
 
 20/12/2013:
 
@@ -165,7 +165,6 @@ Before 14/11/2013:
 
 ## <a name="ideas"></a> Ideas
 
-* Questions could be themed. Harry Potter?
 * A Random quote on every page. Hack this site has them.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dZ-Corp/cryptex/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

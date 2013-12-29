@@ -62,4 +62,3 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
     </div>
   </div>
 <!-- Modal Dialogs End -->
-
