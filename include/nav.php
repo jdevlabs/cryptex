@@ -1,4 +1,4 @@
-<!-- I, Contain -->
+<!-- The main container-->
 <div class="container">
 <!-- Navbar Begins -->
 <nav class="navbar navbar-default" role="navigation">
@@ -28,9 +28,10 @@
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider"></li>
       <li><a href="?pid=facebook"><i class="glyphicon glyphicon-thumbs-up"></i> Login With Facebook</a></li>
+  <?php  if( strpos($_SERVER['SCRIPT_NAME'], "register") === false) {?>
       <li class="divider"></li>
-      <li><a href="?pid=register"><i class="glyphicon glyphicon-user"></i> Register</a></li>
-      <!-- <li><a href="/login"><i class="glyphicon glyphicon-user"></i> Login</a></li> -->
+      <li><a href="register.php"><i class="glyphicon glyphicon-user"></i> Register</a></li>
+  <?php  }?>
 <?php  } else {?>
       <li class="divider"></li>
       <li class="dropdown">

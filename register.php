@@ -1,5 +1,18 @@
-<?php if ($_SESSION['loggedin'] != 1 ) { ?>
+<?php
+  // Todo: Remove Debug Function
+  error_reporting(E_ALL ^ E_NOTICE);
 
+  require_once "config/_connect.php";
+  require_once "config/_dbFunctions.php";
+  require_once "config/_session.php";
+
+  require "include/header.php";
+  require "include/nav.php";
+  require "include/navmod.php";
+?>
+
+<?php if ($_SESSION['loggedin'] != 1 ) { ?>
+<script> document.title = "Cryptex | Register" </script>
 <div class="container">
     <div class="col-md-6 col-md-offset-3 well" style="margin-top: 50px;">
       <form id="regForm" name="input" method="POST" autocomplete="on">
@@ -35,5 +48,8 @@
       </form>
     </div>
 </div>
-
 <?php } ?>
+
+<?php
+  require "include/footer.php";
+?>

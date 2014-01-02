@@ -11,7 +11,7 @@ if(isset($_POST['user'],  $_POST['pass']))
   if (mysql_num_rows($result) > 0)
   {
     $row = mysql_fetch_row($result);
-    // BUG: SQL Injection Here!
+    // Fixme: SQL Injection Here!
     // if (md5($pass) == $row[0])
     if ($pass == $row[0])
     {
