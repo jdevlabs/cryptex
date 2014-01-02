@@ -15,6 +15,9 @@ A list of levels that will be present in the game...
 
 ## <a name="todo"></a> To Add Later
 
+* File Formats:
+  * Metadata in MP3, Exif in Images
+
 * Javascript Fun!
   * Use js function to match username/password
   * Make false promise

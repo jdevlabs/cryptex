@@ -27,13 +27,10 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 * User Gamedata
   * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
 
-* The Leaderboard
-  * Pagination (50 rows per page)
-
 * Hints
   * Modal UI. Tabs (Hint 1 | Hint 2 | Hint 3)
-  * _hints.JS  - Ajax call. Recieve Data.
-  * _hints.PHP - Session modifications. Send Data from db.
+  * _hints.js  - Ajax call. Recieve Data.
+  * _hints.php - Session modifications. Send Data from db.
   * Hints in db.
 
 * Ajax-ify answer check
@@ -43,21 +40,22 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * Add a footer.
 
-* Rules
-
-* More Levels
-
-* See intro.js, favico.js, readmore.js
-
-* Use cheet.js to add easter eggs.
+* cheet.js to add easter eggs.
   * Konami code
   * Something HP related?
+
+* The Leaderboard
+  * Pagination (50 rows per page)
 
 * _hpWorld.php
   * Add families from lexicon
   * GetRandomString()
 
 ## <a name="done"></a> Changelog
+
+2/1/2014:
+
+* Was working on a JS based level.
 
 29/12/2013:
 
