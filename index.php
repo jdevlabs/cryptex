@@ -1,5 +1,5 @@
 <?php
-  //Debug Function
+  // Note: Remove Debug Functions
   // require "config/_config.php";
   error_reporting(E_ALL ^ E_NOTICE);
 
@@ -44,6 +44,7 @@
   require "include/nav.php";
   require "include/navmod.php";
 
+  // Todo: Remove the need of pid and then merge page.php here.
   require "include/page.php" ;
   require "include/footer.php";
 ?>

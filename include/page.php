@@ -5,7 +5,7 @@
   $file = $_SERVER['DOCUMENT_ROOT']."/cryptex/include/".$_GET['pid']."/main.php" ;
   $bool = file_exists($file);
 
-  //Todo: Only allow pid access to leaderboard/facebook etc.
+  //Todo: Remove dependency on pid. Use files directly ?
   if (isset($_GET['pid']))
   {
     if($bool)

@@ -55,6 +55,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 2/1/2014:
 
+* Modified: register/leaderboard don't use the pid method now. Only facebook left.
 * Was working on a JS based level.
 
 29/12/2013:

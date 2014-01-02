@@ -1,3 +1,16 @@
+<?php
+  error_reporting(E_ALL ^ E_NOTICE);
+
+  require_once "config/_connect.php";
+  require_once "config/_dbFunctions.php";
+  require_once "config/_session.php";
+
+  require "include/header.php";
+  require "include/nav.php";
+  require "include/navmod.php";
+?>
+
+<script> document.title = "Cryptex | Leaderboard" </script>
 <div class="container">
 <div class ="panel panel-default">
     <div class="panel-heading">The Leaderboard</div>
@@ -34,3 +47,7 @@
   <!-- </center> -->
 </div>
 </div>
+
+<?php
+  require "include/footer.php";
+?>

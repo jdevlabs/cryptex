@@ -2,6 +2,10 @@
 
 Notes related to the game
 
+## Design ?
+
+* The pid method to access parts.
+
 ## Hints
 
 * Single Hint Per Level.

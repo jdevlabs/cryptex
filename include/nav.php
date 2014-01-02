@@ -16,7 +16,7 @@
       <li class="divider"></li>
       <li><a href="index.php"><i class="glyphicon glyphicon-home"></i> Home</a></li>
       <li class="divider"></li>
-      <li><a href="?pid=leaderboard"><i class="glyphicon glyphicon-list"></i> Leaderboard</a></li>
+      <li><a href="leaderboard.php"><i class="glyphicon glyphicon-list"></i> Leaderboard</a></li>
 <?php if($_SESSION['loggedin'] == 1) { ?>
       <li class="divider"></li>
       <li><a id="navHint" href="#"><i class="glyphicon glyphicon-gift"></i> Hints</a></li>
@@ -44,7 +44,6 @@
 
           <div class="row col-md-pull-left">
           </div>
-          <!-- <label><col-md- class=" badge badge-info">Level : 1000</col-md-></label> -->
           <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
           <i class="glyphicon glyphicon-bookmark"></i> Level :<?php echo '  ' . $_SESSION['level'];?><br>
           <i class="glyphicon glyphicon-star"></i> Score : <?php echo '  ' . $_SESSION['score'];?><br>
