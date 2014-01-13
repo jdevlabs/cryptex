@@ -46,6 +46,7 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 
 * The Leaderboard
   * Pagination (50 rows per page)
+  * SQL LIMIT
 
 * _hpWorld.php
   * Add families from lexicon

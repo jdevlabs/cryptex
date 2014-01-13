@@ -24,7 +24,7 @@ $(document).ready(function()
 
     $.ajax({
       type: "POST",
-      url: "include\\register\\_register.php",
+      url: "include/register/_register.php",
       data: $("#regForm").serialize(),
       success: function(data, tStatus)
       {
