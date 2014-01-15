@@ -1,6 +1,6 @@
 # Cryptex v0.5.3
 
-An online hacking and treasure hunting game.
+An online hacking and treasure hunting game to be done by 20/2/2014.
 
 The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
@@ -24,6 +24,9 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * _register.js
   * _register.php
 
+* Ajax-ify answer check
+  * _answer.js & _answer.php 
+
 * User Gamedata
   * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
 
@@ -33,8 +36,9 @@ For notes on AJAX and other structural information, have a look at the Notes at 
   * _hints.php - Session modifications. Send Data from db.
   * Hints in db.
 
-* Ajax-ify answer check
-  * _answer.js & _answer.php 
+* The Leaderboard
+  * Pagination (50 rows per page)
+  * SQL LIMIT
 
 ## <a name="todo"></a>Add Later
 
@@ -43,10 +47,6 @@ For notes on AJAX and other structural information, have a look at the Notes at 
 * cheet.js to add easter eggs.
   * Konami code
   * Something HP related?
-
-* The Leaderboard
-  * Pagination (50 rows per page)
-  * SQL LIMIT
 
 * _hpWorld.php
   * Add families from lexicon

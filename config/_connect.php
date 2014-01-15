@@ -1,4 +1,8 @@
 <?php
+
+// error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(0);
+
 // Database connection values
 // Note: Database parameters on the server are different
 define('DB_HOST', 'localhost');

@@ -1,7 +1,6 @@
 <?php
   // Note: Remove Debug Functions
   // require "config/_config.php";
-  error_reporting(E_ALL ^ E_NOTICE);
 
   require_once "config/_connect.php";
   require_once "config/_dbFunctions.php";

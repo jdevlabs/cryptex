@@ -16,7 +16,7 @@ $(document).ready(function()
           callback: function() {
             $.ajax({
               type: "POST",
-              url: "include\\_reset.php",
+              url: "include/_reset.php",
               success: function(data, tStatus)
               {
                 // alert(data);
@@ -55,7 +55,7 @@ $(document).ready(function()
   {
     $.ajax({
       type: "POST",
-      url: "include\\_logout.php",
+      url: "include/_logout.php",
       success: function(data, tStatus)
       {
         // alert(data);
