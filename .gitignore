@@ -1,6 +1,9 @@
 *.sublime*
+
 *.ini
 *.zip
 *.rar
+
+!*DB-Setup.sql
 
 Help/

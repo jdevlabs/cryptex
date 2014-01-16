@@ -1,10 +1,10 @@
-# Cryptex v0.5.3
+# Cryptex v0.6
 
 An online hacking and treasure hunting game to be done by 20/2/2014.
 
 The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
-There is also a version hosted on [thinkdiff](http://cryptex.thinkdiff.co.in/). Again, there may be loads of bugs. Please file an issue and help us out.
+To setup the database on your machine, goto 'localhost/phpmyadmin', create a new database named 'test' and then import the file [DB-Setup.sql](/dufferzafar/src/master/DB-Setup.sql) - this will create the required tables. A dummy user named 'dummy' with password 'pass' will also be created for testing purposes.
 
 For notes on AJAX and other structural information, have a look at the Notes at the end of the readme.
 
