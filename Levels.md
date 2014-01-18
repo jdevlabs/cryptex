@@ -22,6 +22,7 @@ A list of levels that will be present in the game...
 
 ## Helping Links
 
+[Troika Mist!](http://www.troika.dcetech.com/events/mist.html)
 [Notpron](http://www.deathball.net/notpron)
 [Hax.tor hu](http://hax.tor.hu/warmup1/)
 [Hack this site](http://www.hackthissite.org/missions/basic/)

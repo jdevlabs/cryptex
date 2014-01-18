@@ -19,13 +19,12 @@ $(document).ready(function()
               url: "include/_reset.php",
               success: function(data, tStatus)
               {
-                // alert(data);
                 if (data.indexOf("Reset Successful") > 0 )
-                  window.location.reload(true); // Todo: *HIGH* Change location to index.php
+                  window.location.assign("index.php"); // Goto home.
                 else
                 {
-                  //Ooopsie
-                  //Todo: Handle any sort of ajax error that could occur.. could it?
+                  //Note: PP - This part could be removed.
+                  alert(data);
                 }
               },
               error:function(jqXHR, tStatus, errorThrown)

@@ -5,10 +5,14 @@
   require '../config/_dbFunctions.php';
   require '../config/_session.php';
 
-  updateField("gamedata", "level", '1', $_SESSION['userid']);
-  updateField("gamedata", "score", '1000', $_SESSION['userid']);
-  updateField("gamedata", "qlevel", '', $_SESSION['userid']);
-
-  // Note: What if an error occurs in SQL
-  echo("Reset Successful");
+  $uid = $_SESSION['userid'];
+  $result = mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = ' " . time() ."', qlevel = '0' WHERE userid = $uid");
+  if (!$result)
+  {
+    echo(mysql_error());
+  }
+  else
+  {
+    echo("Reset Successful");
+  }
 ?>

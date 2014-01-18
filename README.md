@@ -5,6 +5,7 @@ An online hacking and treasure hunting game to be done by 20/2/2014.
 The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
 For level ideas: [Levels](/dufferzafar/cryptex/src/master/Levels.md)
+
 For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 ## Table of Contents
@@ -49,11 +50,21 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 * Create a new branch whenever you want to add a feature - do not change anything in the 'master' branch directly.
 
-`git checkout -b new_feature`
+        `git checkout -b new_feature`
 
-* Make whatever changes you wanted to and push - do not merge anything with 'master'.
+* Make whatever changes you want to.
 
-`git push -u origin new_feature`
+        `git status`
+        
+        `git add -A`
+
+        `git commit`
+
+* Do not merge anything with 'master', just Push. 
+
+        `git push -u origin new_feature`
+
+Read [Git-Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow) for reasons.
 
 ## Roadmap
 
@@ -65,9 +76,6 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 * Ajax-ify answer check
     * _answer.js & _answer.php 
-
-* User Gamedata
-    * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
 
 * Hints
     * Modal UI. Tabs.

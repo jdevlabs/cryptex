@@ -25,6 +25,7 @@
       {
         // Update the current level
         updateField("gamedata", "level", $_SESSION['level'] + 1, $userid);
+        updateField("gamedata", "reached", time(), $userid);
 
         // Update Score
         if ($_SESSION['level'] <= 5)
