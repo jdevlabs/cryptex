@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2014 at 04:45 PM
+-- Generation Time: Jan 18, 2014 at 08:28 PM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `gamedata` (
   `userid` int(11) NOT NULL AUTO_INCREMENT,
   `level` int(3) NOT NULL,
   `score` int(10) NOT NULL,
+  `reached` varchar(12) NOT NULL,
   `qlevel` int(3) NOT NULL,
   `ques` varchar(100) NOT NULL,
   `ans` varchar(100) NOT NULL,
@@ -40,8 +41,8 @@ CREATE TABLE IF NOT EXISTS `gamedata` (
 -- Dumping data for table `gamedata`
 --
 
-INSERT INTO `gamedata` (`userid`, `level`, `score`, `qlevel`, `ques`, `ans`) VALUES
-(1, 1, 1000, 1, '', '');
+INSERT INTO `gamedata` (`userid`, `level`, `score`, `reached`, `qlevel`, `ques`, `ans`) VALUES
+(1, 1, 1000, '1390067826', 0, '', '');
 
 -- --------------------------------------------------------
 

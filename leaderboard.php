@@ -38,7 +38,7 @@
         echo "<td>" . $row['name'] . "</td>";
         echo "<td>" . $row['level'] . "</td>";
         echo "<td>" . $row['score'] . "</td>";
-        echo "<td>" . '' . "</td>";
+        echo "<td>" . $row['reached'] . "</td>";
         echo "</tr>";
       }
     ?>
