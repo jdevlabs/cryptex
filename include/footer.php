@@ -1,3 +1,5 @@
+</div>
+<!-- The Container Ends -->
 
   <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
@@ -5,12 +7,13 @@
   <script type="text/javascript" src="assets/js/bootbox.min.js"></script>
   <script type="text/javascript" src="assets/js/vibrate.js"></script>
 
-  <!-- Todo: Merge all these files into one -->
+  <!-- Todo: PP - Merge all these files into one -->
   <script type="text/javascript" src="assets/js/_login.js"></script>
   <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
+  <script type="text/javascript" src="assets/js/_hints.js"></script>
 
-  <!-- Todo: Move this into a js file -->
+  <!-- Todo: PL - Move this into a js file -->
   <script>
   $('[data-toggle="tooltip"]').tooltip({
     'trigger': 'manual', 'placement': 'right'

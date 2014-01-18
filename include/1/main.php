@@ -1,6 +1,10 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
+  $hintText[1] = "Hint for level 1";
+  $hintCost[1] = 500;
+  $hintScore[1] = 1000;
+
   $level = getField("gamedata", "level", $_SESSION['userid']);
   $qlevel = getField("gamedata", "qlevel", $_SESSION['userid']);
 
@@ -14,7 +18,6 @@
     // Save to db.
     updateField("gamedata", "ques", $ques, $_SESSION['userid']);
     updateField("gamedata", "ans", $ques, $_SESSION['userid']);
-
     updateField("gamedata", "qlevel", '1', $_SESSION['userid']);
   }
   else

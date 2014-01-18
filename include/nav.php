@@ -41,9 +41,6 @@
         </a>
         <ul class="dropdown-menu col-lg-7" style="padding: 15px; padding-bottom: 15px;">
           <div class="row col-md-12 col-md-pull-right"><img src="assets/img/avatar.svg" alt="avatar"></div>
-
-          <div class="row col-md-pull-left">
-          </div>
           <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
           <i class="glyphicon glyphicon-bookmark"></i> Level :<?php echo '  ' . $_SESSION['level'];?><br>
           <i class="glyphicon glyphicon-star"></i> Score : <?php echo '  ' . $_SESSION['score'];?><br>
@@ -52,9 +49,9 @@
           <a href="" id="resetProgress"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
           <a href="" id="logout" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
         </ul>
-        </li>
+      </li>
 <?php } ?>
     </ul>
   </div>
-</div>
+</nav>
 <!-- Navbar Ends

@@ -8,6 +8,8 @@ A list of levels that will be present in the game...
 
 ## To Add Later
 
+* Todo: PH - Merge multiple UpdateFields into a single sql query. Create a dbFunction if needed.
+
 * File Formats:
     * Metadata in MP3, Exif in Images
 

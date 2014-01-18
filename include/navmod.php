@@ -9,18 +9,17 @@
           <h4>Hints on Sale!</h4>
         </div>
         <div class="modal-body">
-          Stuck on the level? <br><br>
-          You can use your hack points to buy hints that might help you with the level. <br><br>
-          This hint will cost you <strong>500 HP</strong>. So as soon as you press the button the points <br>
-          will be deducted from your score and a hint will be shown here.
+          <p>
+            Stuck on the level? You can use your hack points to buy hints that might help you with the level. <br><br>
+            You are currently on <strong>Level <?php echo $_SESSION['level'] ?></strong>. Buying a hint will cost you <strong>500 HP</strong>.<br><br>
+            The points will be deducted from your score and a hint will be shown here.
+          </p>
+          <p id="hintText"></p>
         </div>
         <div class="modal-footer">
           <div class="form-group">
             <div class="controls">
-              <?php
-                //Todo: Contact Us CodeBehind *Low*
-              ?>
-              <button id="SOS" class="btn btn-default btn-success">Buy Hint</button>
+              <button id="buyHint" class="btn btn-default btn-success">Buy Hint</button>
               <button data-dismiss="modal" class="btn btn-default">Nevermind</button>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 An online hacking and treasure hunting game to be done by 20/2/2014.
 
-The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
+A demo is available on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
 For level ideas: [Levels](/dufferzafar/cryptex/src/master/Levels.md)
 
