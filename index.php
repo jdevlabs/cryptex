@@ -1,13 +1,20 @@
 <?php
   // Note: Remove Debug Functions
-  // require "config/_config.php";
 
-  require_once "config/_connect.php";
-  require_once "config/_dbFunctions.php";
-  require_once "config/_session.php";
+  require_once "config/connect.php";
+  require_once "config/session.php";
 
-  require_once "include/_helpers.php" ;
-  require_once "include/_hpWorld.php" ;
+  // Quick Access DB Functions
+  require_once "fn/db.php";
+
+  // Functions used in creating levels
+  require_once "fn/level-help.php" ;
+
+  // HP Nostalgia
+  require_once "meta/harry.php";
+
+  // Meta data about levels; hints, score, cost
+  require_once "meta/levels.php";
 
   // Everything else depends on the current level, so this needs to be evaluated first.
   if ($_SESSION['loggedin'] == 1)

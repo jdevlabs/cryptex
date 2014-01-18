@@ -1,6 +1,6 @@
 <?php
-  require '../config/_connect.php';
-  require '../config/_session.php';
+  require '../config/connect.php';
+  require '../config/session.php';
 
   // Todo: Make sure all the user data is stored into db before exiting.
   // Remove every user info.

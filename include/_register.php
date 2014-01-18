@@ -1,5 +1,5 @@
 <?php
-require '../config/_connect.php';
+require '../config/connect.php';
 
 // Todo: Apply other validations like, email should be a valid address and such!
 if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['email']))

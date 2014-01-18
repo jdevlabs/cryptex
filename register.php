@@ -1,9 +1,6 @@
 <?php
-  error_reporting(E_ALL ^ E_NOTICE);
-
-  require_once "config/_connect.php";
-  require_once "config/_dbFunctions.php";
-  require_once "config/_session.php";
+  require_once "config/connect.php";
+  require_once "config/session.php";
 
   require "include/header.php";
   require "include/nav.php";
