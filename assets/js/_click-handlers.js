@@ -21,7 +21,7 @@ $(document).ready(function()
               {
                 // alert(data);
                 if (data.indexOf("Reset Successful") > 0 )
-                  window.location.reload(true);
+                  window.location.reload(true); // Todo: *HIGH* Change location to index.php
                 else
                 {
                   //Ooopsie

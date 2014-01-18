@@ -4,55 +4,90 @@ An online hacking and treasure hunting game to be done by 20/2/2014.
 
 The current 'master' branch is live on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
-To setup the database on your machine, goto 'localhost/phpmyadmin', create a new database named 'test' and then import the file [DB-Setup.sql](/dufferzafar/src/master/DB-Setup.sql) - this will create the required tables. A dummy user named 'dummy' with password 'pass' will also be created for testing purposes.
-
-For notes on AJAX and other structural information, have a look at the Notes at the end of the readme.
+For level ideas: [Levels](/dufferzafar/cryptex/src/master/Levels.md)
+For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 ## Table of Contents
 
-* [Roadmap](#road)
-* [To be added later](#todo)
-* [Changelog](#changelog)
-* [Some Notes for Developers](#notes)
-* [Random Ideas](#ideas)
+* [Setup Instructions](#markdown-header-setup-instructions)
+* [Contributions](#markdown-header-contributions)
+* [Roadmap](#markdown-header-roadmap)
+* [To be added later](#markdown-header-add-later)
+* [Changelog](#markdown-header-changelog)
 
-## <a name="road"></a> Roadmap
+## Setup Instructions
+
+#### Tools needed:
+
+* [Git](http://git-scm.com/downloads) 
+* [XAMPP v1.8.3.2](http://www.apachefriends.org/en/xampp.html)
+* A text editor (preferably [Sublime Text](http://sublimetext.com/3))
+* A browser (preferably [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/))
+
+#### Setup:
+
+1. Make sure you have all the tools installed.
+
+2. Clone the repo:
+    1. Run a git shell and do a clone. Change the directory accordingly.
+
+        `git clone https://bitbucket.org/dufferzafar/cryptex.git C:\xampp\htdocs\cryptex`
+
+    2. Enter your username and password for bitbucket when prompted for one.
+
+3. Setup DB:
+    1. Make sure the Apache and MySQL services are running.
+    2. Goto [Phpmyadmin](http://localhost/phpmyadmin/)
+    3. Create a new database named 'test'
+    4. Import the file [DB-Setup.sql](/dufferzafar/cryptex/src/master/DB-Setup.sql) into the database. This will create all the required tables and a user named 'dummy' with the password 'pass'.
+
+4. Goto [Cryptex](http://localhost/cryptex/index.php) and try logging in with 'dummy' / 'pass' credentials. Keep your fingers crossed - may the force be with you.
+
+## Contributions
+
+* Make sure you have a local clone - you don't have to fork it on bitbucket to contribute.
+
+* Create a new branch whenever you want to add a feature - do not change anything in the 'master' branch directly.
+
+`git checkout -b new_feature`
+
+* Make whatever changes you wanted to and push - do not merge anything with 'master'.
+
+`git push -u origin new_feature`
+
+## Roadmap
 
 * SQL Injection. Hashed Passwords.
 
 * Registration 
-  * _register.js
-  * _register.php
+    * _register.js
+    * _register.php
 
 * Ajax-ify answer check
-  * _answer.js & _answer.php 
+    * _answer.js & _answer.php 
 
 * User Gamedata
-  * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
+    * User ID, Current Level, Current Ans, Current Score, Score Reached At, Hints Used -> db table
 
 * Hints
-  * Modal UI. Tabs (Hint 1 | Hint 2 | Hint 3)
-  * _hints.js  - Ajax call. Recieve Data.
-  * _hints.php - Session modifications. Send Data from db.
-  * Hints in db.
+    * Modal UI. Tabs.
+    * _hints.js  - Ajax call. Recieve Data.
+    * _hints.php - Session modifications. Send Data from db.
+    * Hints in db.
 
-* The Leaderboard
-  * Pagination (50 rows per page)
-  * SQL LIMIT
-
-## <a name="todo"></a>Add Later
+## Add Later
 
 * Add a footer.
 
 * cheet.js to add easter eggs.
-  * Konami code
-  * Something HP related?
+    * Konami code
+    * Something HP related?
 
 * _hpWorld.php
-  * Add families from lexicon
-  * GetRandomString()
+    * Add families from lexicon
+    * GetRandomString()
 
-## <a name="done"></a> Changelog
+## Changelog
 
 2/1/2014:
 
@@ -91,8 +126,8 @@ From 25-28/11/2013:
 * Added: On POST Answer handler
 * Fixed: $_Session variables in level 1
 * Modified: nav-bar
-  * Register for 'Anon' Users
-  * Contact and Hints Modal
+* Register for 'Anon' Users
+* Contact and Hints Modal
 * Added: Vibrating Main Form (vibrate.js)
 * Modified: Ajax login redirection fixes
 * Modified: Nicer Main login UI
@@ -113,9 +148,9 @@ From 25-28/11/2013:
 * Added: Level 3 - The invisibility cloak
 * Updated: Levels 1,2 to use data from _hpWorld
 * Added: _hpWorld.php - Random harry potter data.
-  * Added Weasley and Black family.
+* Added Weasley and Black family.
 * Added: Level\index.php - Single file for all levels
-  * Uses sentinel values to make sure the level files are included and not accessed directly.
+* Uses sentinel values to make sure the level files are included and not accessed directly.
 * Database: Added "qlevel" - the value is updated when a ques/ans pair is generated. Makes sure that a random ques/ans is generated only once per user per level.
 * Added: index.php - Basic Homepage with Login
 * Updated: Designed contact Admin Modal on the navbar.
@@ -126,46 +161,10 @@ Before 14/11/2013:
 
 * Frontend ( based on Bootstrap )
 
-  * A basic navigation bar
-  * Register & Login Pages
-  * Basic main window template
+* A basic navigation bar
+* Register & Login Pages
+* Basic main window template
 
 * Backend ( jQuery/Ajax + PHP + mySQL )
 
-  * Ajax/PHP for Register & Login
-
-## <a name="notes"></a> Notes for Developers
-
-* Done: Show full names in the leaderboard instead of usernames.
-* Note: Remove all debugging related help like mysql_error()
-
-* Every single php file should be able to handle direct execution, in which case, either redirect to a proper place or show an echo message.
-
-* Files beginning with an **underscore** mostly contain helper functions and just work as include files.
-
-* The **assets\js** folder contains the js ajax handlers (**_login.js** && **register.js**)
-
-* Their php counterparts are kept in **include\login** && **include\register**.
-
-* **_login.js** is the ajax handler for login functions.
-  * contains the form submit handler
-  * which sends an async request to _login.php with form data
-  * handles the response from the php file
-
-* **_login.php** does the backend stuff of login
-  * recieves the data
-  * sets the $_SESSION variables 
-  * and passes on a flag to the JS handler via _echo_
-
-* **assets** also contains 3rd party stuff like Bootstrap, jQuery etc. Add your own code into respective folders.
-
-* All javascript will be minified (or obfuscated) at the end of development.
-
-* Once the setup is on server, special care should be taken to ensure that none of the folders like includes etc are accessible by altering the URL.
-
-## <a name="ideas"></a> Ideas
-
-* A Random quote on every page. Hack this site has them.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dZ-Corp/cryptex/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+* Ajax/PHP for Register & Login
