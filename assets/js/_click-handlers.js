@@ -1,3 +1,4 @@
+// Todo: Merge other ajax click handlers here
 $(document).ready(function()
 {
   /**

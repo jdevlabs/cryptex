@@ -32,7 +32,7 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 2. Clone the repo:
     1. Run a git shell and do a clone. Change the directory accordingly.
 
-        `git clone https://bitbucket.org/dufferzafar/cryptex.git C:\xampp\htdocs\cryptex`
+            git clone https://bitbucket.org/dufferzafar/cryptex.git C:\xampp\htdocs\cryptex
 
     2. Enter your username and password for bitbucket when prompted for one.
 
@@ -50,19 +50,19 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 * Create a new branch whenever you want to add a feature - do not change anything in the 'master' branch directly.
 
-        `git checkout -b new_feature`
+        git checkout -b new_feature
 
 * Make whatever changes you want to.
 
-        `git status`
+        git status
         
-        `git add -A`
+        git add -A
 
-        `git commit`
+        git commit -m "New Cool Feature"
 
 * Do not merge anything with 'master', just Push. 
 
-        `git push -u origin new_feature`
+        git push -u origin new_feature
 
 Read [Git-Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow) for reasons.
 

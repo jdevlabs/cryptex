@@ -1,6 +1,4 @@
 <?php
-  // Note: Remove Debug Functions
-
   require_once "config/connect.php";
   require_once "config/session.php";
 
@@ -10,7 +8,7 @@
   // Functions used in creating levels
   require_once "fn/level-help.php" ;
 
-  // HP Nostalgia
+  // Harry Potter Nostalgia
   require_once "meta/harry.php";
 
   // Meta data about levels; hints, score, cost
