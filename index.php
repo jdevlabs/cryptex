@@ -11,45 +11,50 @@
   // Harry Potter Nostalgia
   require_once "meta/harry.php";
 
-  // Meta data about levels; hints, score, cost
+  // Metadata about levels; hints, score, cost
   require_once "meta/levels.php";
 
   // Everything else depends on the current level, so this needs to be evaluated first.
   if ($_SESSION['loggedin'] == 1)
   {
-    $userid = $_SESSION['userid'];
+    $uid = $_SESSION['userid'];
+    $level = $_SESSION['level'];
 
-    //Form submitted. Check whether answer is correct.
+    //Form submitted. Check whether the answer is correct.
     if (isset($_POST['answer']))
     {
-      $postAns = trim($_POST['answer']);
+      $ans = getField("gamedata", "ans", $uid);
+      $qlevel = getField("gamedata", "qlevel", $uid);
 
-      $ans = getField("gamedata", "ans", $userid);
-
-      if ($postAns == $ans)
+      // The question was generated on this level and the answer matches
+      if (($level == $qlevel) && (trim($_POST['answer']) == $ans))
       {
         // Update the current level
-        updateField("gamedata", "level", $_SESSION['level'] + 1, $userid);
-        updateField("gamedata", "reached", time(), $userid);
+        updateField("gamedata", "level", $level + 1, $uid);
+        updateField("gamedata", "reached", time(), $uid);
+        updateField("gamedata", "score", $_SESSION['score'] + $levelScore[$level], $uid);
 
-        // Update Score
-        if ($_SESSION['level'] <= 5)
-        {
-          updateField("gamedata", "score", $_SESSION['score'] + 1000, $userid);
-        }
+        // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
       }
     }
 
-    // No problem in loading values from db
-    $_SESSION['level'] = getField("gamedata", "level", $userid);
-    $_SESSION['score'] = getField("gamedata", "score", $userid);
+    // Play it safe - load values from db
+    $_SESSION['level'] = getField("gamedata", "level", $uid);
+    $_SESSION['score'] = getField("gamedata", "score", $uid);
   }
 
+  // Begins HTML; Loads CSS
   require "include/header.php";
+
+  // The main navigation bar
   require "include/nav.php";
+
+  // The 'Hints' & 'Contact' bootstrap modal dialogs
   require "include/navmod.php";
 
   // Todo: Remove the need of pid and then merge page.php here.
   require "include/page.php" ;
+
+  // Ends HTML; Loads JS
   require "include/footer.php";
 ?>

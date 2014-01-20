@@ -37,7 +37,8 @@
         echo "<td>" . $row['name'] . "</td>";
         echo "<td>" . $row['level'] . "</td>";
         echo "<td>" . $row['score'] . "</td>";
-        echo "<td>" . $row['reached'] . "</td>";
+        // See: http://in2.php.net/manual/en/function.date.php
+        echo "<td>" . date('j M, g:i A', $row['reached']) . "</td>";
         echo "</tr>";
       }
     ?>

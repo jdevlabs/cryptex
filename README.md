@@ -97,6 +97,23 @@ Read [Git-Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow) f
 
 ## Changelog
 
+20/1/2014
+
+
+
+19/1/2014:
+
+* Added: Score Reached At
+
+13/1/2014:
+
+* Tested with XAMPP 1.8.3.2 and Firefox
+* Moved repository from Github to Bitbucket
+
+3/1/2014:
+
+* Removed: Some part of pid - Leaderboard and Register Page
+
 2/1/2014:
 
 * Modified: register/leaderboard don't use the pid method now. Only facebook left.
