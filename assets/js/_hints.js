@@ -5,13 +5,13 @@ $('#buyHint').click(function(e)
     url: "include/_hints.php",
     success: function(data, tStatus)
     {
-      if (data.indexOf("HintText - ") > 0 )
+      if (data.indexOf("HintText:") > 0 )
       {
-        $('#hintText').html(data);
-      }
-      else
-      {
-        alert(data);
+        // Show Hint
+        $('#hintText').html("<hr> " + data.replace("HintText:", ""));
+
+        // Done so that the avatar popup is updated.
+        window.location.reload(true);
       }
     },
     error:function(jqXHR, tStatus, errorThrown)

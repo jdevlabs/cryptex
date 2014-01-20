@@ -12,8 +12,7 @@
 <script> document.title = "Cryptex | Leaderboard" </script>
 <div class="container">
 <div class ="panel panel-default">
-    <div class="panel-heading">The Leaderboard</div>
-  <!-- <center> -->
+  <div class="panel-heading" align="center">Leaderboard: The Top 25 Hackers</div>
     <table class="table table-hover">
     <thead>
       <tr>
@@ -22,29 +21,28 @@
         <th>Level</th>
         <th>Score</th>
         <th>Score Reached At</th>
+        <th>Hints Taken</th>
       </tr>
     </thead>
     <tbody>
     <?php
-      $q = "SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid order by score desc;";
-      $result = mysql_query($q);
-      $i = 0;
+      $result = mysql_query("SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid ORDER BY score DESC LIMIT 25");
+      $i = 1;
       while($row = mysql_fetch_array($result))
       {
-        $i++;
         echo "<tr>";
         echo "<td>" . $i . "</td>" ;
         echo "<td>" . $row['name'] . "</td>";
         echo "<td>" . $row['level'] . "</td>";
         echo "<td>" . $row['score'] . "</td>";
-        // See: http://in2.php.net/manual/en/function.date.php
         echo "<td>" . date('j M, g:i A', $row['reached']) . "</td>";
+        echo "<td>" . $row['hints'] . "</td>";
         echo "</tr>";
+        $i++;
       }
     ?>
     </tbody>
     </table>
-  <!-- </center> -->
 </div>
 </div>
 

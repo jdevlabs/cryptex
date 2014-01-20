@@ -11,15 +11,28 @@
         <div class="modal-body">
           <p>
             Stuck on the level? You can use your hack points to buy hints that might help you with the level. <br><br>
-            You are currently on <strong>Level <?php echo $_SESSION['level'] ?></strong>. Buying a hint will cost you <strong>500 HP</strong>.<br><br>
-            The points will be deducted from your score and a hint will be shown here.
+            You are currently on <strong>Level <?php echo $_SESSION['level'] ?></strong>. Buying a hint will cost you <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong>.<br><br>
+            The points will be deducted from your score and the page will be refreshed. You can then view the hint here.
           </p>
-          <p id="hintText"></p>
+          <p id="hintText">
+            <?php
+              $uid = $_SESSION['userid'];
+              $level = $_SESSION['level'];
+              $hlevel = getField("gamedata", "hlevel", $uid);
+              if ($level == $hlevel)
+              {
+                echo "<hr>";
+                echo $hint[$level];
+              }
+            ?>
+          </p>
         </div>
         <div class="modal-footer">
           <div class="form-group">
             <div class="controls">
+            <?php if ($level != $hlevel) { ?>
               <button id="buyHint" class="btn btn-default btn-success">Buy Hint</button>
+            <?php } ?>
               <button data-dismiss="modal" class="btn btn-default">Nevermind</button>
             </div>
           </div>

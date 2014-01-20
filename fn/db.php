@@ -3,11 +3,6 @@
 
 /**
  * Retrieves a field from the table for that particular userid
- *
- * @param  [string] $table  [The db table to fetch from]
- * @param  [string] $field  [Field to fetch]
- * @param  [int]    $userid [The user's id]
- * @return [string]         [Matched Field]
  */
 function getField($table, $field, $userid)
 {
@@ -17,32 +12,39 @@ function getField($table, $field, $userid)
 }
 
 /**
- * Insert fields into a table. Quickly.
- *
- * @param [string] $table  [The Table]
- * @param [string] $fields [ONE Field]
- * @param [string] $values [ONE Value]
+ * Retrieve Multiple Fields from DB. Improved version of getField()
  */
-function insertField($table, $field, $values)
+function getFields($table, $fields, $userid)
 {
-  // $result =  mysql_query("INSERT INTO $table ($fields) VALUES($values)");
+  $result  = mysql_query("SELECT $fields FROM $table WHERE userid = $userid");
+  return mysql_fetch_row($result);
 }
 
 /**
  * Updates the given field with new value
- *
- * @param  [string] $table  []
- * @param  [string] $field  []
- * @param  [string] $value  []
- * @param  [int]    $userid []
- * @return [string]         []
  */
 function updateField($table, $field, $value, $userid)
 {
-  $result = mysql_query("UPDATE $table SET $field = '$value' WHERE userid = $userid");
-  if (!$result)
+  return mysql_query("UPDATE $table SET $field = '$value' WHERE userid = $userid");
+}
+
+/**
+ * Updates the given field with new value
+ */
+function updateFields($table, $fieldValues, $userid)
+{
+  // return mysql_query("UPDATE $table SET $fieldValues WHERE userid = $userid");
+  if (!mysql_query("UPDATE $table SET $fieldValues WHERE userid = $userid"))
   {
     die("Shit Happened in Updating - " . mysql_error());
   }
+}
+
+/**
+ * Insert fields into a table. Quickly.
+ */
+function insertField($table, $field, $values)
+{
+  // $result = mysql_query("INSERT INTO $table ($fields) VALUES($values)");
 }
 ?>

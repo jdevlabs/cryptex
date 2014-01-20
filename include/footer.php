@@ -1,5 +1,20 @@
+  </div>  <!-- The Container Ends -->
+  <div id="push"></div>
 </div>
-<!-- The Container Ends -->
+
+  <div id="footer">
+    <div class="container">
+      <p class="muted credit" align="center">Designed by The JMI-SDS Team for Algorhythm'14.</p>
+      <!-- <p class="muted credit">Coded with love on Sublime Text. Made possible by Git and Bitbucket.</p> -->
+      <!-- <p class="muted credit">
+      Developed By:
+      <a href="https://github.com/dufferzafar">Shadab Zafar</a>,
+      <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
+      <a href="https://github.com/zishanAhmad">Zishan Ahmad</a>,
+      <a href="https://github.com/rootAvish">Avishkar Gupta</a> and team.
+      </p> -->
+    </div>
+  </div>
 
   <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>

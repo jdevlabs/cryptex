@@ -49,3 +49,7 @@
 
 * Declare that cheet codes exist?
 
+* cheet.js to add easter eggs.
+    * Konami code
+    * Something HP related?
+

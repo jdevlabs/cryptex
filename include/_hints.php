@@ -2,34 +2,27 @@
 require '../config/connect.php';
 require '../config/session.php';
 
+require '../fn/db.php';
+
 require "../meta/levels.php";
 
-$level = $_SESSION['level'];
 $uid = $_SESSION['userid'];
+$level = $_SESSION['level'];
+$hlevel = getField("gamedata", "hlevel", $uid);
 
-// Todo: Update the session var in db
-$_SESSION['score'] = $_SESSION['score'] - $hintCost[$level];
-$_SESSION['hints']++;
+if ($level != $hlevel)
+{
+  $_SESSION['score'] = $_SESSION['score'] - $hintCost[$level];
+  $_SESSION['hints']++;
+  $res = updateFields("gamedata", "score = " . $_SESSION['score'] . ", hints = " . $_SESSION['hints'] . ", hlevel = " . $level, $uid);
 
-/*
-  if ($level != $hlevel)
+  if (!$res)
   {
-
+    echo "HintText:" . $hint[$level];
   }
-*/
-
-if (1)
-{
-  echo "HintText - " . $hint[$level] . "   " . $_SESSION['score'];
+  else
+  {
+    echo "HintErrorOccurred:" . mysql_error();
+  }
 }
-else
-{
-  echo "Hint Error Occurred";
-}
-
-/**
- * Modifies db and $_SESSION['hints']
- * Todo: PH - 'hints' in gamedata
- */
-
 ?>

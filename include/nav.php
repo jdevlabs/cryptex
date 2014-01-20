@@ -1,3 +1,4 @@
+<div id="wrap">
 <!-- The main container-->
 <div class="container">
 <!-- Navbar Begins -->
