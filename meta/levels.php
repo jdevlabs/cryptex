@@ -1,16 +1,18 @@
 <?php
 
 // Level 1
-$hint[1] =  <<<'EOD'
+$hint[1] = <<<'EOD'
 In any browser window, you can press Ctrl + U to view the 'source code' of a webpage.
-Try pressing Ctrl + U and sifting through the code.<br><br>
-Usually, the green lines are the ones that are ignored by the browser - the comments.
+Try pressing Ctrl + U here and skim through the code.<br><br>
+Usually, the green lines are the ones that are ignored by the browser - the comments. <br><br>
 EOD;
 $hintCost[1] = 500;
 $levelScore[1] = 1000;
 
 // Level 2
-$hint[2] = "Sexy hint for level 2";
+$hint[2] = <<<'EOD'
+<img src="include/2/caesar.jpg"></img>
+EOD;
 $hintCost[2] = 600;
 $levelScore[2] = 1300;
 

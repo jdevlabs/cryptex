@@ -9,31 +9,38 @@
           <h4>Hints on Sale!</h4>
         </div>
         <div class="modal-body">
-          <p>
-            Stuck on the level? You can use your hack points to buy hints that might help you with the level. <br><br>
-            You are currently on <strong>Level <?php echo $_SESSION['level'] ?></strong>. Buying a hint will cost you <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong>.<br><br>
-            The points will be deducted from your score and the page will be refreshed. You can then view the hint here.
-          </p>
+          <?php
+            $uid = $_SESSION['userid'];
+            $level = $_SESSION['level'];
+            $hlevel = getField("gamedata", "hlevel", $uid);
+
+            if ($level != $hlevel)
+            { ?>
+            <p>
+              Stuck on the level? You can use your hack points to buy hints that might help you with the level. <br><br>
+              You are currently on <strong>Level <?php echo $_SESSION['level'] ?></strong>. Buying a hint will cost you <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong>.<br><br>
+              The points will be deducted from your score and the page will be refreshed. You can then view the hint here.
+            </p>
+          <?php } else { ?>
+            <p>
+              Congratulations, you bought a hint.<br><br> <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong> were deducted from your score. It currently is <strong><?php echo $_SESSION['score'] ?> HP</strong>.
+            </p>
+          <?php } ?>
           <p id="hintText">
-            <?php
-              $uid = $_SESSION['userid'];
-              $level = $_SESSION['level'];
-              $hlevel = getField("gamedata", "hlevel", $uid);
-              if ($level == $hlevel)
-              {
-                echo "<hr>";
-                echo $hint[$level];
-              }
-            ?>
+          <?php
+            if ($level == $hlevel)
+            {
+              echo "<hr>";
+              echo $hint[$level];
+            }
+          ?>
           </p>
         </div>
         <div class="modal-footer">
           <div class="form-group">
             <div class="controls">
-            <?php if ($level != $hlevel) { ?>
+              <button data-dismiss="modal" class="btn btn-default">Cancel</button>
               <button id="buyHint" class="btn btn-default btn-success">Buy Hint</button>
-            <?php } ?>
-              <button data-dismiss="modal" class="btn btn-default">Nevermind</button>
             </div>
           </div>
         </div>
@@ -65,8 +72,8 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
                 <?php
                   //Todo: Contact Us CodeBehind *Low*
                 ?>
-                <button id="SOS" class="btn btn-default btn-success">Help Me Out!</button>
-                <button data-dismiss="modal" class="btn btn-danger">Nevermind</button>
+                <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+                <button id="SOS" class="btn btn-default btn-success">Contact Admin!</button>
               </div>
             </div>
           </div>

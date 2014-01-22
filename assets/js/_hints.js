@@ -11,7 +11,13 @@ $('#buyHint').click(function(e)
         $('#hintText').html("<hr> " + data.replace("HintText:", ""));
 
         // Done so that the avatar popup is updated.
-        window.location.reload(true);
+        // window.location.reload(true);
+
+        // Update Avatar Popup
+        alert($('#avLevel').html().replace("/[0-9]/", "duff"));
+
+        // Disale Buy Button
+        $('#buyHint').attr("disabled", "disabled");
       }
     },
     error:function(jqXHR, tStatus, errorThrown)
