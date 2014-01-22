@@ -4,7 +4,7 @@
 
   <div id="footer">
     <div class="container">
-      <p class="muted credit" align="center">Designed by The JMI-SDS Team for Algorhythm'14.</p>
+      <p class="muted credit" align="center">Designed by the JMI-SDS team for Algorhythm'14</p>
       <!-- <p class="muted credit">Coded with love on Sublime Text. Made possible by Git and Bitbucket.</p> -->
       <!-- <p class="muted credit">
       Developed By:

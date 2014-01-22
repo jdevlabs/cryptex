@@ -1,12 +1,14 @@
 <?php
 require '../config/connect.php';
 
-// Todo: Apply other validations like, email should be a valid address and such!
+// Todo: Email should be a valid address and such!
+// Think of other possible validation gotcha's
+// Todo: Add a Gender field to the form as well "/register.php"
 if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['email']))
 {
   if (!empty($_POST['username']) && !empty($_POST['fullname']) && !empty($_POST['password']) && !empty($_POST['email']))
   {
-    // Todo: Passwords should not be stored in plaintext format... Hash them
+    // Note: Don't focus on password hashing for now...
     $uName = $_POST['username']; $name = $_POST['fullname'];
     $email = $_POST['email']; $pass = $_POST['password'];
 
@@ -28,7 +30,6 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['em
       else
       {
         //Todo: Email should be verified
-        //Insert User as Email & Username both are unique
         $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."')";
         $r1 =  mysql_query($q);
         //Note: What if one of these queries is successful and the other isn't?
@@ -44,12 +45,13 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['em
   }
   else
   {
+    // Error occurred in validation
     echo "Invalid Input";
   }
 }
 else
 {
-  //Somehow, the data has not reached ... ?
+  //Somehow, the data has not reached us ... ?
   echo("No Data Passed...");
 }
 ?>

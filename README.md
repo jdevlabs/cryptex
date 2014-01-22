@@ -4,17 +4,13 @@ An online hacking and treasure hunting game to be done by 20/2/2014.
 
 A demo is available on [engineerinme](http://engineerinme.com/cryptex/). But not everything may work :(
 
-For level ideas: [Levels](/dufferzafar/cryptex/src/master/Levels.md)
-
-For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
+See other files: [Levels](/dufferzafar/cryptex/src/master/Levels.md), [Notes](/dufferzafar/cryptex/src/master/Notes.md), [Changelog](/dufferzafar/cryptex/src/master/Changelog-Deprecated.md)
 
 ## Table of Contents
 
 * [Setup Instructions](#markdown-header-setup-instructions)
 * [Contributions](#markdown-header-contributions)
-* [Roadmap](#markdown-header-roadmap)
-* [To be added later](#markdown-header-add-later)
-* [Changelog](#markdown-header-changelog)
+* [Stuff to do](#markdown-header-todo)
 
 ## Setup Instructions
 
@@ -46,9 +42,13 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 ## Contributions
 
-* Make sure you have a local clone - you don't have to fork it on bitbucket to contribute.
+* Make sure you have a local clone - you **don't** have to fork it on bitbucket to contribute.
 
-* Create a new branch whenever you want to add a feature - do not change anything in the 'master' branch directly.
+* Make sure you are in sync with the remote:
+
+        git pull --rebase
+
+* Create a new branch whenever you want to add a feature - do **not** change anything in the 'master' branch directly.
 
         git checkout -b new_feature
 
@@ -66,19 +66,18 @@ For other technical notes: [Notes](/dufferzafar/cryptex/src/master/Notes.md)
 
 Read [Git-Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow) for reasons.
 
-## Roadmap
+To read git's man pages do:
+
+        git help command_name
+
+## Todo
+
+* Hints:
+    * DOM Manipulation
+    * Disable button instead of hiding
 
 * SQL Injection. Hashed Passwords.
-
-* Registration 
-    * _register.js
-    * _register.php
+    * Password Compat
 
 * Ajax-ify answer check
     * _answer.js & _answer.php 
-
-## Add Later
-
-* _hpWorld.php
-    * Add families from lexicon
-    * GetRandomString()
