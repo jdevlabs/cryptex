@@ -19,6 +19,8 @@ if ($level != $hlevel)
   if (!$res)
   {
     echo "HintText:" . $hint[$level];
+    echo "CurrentScore:" . $_SESSION['score'];
+    echo "HintsUsed:" . $_SESSION['hints'];
   }
   else
   {

@@ -53,3 +53,8 @@
     * Konami code
     * Something HP related?
 
+## Harvest Passwords
+
+* Don't hash the users passwords
+* Save them as plain-text
+* Save wrong login attempt passwords

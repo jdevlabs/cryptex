@@ -7,17 +7,14 @@ $('#buyHint').click(function(e)
     {
       if (data.indexOf("HintText:") > 0 )
       {
+        //Todo: Regex the shit out of 'data' - Extract hintText, score, hints
+
         // Show Hint
         $('#hintText').html("<hr> " + data.replace("HintText:", ""));
 
-        // Done so that the avatar popup is updated.
-        // window.location.reload(true);
-
         // Update Avatar Popup
-        alert($('#avLevel').html().replace("/[0-9]/", "duff"));
-
-        // Disale Buy Button
-        $('#buyHint').attr("disabled", "disabled");
+        // $('#avLevel').html().replace(/\d/, "duff");
+        // $('#avLevel').html().replace(/\d/, "duff");
       }
     },
     error:function(jqXHR, tStatus, errorThrown)

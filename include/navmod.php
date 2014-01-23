@@ -39,8 +39,10 @@
         <div class="modal-footer">
           <div class="form-group">
             <div class="controls">
-              <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <?php if ($level != $hlevel) { ?>
               <button id="buyHint" class="btn btn-default btn-success">Buy Hint</button>
+            <?php } ?>
+              <button data-dismiss="modal" class="btn btn-default">Cancel</button>
             </div>
           </div>
         </div>

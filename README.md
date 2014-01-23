@@ -72,9 +72,8 @@ To read git's man pages do:
 
 ## Todo
 
-* Hints:
-    * DOM Manipulation
-    * Disable button instead of hiding
+* After Register?
+* After Level Clear?
 
 * SQL Injection. Hashed Passwords.
     * Password Compat
