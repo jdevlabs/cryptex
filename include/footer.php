@@ -4,8 +4,8 @@
 
   <div id="footer">
     <div class="container">
-      <p class="muted credit" align="center">Designed by the JMI-SDS team for Algorhythm'14</p>
-      <!-- <p class="muted credit">Coded with love on Sublime Text. Made possible by Git and Bitbucket.</p> -->
+      <p class="muted credit" align="right">Designed by the JMI-SDS team for Algorhythm'14</p>
+      <!-- <p class="muted credit" align="center">Coded with love on <a href="www.sublimetext.com/3">Sublime Text</a>. Made possible by Git and Bitbucket.</p> -->
       <!-- <p class="muted credit">
       Developed By:
       <a href="https://github.com/dufferzafar">Shadab Zafar</a>,

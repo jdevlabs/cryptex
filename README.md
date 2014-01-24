@@ -73,10 +73,10 @@ To read git's man pages do:
 ## Todo
 
 * After Register?
-* After Level Clear?
 
 * SQL Injection. Hashed Passwords.
     * Password Compat
 
 * Ajax-ify answer check
     * _answer.js & _answer.php 
+    * After level clear

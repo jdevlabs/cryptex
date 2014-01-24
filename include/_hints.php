@@ -18,13 +18,12 @@ if ($level != $hlevel)
 
   if (!$res)
   {
-    echo "HintText:" . $hint[$level];
-    echo "CurrentScore:" . $_SESSION['score'];
-    echo "HintsUsed:" . $_SESSION['hints'];
+    echo $hint[$level];
+    echo "CS:" . $_SESSION['score'] . " " . "HU:" . $_SESSION['hints'];
   }
   else
   {
-    echo "HintErrorOccurred:" . mysql_error();
+    echo "HintError:" . mysql_error();
   }
 }
 ?>

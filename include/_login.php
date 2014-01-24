@@ -6,11 +6,11 @@ if(isset($_POST['user'],  $_POST['pass']))
 {
   $uName = $_POST['user']; $pass = $_POST['pass'];
   // Check whether the user already exists
+  // Fixme: SQL Injection Here!
   $result = mysql_query("SELECT pass, userid FROM user WHERE username = '$uName'");
   if (mysql_num_rows($result) > 0)
   {
     $row = mysql_fetch_row($result);
-    // Fixme: SQL Injection Here!
     // if (md5($pass) == $row[0])
     if ($pass == $row[0])
     {
