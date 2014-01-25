@@ -12,7 +12,6 @@ $(document).ready(function()
     full = $('#fullname').val(); email = $('#email').val();
     pass = $('#password').val(); cpass = $('#cpass').val();
 
-    // alert(pass + "  " + cpass);
     // Password matching
     if (pass != cpass)
     {

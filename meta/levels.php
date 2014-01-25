@@ -3,8 +3,8 @@
 // Level 1
 $hint[1] = <<<'EOD'
 In any browser window, you can press Ctrl + U to view the 'source code' of a webpage.
-Try pressing Ctrl + U here and skim through the code.<br><br>
-Usually, the green lines are the ones that are ignored by the browser - the comments. <br><br>
+Try pressing Ctrl + U here and go through the code.<br><br>
+Usually, the green lines are the ones that are ignored by the browser - the comments.
 EOD;
 $hintCost[1] = 500;
 $levelScore[1] = 1000;

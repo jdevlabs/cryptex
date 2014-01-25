@@ -72,12 +72,11 @@ To read git's man pages do:
 
 ## Todo
 
-* Hints:
-    * DOM Manipulation
-    * Disable button instead of hiding
+* After Register?
 
 * SQL Injection. Hashed Passwords.
     * Password Compat
 
 * Ajax-ify answer check
     * _answer.js & _answer.php 
+    * After level clear
