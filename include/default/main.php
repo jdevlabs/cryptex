@@ -9,17 +9,17 @@
   <div class="row col-sm-offset-1" style="margin-top: 100px;" >
     <form id="submitForm" method="POST">
       <div align="center" class="col-sm-3">
-        <label style="margin-top: 5px;">Let's Login Hackerboy!</label>
+        <label style="margin-top: 21px; margin-right: -30px;">Let's Login Hackerboy!</label>
       </div>
       <div class="col-sm-3">
-        <input name="user"type="text" placeholder="Your Username" class="form-control"  required autofocus>
+        <input style="margin-top: 15px;" name="user" type="text" placeholder="Your Username" class="form-control"  required autofocus>
       </div>
       <div class="col-sm-3">
       <!-- Todo: type="password" -->
-        <input name="pass" type="text" placeholder="Your Password" class="form-control" required>
+        <input style="margin-top: 15px;" name="pass" type="text" placeholder="Your Password" class="form-control" required>
       </div>
       <div class="col-sm-1">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button id="signinBtn"type="submit" style="margin-top: 15px;" class="btn btn-primary">Sign in</button>
       </div>
     </form>
   </div>
