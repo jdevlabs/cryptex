@@ -10,6 +10,9 @@ A list of levels that will be present in the game...
 
 * Todo: PH - Merge multiple UpdateFields into a single sql query. Create a dbFunction if needed.
 
+* Exif Metadata - GD in PHP
+* Audio Metadata
+
 * File Formats:
     * Metadata in MP3, Exif in Images
 

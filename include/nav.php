@@ -43,9 +43,9 @@
         <ul class="dropdown-menu col-lg-7" style="padding: 15px; padding-bottom: 15px;">
           <div class="row col-md-12 col-md-pull-right"><img src="assets/img/avatar.svg" alt="avatar"></div>
           <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
-          <i class="glyphicon glyphicon-bookmark"></i><p id="avLevel"><strong> Level :</strong><?php echo '  ' . $_SESSION['level'];?></p>
-          <i class="glyphicon glyphicon-star"></i><p id="avScore"><strong> Score :</strong><?php echo '  ' . $_SESSION['score'];?></p>
-          <i class="glyphicon glyphicon-gift"></i><p id="avHints"><strong> Hints Used :</strong><?php echo '  ' . $_SESSION['hints'];?></p>
+          <p id="avLevel"><i class="glyphicon glyphicon-bookmark"></i><strong> Level :</strong><?php echo '  ' . $_SESSION['level'];?></p>
+          <p id="avScore"><i class="glyphicon glyphicon-star"></i><strong> Score :</strong><?php echo '  ' . $_SESSION['score'];?></p>
+          <p id="avHints"><i class="glyphicon glyphicon-gift"></i><strong> Hints Used :</strong><?php echo '  ' . $_SESSION['hints'];?></p>
           <li class="divider"></li>
           <a href="" id="resetProgress"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
           <a href="" id="logout" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
@@ -55,4 +55,4 @@
     </ul>
   </div>
 </nav>
-<!-- Navbar Ends
+<!-- Navbar Ends -->

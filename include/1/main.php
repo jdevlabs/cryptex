@@ -37,7 +37,7 @@
       <p id="quesData">
         The big fat lady asks Harry for the password to the gryffindor's common room but harry has yet again forgotten it. <br><br>
         Luckily, Harry knew that this could happen, so he wrote down the <b>password in this file somewhere.</b> <br><br>
-        Can you please fecth it for him?
+        Can you please fetch it for him?
       </p>
       <hr>
     </div>

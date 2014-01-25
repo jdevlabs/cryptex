@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  /* Site-wide footer */
+ #footer {
+   display: none;
+ }
+ /* Signin button on the home page */
+ #signinBtn {
+  width: 100%;
+ }
+}

@@ -5,19 +5,19 @@ $('#buyHint').click(function(e)
     url: "include/_hints.php",
     success: function(data, tStatus)
     {
-      if (data.indexOf("HintText:") > 0 )
+      if (data.indexOf("CS:") > 0 )
       {
-        // Show Hint
-        $('#hintText').html("<hr> " + data.replace("HintText:", ""));
-
-        // Done so that the avatar popup is updated.
-        // window.location.reload(true);
-
         // Update Avatar Popup
-        alert($('#avLevel').html().replace("/[0-9]/", "duff"));
+        matches = data.match(/CS:(\d+) HU:(\d+)/);
+        $('#avScore').html($('#avScore').html().replace(/\d+/, matches[1]));
+        $('#avHints').html($('#avHints').html().replace(/\d+/, matches[2]));
 
-        // Disale Buy Button
-        $('#buyHint').attr("disabled", "disabled");
+        // Hide the button
+        $('#buyHint').hide();
+        $('#cancHint').text("Okay");
+
+        // Show Hint
+        $('#hintText').html("<hr> " + data.replace(matches[0], ""));
       }
     },
     error:function(jqXHR, tStatus, errorThrown)

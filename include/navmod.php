@@ -23,7 +23,7 @@
             </p>
           <?php } else { ?>
             <p>
-              Congratulations, you bought a hint.<br><br> <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong> were deducted from your score. It currently is <strong><?php echo $_SESSION['score'] ?> HP</strong>.
+              Congratulations, you bought a hint.<br><br> <strong><?php echo $hintCost[$_SESSION['level']] ?> HP</strong> were deducted from your score. You currently have <strong><?php echo $_SESSION['score'] ?> HP</strong> with you.
             </p>
           <?php } ?>
           <p id="hintText">
@@ -39,8 +39,12 @@
         <div class="modal-footer">
           <div class="form-group">
             <div class="controls">
-              <button data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <?php if ($level != $hlevel) { ?>
               <button id="buyHint" class="btn btn-default btn-success">Buy Hint</button>
+              <button id="cancHint" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            <?php } else { ?>
+              <button data-dismiss="modal" class="btn btn-default">Okay</button>
+            <?php } ?>
             </div>
           </div>
         </div>
