@@ -9,7 +9,9 @@ $(document).ready(function()
 
     // Get values from the form
     uname = $('#username').val();
-    full = $('#fullname').val(); email = $('#email').val();
+    full = $('#fullname').val(); 
+    gender = $('#gender').val();
+    email = $('#email').val();
     pass = $('#password').val(); cpass = $('#cpass').val();
 
     // alert(pass + "  " + cpass);

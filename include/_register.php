@@ -3,13 +3,14 @@ require '../config/connect.php';
 
 // Todo: Email should be a valid address and such!
 // Think of other possible validation gotcha's
-// Todo: Add a Gender field to the form as well "/register.php"
-if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['email']))
+
+if (isset($_POST['username'], $_POST['fullname'],$_POST['gender'],$_POST['password'], $_POST['email']))
 {
   if (!empty($_POST['username']) && !empty($_POST['fullname']) && !empty($_POST['password']) && !empty($_POST['email']))
   {
     // Note: Don't focus on password hashing for now...
     $uName = $_POST['username']; $name = $_POST['fullname'];
+    $sex = $_POST['gender'];
     $email = $_POST['email']; $pass = $_POST['password'];
 
     // Check whether the user already exist
@@ -30,7 +31,7 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['password'], $_POST['em
       else
       {
         //Todo: Email should be verified
-        $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."')";
+        $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`,`gender`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."','".$sex."')";
         $r1 =  mysql_query($q);
         //Note: What if one of these queries is successful and the other isn't?
         $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `qlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '', '')";

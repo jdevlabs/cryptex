@@ -18,6 +18,11 @@
           <input id="fullname" name="fullname" placeholder="Your full name" class="form-control" autofocus requi type="text">
         </div>
         <div class="form-group">
+          <label class="control-label" for="gender">Gender</label><br/>      
+          <input name="gender" type="radio" value="F"/> Female
+          <input name="gender" type="radio" value="M" checked="true"/> Male
+        </div>
+        <div class="form-group">
           <label class="control-label" for="email">E-Mail ID</label>
           <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" requi type="text">
         </div>

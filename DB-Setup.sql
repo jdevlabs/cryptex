@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `pass` varchar(25) NOT NULL,
   `email` varchar(80) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `gender` varchar(2) NOT NULL,
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
@@ -63,8 +64,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userid`, `username`, `pass`, `email`, `name`) VALUES
-(1, 'dummy', 'pass', 'dummy@chu.in', 'Dummy User');
+INSERT INTO `user` (`userid`, `username`, `pass`, `email`, `name`,`gender`) VALUES
+(1, 'dummy', 'pass', 'dummy@chu.in', 'Dummy User', 'M');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
