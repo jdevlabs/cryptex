@@ -23,8 +23,13 @@
           <input name="gender" type="radio" value="M" checked="true"/> Male
         </div>
         <div class="form-group">
+          <div class="control-group">
           <label class="control-label" for="email">E-Mail ID</label>
-          <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" required="" type="text">
+          <div class="controls">
+          <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" required="" type="email" data-validation-email-message="Please enter a valid email"/>
+          <p class="help-block"></p>
+          </div>
+          </div>
         </div>
         <div class="form-group">
           <label class="control-label" for="username">Username</label>

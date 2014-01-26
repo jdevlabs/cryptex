@@ -1,7 +1,6 @@
 <?php
 require '../config/connect.php';
 
-// Todo: Email should be a valid address and such!
 // Think of other possible validation gotcha's
 
 if (isset($_POST['username'], $_POST['fullname'],$_POST['gender'],$_POST['password'], $_POST['email']))
