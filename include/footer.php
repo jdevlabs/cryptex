@@ -1,4 +1,4 @@
-  </div>  <!-- The Container Ends -->
+</div>  <!-- The Container Ends -->
   <div id="push"></div>
 </div>
 
@@ -27,7 +27,7 @@
   <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
   <script type="text/javascript" src="assets/js/_hints.js"></script>
-
+  <script src="assets/js/jqBootstrapValidation.js"></script>
   <!-- Todo: PL - Move this into a js file -->
   <script>
   $('[data-toggle="tooltip"]').tooltip({
@@ -37,6 +37,9 @@
   $('[data-toggle="popover"]').popover({
     'trigger': 'manual', 'placement': 'right', 'html': true
   });
+  </script>
+  <script>
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
   </script>
 </body>
 </html>
