@@ -26,10 +26,16 @@
           <div class="control-group">
           <label class="control-label" for="email">E-Mail ID</label>
           <div class="controls">
+<<<<<<< HEAD
           <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" required="" type="email" data-validation-email-message="Please enter a valid email"/>
           <p class="help-block"></p>
           </div>
           </div>
+=======
+          <input id="email" name="email" data-toggle="popover" data-title="Email already in use" data-container="body" data-content="Another user is already registered with this email.<br><br>Please enter a unique email address." placeholder="Your E-Mail ID" class="form-control" required="" type="email" data-validation-email-message="Please enter a valid email">
+          <p class="help-block"></p>
+          </div>
+>>>>>>> 1c3a7e12d3012211f8c9f8858f820c0f2f3a743b
         </div>
         <div class="form-group">
           <label class="control-label" for="username">Username</label>
