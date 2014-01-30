@@ -44,6 +44,11 @@ $(document).ready(function()
           $('#username').parent().parent().addClass('has-error');
           $('#username').popover('toggle');
         }
+        else if ( data.indexOf("Please enter a valid email address") != -1 )
+        {
+          $('#email').parent().addClass('has-error');
+          $('#email').popover('toggle');
+        }
         else
         {
           $('legend').popover('toggle');
