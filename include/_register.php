@@ -17,6 +17,10 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['pass
     {
       echo("Email already exists");
     }
+    elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) //email validation
+    {
+        echo("Please enter a valid email address");
+    }
     else
     {
       $q = "SELECT pass FROM user WHERE username = '$uName'";
@@ -27,7 +31,6 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['pass
       }
       else
       {
-        //Todo: Email should be verified
         $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`,`gender`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."','".$sex."')";
         $r1 =  mysql_query($q);
         //Note: What if one of these queries is successful and the other isn't?
