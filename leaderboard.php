@@ -26,7 +26,7 @@
     </thead>
     <tbody>
     <?php
-      $result = mysql_query("SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid ORDER BY score DESC LIMIT 25");
+      $result = mysql_query("SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid ORDER BY score DESC,reached ASC LIMIT 25");
       $i = 1;
       while($row = mysql_fetch_array($result))
       {
