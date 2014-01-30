@@ -2,19 +2,32 @@
 
 A list of levels that will be present in the game...
 
-## Working On
+## Order
 
-* Ideas for more levels.
+Ol' HTML:
 
-## To Add Later
+* The Invisibility Cloak
+* View Source
+* Javascript Output
+* Send Mail
+* 
 
-* Todo: PH - Merge multiple UpdateFields into a single sql query. Create a dbFunction if needed.
+Onto Crypto:
 
+* Ceaser Cipher
+* Morse Code (Use 'ls' to give file)
+* MP3 Stego
+* Image 
+
+Let's Hack:
+
+* SQL Injection
+* 
+
+## Add Later
+
+* Audio Steganography
 * Exif Metadata - GD in PHP
-* Audio Metadata
-
-* File Formats:
-    * Metadata in MP3, Exif in Images
 
 * Javascript Fun!
     * Use js function to match username/password
@@ -25,15 +38,11 @@ A list of levels that will be present in the game...
     * An image containing random morses..
     * Generate image using PHP GD
 
+* Todo: PH - Merge multiple UpdateFields into a single sql query. Create a dbFunction if needed.
+
 ## Helping Links
 
 [Troika Mist!](http://www.troika.dcetech.com/events/mist.html)
 [Notpron](http://www.deathball.net/notpron)
 [Hax.tor hu](http://hax.tor.hu/warmup1/)
 [Hack this site](http://www.hackthissite.org/missions/basic/)
-
-## Changelog
-
-Level 3 - The Invisibility Cloak - View Comment/Select Test
-Level 2 - Cipher'ed - Ceaser Cipher
-Level 1 - The Fat Lady - View Comment

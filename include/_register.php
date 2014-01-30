@@ -2,14 +2,12 @@
 require '../config/connect.php';
 
 // Think of other possible validation gotcha's
-
-if (isset($_POST['username'], $_POST['fullname'],$_POST['gender'],$_POST['password'], $_POST['email']))
+if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['password'], $_POST['email']))
 {
   if (!empty($_POST['username']) && !empty($_POST['fullname']) && !empty($_POST['password']) && !empty($_POST['email']))
   {
     // Note: Don't focus on password hashing for now...
-    $uName = $_POST['username']; $name = $_POST['fullname'];
-    $sex = $_POST['gender'];
+    $uName = $_POST['username']; $name = $_POST['fullname']; $sex = $_POST['gender'];
     $email = $_POST['email']; $pass = $_POST['password'];
 
     // Check whether the user already exist

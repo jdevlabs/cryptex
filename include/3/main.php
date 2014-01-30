@@ -36,7 +36,7 @@
         Ten years later, Dumbledore gave it to Harry Potter as a Christmas present anonymously and told him to "use it well." <br><br>
         It's your turn now, there is something hidden on this webpage, let's see if you can <b>uncover</b> it.
       </p>
-      <p style="color:white"> <?php echo $ques ?> </p>
+      <bdo style="color:white" dir="rtl"><?php echo $ques ?></bdo>
       <hr>
     </div>
     <div class="row col-sm-offset-2">
