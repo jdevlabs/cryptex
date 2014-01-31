@@ -34,7 +34,12 @@
         updateField("gamedata", "reached", time(), $uid);
         updateField("gamedata", "score", $_SESSION['score'] + $levelScore[$level], $uid);
 
+        $wrongAns = 0;
         // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
+      }
+      else
+      {
+        $wrongAns = 1;
       }
     }
 

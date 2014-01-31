@@ -41,12 +41,25 @@
     </div>
     <div class="row col-sm-offset-2">
       <form method="POST">
-        <div class="col-sm-7">
-          <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
-        </div>
-        <div class="col-sm-2">
-          <button type="submit" class="btn btn-primary form-control">Submit</button>
+        <div class="form-group">
+          <div class="control-group">
+          <?php if ($wrongAns == 1) { ?>
+            <div class="controls has-error">
+              <div class="col-sm-7">
+                  <input name="answer" type="text" class="form-control" placeholder="Wrong answer. Please try again!">
+          <?php } else { ?>
+            <div class="controls">
+              <div class="col-sm-7">
+                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+          <?php } ?>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
   </div>
+
