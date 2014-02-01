@@ -15,6 +15,7 @@ Ol' HTML:
 Onto Crypto:
 
 * Ceaser Cipher
+* Italicized alphabets in a paragraph
 * Morse Code (Use 'ls' to give file)
 * MP3 Stego
 * Image 
@@ -24,7 +25,12 @@ Let's Hack:
 * SQL Injection
 * 
 
-## Add Later
+## Mini-Ideas
+
+* Show a fake php error/warning. Piss the user off.
+  * Link to next level? Invisible text. 
+
+## Research
 
 * Audio Steganography
 * Exif Metadata - GD in PHP
@@ -42,7 +48,8 @@ Let's Hack:
 
 ## Helping Links
 
-[Troika Mist!](http://www.troika.dcetech.com/events/mist.html)
-[Notpron](http://www.deathball.net/notpron)
-[Hax.tor hu](http://hax.tor.hu/warmup1/)
-[Hack this site](http://www.hackthissite.org/missions/basic/)
+* [Meta](http://captf.com/practice-ctf/)
+* [Troika Mist!](http://www.troika.dcetech.com/events/mist.html)
+* [Notpron](http://www.deathball.net/notpron)
+* [Hax.tor hu](http://hax.tor.hu/warmup1/)
+* [Hack this site](http://www.hackthissite.org/missions/basic/)

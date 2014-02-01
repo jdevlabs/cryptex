@@ -1,16 +1,12 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  $hintText[1] = "Hint for level 1";
-  $hintCost[1] = 500;
-  $hintScore[1] = 1000;
-
   $level = getField("gamedata", "level", $_SESSION['userid']);
   $qlevel = getField("gamedata", "qlevel", $_SESSION['userid']);
 
   // The ques has not yet been generated.
-  // if ((is_null($ques) or empty($ques)))
-  if ($level != $qlevel)
+  // if ($level != $qlevel)
+  if ($qlevel == 0)
   {
     // Generate question.
     $ques = getRandomFamily('Black');
@@ -19,6 +15,8 @@
     updateField("gamedata", "ques", $ques, $_SESSION['userid']);
     updateField("gamedata", "ans", $ques, $_SESSION['userid']);
     updateField("gamedata", "qlevel", '1', $_SESSION['userid']);
+
+    $firstTime = 1;
   }
   else
   {
@@ -64,6 +62,3 @@
       </form>
     </div>
   </div>
-  
-</script>
-

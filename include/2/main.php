@@ -1,7 +1,6 @@
 <?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
 
 <?php
-
   $level = getField("gamedata", "level", $_SESSION['userid']);
   $qlevel = getField("gamedata", "qlevel", $_SESSION['userid']);
 
@@ -20,7 +19,6 @@
   }
   else
     $ques = getField("gamedata", "ques", $_SESSION['userid']);
-
 ?>
 
   <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>

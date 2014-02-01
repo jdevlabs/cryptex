@@ -73,9 +73,7 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
           <div class="modal-footer">
             <div class="form-group">
               <div class="controls">
-                <?php
-                  //Todo: Contact Us CodeBehind *Low*
-                ?>
+                <?php //Todo: Contact Us CodeBehind *Low* ?>
                 <button data-dismiss="modal" class="btn btn-default">Cancel</button>
                 <button id="SOS" class="btn btn-default btn-success">Contact Admin!</button>
               </div>
@@ -84,33 +82,36 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
         </div>
     </div>
   </div>
+<?php if($_SESSION['level'] == 1) { ?>
+
+<div id="rulesModal" class="modal fade in bs-modal-lg" role="dialog" aria-labelledby="rulesModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>This is Cryptex 2014, Welcome.</h3>
+      </div>
+      <div class="modal-body">
+        <h4>Here are some rules , should they apply to you</h4>
+        <p>
+          Acceptable
+          hacking this site.
+          bragging in front of your friends.
+          Helping your friends Indirectly ,by hinting your approach to a level or mocking their poor analytical skills
+          Unacceptable
+          Disclosing the hints to levels , either online or to a friend
+          Posting the answers online , yes even on facebook
+
+          Be sure to tell your friends , and make sure they tell thiers
+          Let the game begin!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">I Understand</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php } ?>
 <!-- Modal Dialogs End -->
-
-<div id="rulesModal" class="modal fade in bs-modal-lg" role="dialog" aria-labelledby="rulesModal" aria-hidden="true">  
-<div class="modal-dialog modal-lg" >
-<div class="modal-content">
-<div class="modal-header">  
-<a class="close" data-dismiss="modal">×</a>  
-<h3>This is Cryptex 2014, Welcome.</h3>  
-</div>  
-<div class="modal-body">  
-<h4>Here are some rules , should they apply to you</h4>  
-<p>
-   <h5>Acceptable</h5><br/>
-   hacking this site.<br/>
-   bragging in front of your friends.<br/> 
-   Helping your friends <strong>Indirectly</strong> ,by hinting your approach to a level or mocking their poor analytical skills<br/>
-   <h5>Unacceptable</h5><br/>
-   Disclosing the hints to levels , either online or to a friend<br/>
-   Posting the answers online , yes even on facebook<br/>
-
-   <h5>Be sure to tell your friends , and make sure they tell thiers<br></h5>
-   <h4>Let the game begin!</h4>
-</p>                
-</div>  
-<div class="modal-footer">    
-<a href="#" class="btn" data-dismiss="modal">I Understand</a>  
-</div>  
-</div>
-</div>
-</div>  
