@@ -43,18 +43,8 @@
   <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
   </script>
-
-  <?php  
-    if($_SESSION['level']==1) { ?>
-      <script>
-      $(document).ready(function() {
-    $('#rulesModal').modal('show');
-    $('#rulesModal').on('show.bs.modal', function() {
-        $("#rulesModal").focus();
-    })
-});
-      </script>
-  <?php } ?>
-
+<?php 
+  include_once 'rules.php';
+?>
 </body>
 </html>

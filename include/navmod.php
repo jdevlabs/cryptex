@@ -63,7 +63,7 @@
             <!-- <p>Don't have a problem but still want to talk to us? We'll love to hear from you.</p> -->
           </div>
           <div class="modal-body">
-            <form class="col-sm-12">
+            <form class="col-sm-12" action="_contact.php" method="post">
               <textarea class="form-control" id="prob" name="prob" rows="8" style="width: 515px;">
 Enter a brief description of the problem you are experiencing.
 
@@ -77,7 +77,7 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
                   //Todo: Contact Us CodeBehind *Low*
                 ?>
                 <button data-dismiss="modal" class="btn btn-default">Cancel</button>
-                <button id="SOS" class="btn btn-default btn-success">Contact Admin!</button>
+                <a id="SOS" class="btn btn-default btn-success" type="submit">Contact Admin!</a>
               </div>
             </div>
           </div>
