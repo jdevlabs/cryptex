@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bs.sticky.footer.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</script>
 </head>
+
 
 <body>

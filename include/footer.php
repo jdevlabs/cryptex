@@ -29,6 +29,7 @@
   <script type="text/javascript" src="assets/js/_hints.js"></script>
   <script src="assets/js/jqBootstrapValidation.js"></script>
   <!-- Todo: PL - Move this into a js file -->
+
   <script>
   $('[data-toggle="tooltip"]').tooltip({
     'trigger': 'manual', 'placement': 'right'
@@ -38,8 +39,22 @@
     'trigger': 'manual', 'placement': 'right', 'html': true
   });
   </script>
+
   <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
   </script>
+
+  <?php  
+    if($_SESSION['level']==1) { ?>
+      <script>
+      $(document).ready(function() {
+    $('#rulesModal').modal('show');
+    $('#rulesModal').on('show.bs.modal', function() {
+        $("#rulesModal").focus();
+    })
+});
+      </script>
+  <?php } ?>
+
 </body>
 </html>
