@@ -17,14 +17,16 @@
       <li class="divider"></li>
       <li><a href="index.php"><i class="glyphicon glyphicon-home"></i> Home</a></li>
       <li class="divider"></li>
+      <li><a href="news.php"><i class="glyphicon glyphicon-bullhorn"></i> News</a></li>
+      <li><a href="faq.php"><i class="glyphicon glyphicon-question-sign"></i> FAQ</a></li>
       <li><a href="leaderboard.php"><i class="glyphicon glyphicon-list"></i> Leaderboard</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="divider"></li>
 <?php if($_SESSION['loggedin'] == 1) { ?>
       <li class="divider"></li>
       <li><a id="navHint" href="#"><i class="glyphicon glyphicon-gift"></i> Hints</a></li>
 <?php } ?>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="divider"></li>
       <li><a id="navContact" href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider"></li>

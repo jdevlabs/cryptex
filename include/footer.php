@@ -38,22 +38,14 @@
   $('[data-toggle="popover"]').popover({
     'trigger': 'manual', 'placement': 'right', 'html': true
   });
-  </script>
 
-  <script>
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-  </script>
-
   <?php if($firstTime) { ?>
-    <script>
+
       $(document).ready(function() {
         $('#rulesModal').modal('show');
-        $('#rulesModal').on('show.bs.modal', function() {
-          $("#rulesModal").focus();
-        })
       });
-    </script>
   <?php } ?>
-
+  </script>
 </body>
 </html>
