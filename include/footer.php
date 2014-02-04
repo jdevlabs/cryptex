@@ -40,12 +40,13 @@
   });
 
   $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-  <?php if($firstTime) { ?>
 
+  <?php if($firstTime) { ?>
       $(document).ready(function() {
         $('#rulesModal').modal('show');
       });
   <?php } ?>
   </script>
+
 </body>
 </html>
