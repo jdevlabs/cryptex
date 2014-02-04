@@ -73,7 +73,6 @@ If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
           <div class="modal-footer">
             <div class="form-group">
               <div class="controls">
-                <?php //Todo: Contact Us CodeBehind *Low* ?>
                 <button data-dismiss="modal" class="btn btn-default">Cancel</button>
                 <button id="SOS" class="btn btn-default btn-success">Contact Admin!</button>
               </div>

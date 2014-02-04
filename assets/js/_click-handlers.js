@@ -61,11 +61,6 @@ $(document).ready(function()
         // alert(data);
         if (data.indexOf("Logout Successful") > 0 )
           window.location.reload(true);
-        else
-        {
-          //Ooopsie
-          //Todo: Handle any sort of ajax error that could occur.. could it?
-        }
       },
       error:function(jqXHR, tStatus, errorThrown)
       {

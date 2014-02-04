@@ -76,7 +76,4 @@ To read git's man pages do:
 
 * SQL Injection. Hashed Passwords.
     * Password Compat
-
-* Ajax-ify answer check
-    * _answer.js & _answer.php 
-    * After level clear
+* Remove reset functionality

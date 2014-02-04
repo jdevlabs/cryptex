@@ -23,7 +23,6 @@ if ($user)
 
   if (!empty($user_profile ))
   {
-    //Todo: Add a check for empty email
 		if( login($user_profile['email']) == 0 )
 		insert($user_profile);
 	}

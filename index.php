@@ -54,11 +54,14 @@
   // The main navigation bar
   require "include/nav.php";
 
-  // The 'Hints' & 'Contact' bootstrap modal dialogs
+  // Bootstrap modal dialogs
   require "include/navmod.php";
 
-  // Todo: Remove the need of pid and then merge page.php here.
-  require "include/page.php" ;
+  // Load the right level
+  if ($_SESSION['loggedin'] == 1)
+    include "include/".$_SESSION['level']."/main.php" ;
+  else
+    include "include/default/main.php" ;
 
   // Ends HTML; Loads JS
   require "include/footer.php";
