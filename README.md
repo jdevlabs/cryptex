@@ -76,4 +76,9 @@ To read git's man pages do:
 
 * SQL Injection. Hashed Passwords.
     * Password Compat
+
 * Remove reset functionality
+
+* Answer is correct but we have db issues...
+
+

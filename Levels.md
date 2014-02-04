@@ -2,49 +2,49 @@
 
 A list of levels that will be present in the game...
 
-## Order
+### Order
 
 Ol' HTML:
 
-* The Invisibility Cloak
-* View Source
-* Javascript Output
-* Send Mail
-* 
+* The invisibility cloak
+* View source
+* Javascript output
+* Edit HTML: Inspect element ('bacon' from the list)
+* Dev Console: Modify a countdown timer
 
 Onto Crypto:
 
-* Ceaser Cipher
-* Italicized alphabets in a paragraph
-* Morse Code (Use 'ls' to give file)
-* MP3 Stego
-* Image 
+* Cookies -> Ceaser cipher
+* Italicized alphabets -> Response headers -> XOR
+* Substitution cipher -> robots.txt
+* Morse codes (Use 'ls' to give file)
+* Text at the end of image
+* Image -> Zip -> mp3 (order)
 
 Let's Hack:
 
-* SQL Injection
-* 
+* SQL injection 
+  * Customer Name : List record
 
-## Mini-Ideas
+### The Last Level
 
-* Show a fake php error/warning. Piss the user off.
-  * Link to next level? Invisible text. 
+* Show a fake php error/warning then die()
+* Recieve an answer via http header
+  * Do this once before too...
 
-## Research
+### Research
 
 * Audio Steganography
 * Exif Metadata - GD in PHP
 
-* Javascript Fun!
-    * Use js function to match username/password
-    * Make false promise
-    * Write actual source after skipping many lines :)
+* Base64
+
+* Send a mail from dumbledore@hogwarts.edu to voldemort@gmail.com
+* emei.cz fake mailer
 
 * Morse Code
     * An image containing random morses..
     * Generate image using PHP GD
-
-* Todo: PH - Merge multiple UpdateFields into a single sql query. Create a dbFunction if needed.
 
 ## Helping Links
 

@@ -1,3 +1,7 @@
+<?php
+  header("lol: ism");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

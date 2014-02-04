@@ -48,10 +48,10 @@
     $_SESSION['score'] = getField("gamedata", "score", $uid);
   }
 
-  // Begins HTML; Loads CSS
+  // Sets Respnse headers; Begins HTML; Loads CSS
   require "include/header.php";
 
-  // The main navigation bar
+  // Main navigation bar
   require "include/nav.php";
 
   // Bootstrap modal dialogs
@@ -59,7 +59,7 @@
 
   // Load the right level
   if ($_SESSION['loggedin'] == 1)
-    include "include/".$_SESSION['level']."/main.php" ;
+    include "include/1".$_SESSION['level']."/main.php" ;
   else
     include "include/default/main.php" ;
 
