@@ -1,5 +1,16 @@
 # Miscellaneous Notes
 
+### Gamedata Table Fields:
+
+**level** : Current level of player.
+**score** : Player's current score.
+**reached** : Unix timestamp of when the last level was cleared.
+**hints** : Number of hints that have been used.
+**qlevel** : The level that 
+**hlevel** :
+**ques** :
+**ans** :
+
 * Done: Show full names in the leaderboard instead of usernames.
 * Note: Remove all debugging related help like mysql_error()
 

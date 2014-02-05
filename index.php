@@ -45,6 +45,7 @@
 
     // Play it safe - load values from db
     $_SESSION['level'] = getField("gamedata", "level", $uid);
+    $_SESSION['qlevel'] = getField("gamedata", "qlevel", $uid);
     $_SESSION['score'] = getField("gamedata", "score", $uid);
   }
 

@@ -40,7 +40,7 @@ Let's Hack:
 * Base64
 
 * Send a mail from dumbledore@hogwarts.edu to voldemort@gmail.com
-* emei.cz fake mailer
+  * emei.cz fake mailer
 
 * Morse Code
     * An image containing random morses..
@@ -53,3 +53,9 @@ Let's Hack:
 * [Notpron](http://www.deathball.net/notpron)
 * [Hax.tor hu](http://hax.tor.hu/warmup1/)
 * [Hack this site](http://www.hackthissite.org/missions/basic/)
+
+Capture The Flags:
+
+* [Felicity - BreakIn](http://felicity.iiit.ac.in/threads/events/break-in/)
+* Cognizance - Backdoor
+* 
