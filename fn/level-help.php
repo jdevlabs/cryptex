@@ -55,4 +55,27 @@ function ceaserCipher($string, $n)
 
   return $result;
 }
+
+/**
+ * XOR a string with a key
+ * @param  string $string [Plain Text]
+ * @param  string $key    [The Key]
+ * @return string         [Ciphered Text]
+ */
+function xorCipher($string, $key)
+{
+  $text =$string;
+  $outText = '';
+
+  // Iterate through each character
+  for($i=0;$i<strlen($text);)
+  {
+     for($j=0;($j<strlen($key) && $i<strlen($text));$j++,$i++)
+     {
+         $outText .= $text{$i} ^ $key{$j};
+     }
+  }
+
+  return $outText;
+}
 ?>

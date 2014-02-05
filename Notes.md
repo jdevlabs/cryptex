@@ -6,10 +6,10 @@
 **score** : Player's current score.
 **reached** : Unix timestamp of when the last level was cleared.
 **hints** : Number of hints that have been used.
-**qlevel** : The level that 
-**hlevel** :
-**ques** :
-**ans** :
+**qlevel** : The level that the last question was generated on.
+**hlevel** : The level that list hint was taken on.
+**ques** : Current question string.
+**ans** : Final answer for current level.
 
 * Done: Show full names in the leaderboard instead of usernames.
 * Note: Remove all debugging related help like mysql_error()

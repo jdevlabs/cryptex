@@ -33,9 +33,15 @@
         updateField("gamedata", "level", $level + 1, $uid);
         updateField("gamedata", "reached", time(), $uid);
         updateField("gamedata", "score", $_SESSION['score'] + $levelScore[$level], $uid);
+        // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
+
+        // Cleanup after levels
+        if ($level == 1)
+          setcookie("ButBrutusIsAnHonourableMan", $ques, time()-1000);
+        elseif ($level == 2)
+          header_remove("ABBarPlusABarB");
 
         $wrongAns = 0;
-        // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
       }
       else
       {
