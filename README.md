@@ -1,4 +1,4 @@
-# Cryptex v0.7
+# Cryptex v0.8
 
 An online hacking and treasure hunting game to be done by 20/2/2014.
 
