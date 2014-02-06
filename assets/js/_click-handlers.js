@@ -21,11 +21,9 @@ $(document).ready(function()
               success: function(data, tStatus)
               {
                 if (data.indexOf("Reset Successful") > 0 )
-                  window.location.assign("index.php"); // Goto home.
-                else
                 {
-                  //Note: PP - This part could be removed.
-                  alert(data);
+                  // alert(data);
+                  window.location.assign("index.php"); // Goto home.
                 }
               },
               error:function(jqXHR, tStatus, errorThrown)

@@ -36,9 +36,9 @@
         // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
 
         // Cleanup after levels
-        if ($level == 1)
+        if ($level == 11)
           setcookie("ButBrutusIsAnHonourableMan", $ques, time()-1000);
-        elseif ($level == 2)
+        elseif ($level == 12)
           header_remove("ABBarPlusABarB");
 
         $wrongAns = 0;
@@ -53,6 +53,7 @@
     $_SESSION['level'] = getField("gamedata", "level", $uid);
     $_SESSION['qlevel'] = getField("gamedata", "qlevel", $uid);
     $_SESSION['score'] = getField("gamedata", "score", $uid);
+
   }
 
   // Sets Respnse headers; Begins HTML; Loads CSS
@@ -66,7 +67,7 @@
 
   // Load the right level
   if ($_SESSION['loggedin'] == 1)
-    include "include/1".$_SESSION['level']."/main.php" ;
+    include "include/".$_SESSION['level']."/main.php" ;
   else
     include "include/default/main.php" ;
 

@@ -5,7 +5,7 @@ header_remove('Server');
 header_remove('X-Powered-By');
 
 // 11th level: Cookies + Ceaser Cipher
-if ($_SESSION['level'] == 1)
+if ($_SESSION['level'] == 11)
 {
   // The ques has not yet been generated.
   if ($_SESSION['level'] != $_SESSION['qlevel'])
@@ -27,7 +27,7 @@ if ($_SESSION['level'] == 1)
   setcookie("ButBrutusIsAnHonourableMan", $ques, time()+60*60*24*30);
 }
 // 12th level: Italicized Text + Response Headers + XOR
-elseif ($_SESSION['level'] == 2)
+elseif ($_SESSION['level'] == 12)
 {
   // The ques has not yet been generated.
   if ($_SESSION['level'] != $_SESSION['qlevel'])
