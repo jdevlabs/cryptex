@@ -1,6 +1,7 @@
-<?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
-
 <?php
+
+  if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
+
   $level = getField("gamedata", "level", $_SESSION['userid']);
   $qlevel = getField("gamedata", "qlevel", $_SESSION['userid']);
 

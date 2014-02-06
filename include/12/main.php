@@ -1,9 +1,9 @@
 <?php if (!isset($_SESSION['loggedin'])) die("Bitch Please."); ?>
 
-  <script> document.title = "Cryptex | Level 12" </script>
+  <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
   <div class="container">
     <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
-      <h5><i class="icon glyphicon glyphicon-fire"></i> Level 12</h5>
+      <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
         Watch your HEADers.
