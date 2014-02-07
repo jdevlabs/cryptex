@@ -1,0 +1,11 @@
+_click-handlers.js
+_hints.js
+_login.js
+_register.js
+
+#jquery.min.js
+#vibrate.js
+
+#bootbox.min.js
+#bootstrap.min.js
+#jqBootstrapValidation.js
