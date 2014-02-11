@@ -4,13 +4,14 @@
   // The ques has not yet been generated.
   if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    $ques = getRandomFamily('Black');
+    $q = array('of' => 139, 'the' => 338, 'in' => 86, 'for' => 56);
 
-    // Save question to db.
+    // Generate question.
+    $ques = array_rand($q);
+
+    // Save to db.
     updateField("gamedata", "ques", $ques, $_SESSION['userid']);
-    updateField("gamedata", "ans", $ques, $_SESSION['userid']);
-
-    // Set Q/A Updated to this level
+    updateField("gamedata", "ans", $q[$ques], $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
   else
@@ -25,14 +26,9 @@
     <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
-      <p id="quesData">
-        The Invisibility Cloak is a magical artefact used to render the wearer invisible.
-        It ended up in the hands of James Potter, the father of Harry Potter...
-        After James was killed, the Cloak was left in Dumbledore's possession. <br><br>
-        Ten years later, Dumbledore gave it to Harry Potter as a Christmas present anonymously and told him to "use it well." <br><br>
-        It's your turn now, there is something hidden on this webpage, let's see if you can <b>uncover</b> it.
+      <p>
+        Count the number of '<?php echo $ques ?>' in the file that google loves. <br>
       </p>
-      <bdo style="color:white" dir="rtl"><?php echo $ques ?></bdo>
       <hr>
     </div>
     <div class="row col-sm-offset-2">

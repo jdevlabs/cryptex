@@ -7,11 +7,11 @@
     $ques = "Password is " . getRandomFamily('Black') . ".";
 
     // Save question to db.
-    updateField("gamedata", "ques", $ques, $_SESSION['userid']);
-    updateField("gamedata", "ans", $ques, $_SESSION['userid']);
+    // updateField("gamedata", "ques", $ques, $_SESSION['userid']);
+    // updateField("gamedata", "ans", $ques, $_SESSION['userid']);
 
     // Set Q/A Updated to this level
-    updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
+    // updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
   else
   {
@@ -26,9 +26,7 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
-        Nearly-Headless Nick was learning to code in <b>Javascript</b>. <br><br>
-        His current chapter is <b>Conditionals</b> <br><br>
-        Help him solve Question no 3.
+        Some Basic Level
       </p>
       <hr>
     </div>

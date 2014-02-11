@@ -10,7 +10,6 @@ Ol' HTML:
 * View source
 * Javascript output
 * Edit HTML: Inspect element ('bacon' from the list)
-* Dev Console: Modify a countdown timer
 
 Onto Crypto:
 
@@ -42,6 +41,7 @@ Let's Hack:
 * Send a mail from dumbledore@hogwarts.edu to voldemort@gmail.com
   * emei.cz fake mailer
 
+* Dev Console: Modify a countdown timer
 * Morse Code
     * An image containing random morses..
     * Generate image using PHP GD

@@ -11,11 +11,11 @@
         Please fill in a quick questionnaire:
       </p><hr>
     </div>
-    <div class="row col-sm-8 col-sm-offset-2">
+    <div class="row col-sm-9 col-sm-offset-2">
       <form class="form-horizontal" method="POST">
           <div class="control-group">
-            <label class="col-sm-5 control-label">Who prophesied voldemort's death?</label>
-            <div class="col-sm-5 controls">
+            <label class="col-sm-6 control-label">Last name of who prophesied voldemort's death?</label>
+            <div class="col-sm-4 controls">
               <select name="prophecy" class="form-control">
                 <option>Prof. Minerva Mc Gonagall</option>
                 <option>Prof. Albus Dumbledore</option>
@@ -25,8 +25,8 @@
           </div>
 
           <div class="control-group">
-            <label class="col-sm-5 control-label">The number of horcruxes is:</label>
-            <div class="col-sm-5 controls">
+            <label class="col-sm-6 control-label">The number of horcruxes is:</label>
+            <div class="col-sm-4 controls">
               <select name="horcrux" class="form-control">
                 <option>6</option>
                 <option>0</option>
@@ -36,8 +36,8 @@
           </div>
 
           <div class="control-group">
-            <label class="col-sm-5 control-label">Draco Dormiens Nunquam ...?</label>
-            <div class="col-sm-5 controls">
+            <label class="col-sm-6 control-label">Draco Dormiens Nunquam ...?</label>
+            <div class="col-sm-4 controls">
               <select name="moto" class="form-control">
                 <option>Sinister</option>
                 <option>Veritas</option>
@@ -47,7 +47,7 @@
           </div>
 
           <div class="control-group">
-            <button type="Submit" style="margin-top: 75px;" class="col-sm-4 col-sm-offset-4 btn btn-primary">Submit</button>
+            <button type="Submit" style="margin-top: 75px;" class="col-sm-4 col-sm-offset-3 btn btn-primary">Submit</button>
           </div>
       </form>
     </div>

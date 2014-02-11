@@ -4,14 +4,16 @@
 
   <div id="footer">
     <div class="container">
-      <p class="muted credit" align="right">Designed by the JMI-SDS team for Algorhythm'14</p>
-      <!-- <p class="muted credit" align="center">Coded with love on <a href="www.sublimetext.com/3">Sublime Text</a>. Made possible by Git and Bitbucket.</p> -->
+      <!-- The Flawless Freeware Faction -->
+      <p class="muted credit" align="right">Designed by the 3F's for Algorhythm'14</p>
       <!-- <p class="muted credit">
       Developed By:
       <a href="https://github.com/dufferzafar">Shadab Zafar</a>,
       <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
       <a href="https://github.com/zishanAhmad">Zishan Ahmad</a>,
-      <a href="https://github.com/rootAvish">Avishkar Gupta</a> and team.
+      <a href="https://github.com/rootAvish">Avishkar Gupta</a>
+      <a href="https://github.com/anzalkhan">Anzal Khan</a>
+      <a href="https://github.com/trigonaminima">Shivam Rana</a>
       </p> -->
     </div>
   </div>
