@@ -12,6 +12,8 @@
 
     // Set Q/A Updated to this level
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
+
+    $firstTime = 1;
   }
   else
   {

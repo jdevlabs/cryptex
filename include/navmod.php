@@ -63,18 +63,13 @@
             <!-- <p>Don't have a problem but still want to talk to us? We'll love to hear from you.</p> -->
           </div>
           <div class="modal-body">
-            <form class="col-sm-12">
-              <textarea class="form-control" id="prob" name="prob" rows="8" style="width: 515px;">
-Enter a brief description of the problem you are experiencing.
-
-If you can keep it under 140 words, we'll gift you a firebolt.</textarea>
-            </form>
+            <p>You can email us at: <a href="mailto:jdevlabs.cryptex@gmail.com">jdevlabs.cryptex@gmail.com</a></p>
+            <p>In case you need instant solution to your problems, join the <a href="">#cryptex</a> channel at freenode.</p>
           </div>
           <div class="modal-footer">
             <div class="form-group">
               <div class="controls">
-                <button data-dismiss="modal" class="btn btn-default">Cancel</button>
-                <button id="SOS" class="btn btn-default btn-success">Contact Admin!</button>
+                <button data-dismiss="modal" class="btn btn-default">Okay</button>
               </div>
             </div>
           </div>

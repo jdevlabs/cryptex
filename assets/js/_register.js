@@ -29,7 +29,6 @@ $(document).ready(function()
       data: $("#regForm").serialize(),
       success: function(data, tStatus)
       {
-        //Todo: Auto-Login after valid registeration?
         if ( data.indexOf("Registeration Successful") != -1 )
         {
           // alert('Okay.');

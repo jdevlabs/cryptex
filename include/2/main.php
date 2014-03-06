@@ -11,8 +11,6 @@
     updateField("gamedata", "ques", $ques, $_SESSION['userid']);
     updateField("gamedata", "ans", $ques, $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
-
-    $firstTime = 1;
   }
   else
   {

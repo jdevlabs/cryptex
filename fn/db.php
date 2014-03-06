@@ -1,6 +1,4 @@
 <?php
-// Todo: Fix All dbFunctions *HIGH*
-
 /**
  * Retrieves a field from the table for that particular userid
  */

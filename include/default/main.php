@@ -15,7 +15,6 @@
         <input style="margin-top: 15px;" name="user" type="text" placeholder="Your Username" class="form-control"  required autofocus>
       </div>
       <div class="col-sm-3">
-      <!-- Todo: type="password" -->
         <input style="margin-top: 15px;" name="pass" type="password" placeholder="Your Password" class="form-control" required>
       </div>
       <div class="col-sm-1">

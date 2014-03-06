@@ -74,12 +74,19 @@ To read git's man pages do:
 
 * Facebook Integration
 
-* SQL Injection. Hashed Passwords.
-    * Password Compat
+* Password Compat - Hashing
 
-* Database parameters on the server are different
+----------------------------------
+
+**Aditya**
+
+* Contact: setup email and #cryptex
+* News + FAQ
+* Modal on 1st Level
+
+----------------------------------
+
 * Remove all debugging related help like mysql_error()
-
 * Remove reset functionality
 * Merge all click handlers to one file
 * Merge JS <footer>
