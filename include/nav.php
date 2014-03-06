@@ -30,7 +30,7 @@
       <li><a id="navContact" href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
 <?php  if($_SESSION['loggedin'] != 1) {?>
       <li class="divider"></li>
-      <li><a href="?pid=facebook"><i class="glyphicon glyphicon-thumbs-up"></i> Login With Facebook</a></li>
+      <li><a href="facebook.php"><i class="glyphicon glyphicon-thumbs-up"></i> Login With Facebook</a></li>
   <?php  if( strpos($_SERVER['SCRIPT_NAME'], "register") === false) {?>
       <li class="divider"></li>
       <li><a href="register.php"><i class="glyphicon glyphicon-user"></i> Register</a></li>

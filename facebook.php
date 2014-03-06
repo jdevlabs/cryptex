@@ -1,5 +1,14 @@
 <?php
-require 'facebook.php';
+  require_once "config/connect.php";
+  require_once "config/session.php";
+
+  require_once "fn/db.php";
+
+  require 'fn/facebook.php';
+
+  require "include/header.php";
+  require "include/nav.php";
+  require "include/navmod.php";
 
 //Todo: Update from facebook app before moving into production
 define('APP_ID', '585698748162793');
@@ -30,7 +39,7 @@ if ($user)
 else
 {
   $login_url = $facebook->getLoginUrl(array( 'scope' => 'email'));
-  bug('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>');
+  echo('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>');
 }
 
 function login($email)
@@ -64,5 +73,7 @@ function insert($userinfo)
   if( login($userinfo['email'] , 1 ) == 0 )
   echo("Error Try again ");
 }
+
+require "include/footer.php";
 
 ?>
