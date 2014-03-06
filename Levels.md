@@ -11,6 +11,8 @@ Ol' HTML:
 * Javascript output
 * Edit HTML: Inspect element ('bacon' from the list)
 
+* QR Code -> Onion Address -> Data?
+
 Onto Crypto:
 
 * Cookies -> Ceaser cipher (Key?)
