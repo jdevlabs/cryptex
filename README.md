@@ -72,9 +72,12 @@ To read git's man pages do:
 
 ## Todo
 
-* Facebook Integration
+* Facebook Integration 
+    * Test logins
+    * Post to profile?
 
-* Password Compat - Hashing
+* Password Compat
+    * Hashing
 
 ----------------------------------
 
@@ -83,6 +86,13 @@ To read git's man pages do:
 * Contact: setup email and #cryptex
 * News + FAQ
 * Modal on 1st Level
+    * Tell your friends
+
+* Levels: Fillers + Hints
+* Harry Potter Data ?
+* Level 12 -> Italicized Alphabets.
+
+* Don't give hint, just deduct score?
 
 ----------------------------------
 

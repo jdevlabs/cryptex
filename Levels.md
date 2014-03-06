@@ -13,8 +13,8 @@ Ol' HTML:
 
 Onto Crypto:
 
-* Cookies -> Ceaser cipher
-* Italicized alphabets -> Response headers -> XOR
+* Cookies -> Ceaser cipher (Key?)
+* Italicized alphabets -> Response headers -> XOR (Key?)
 * Substitution cipher -> robots.txt
 
 * Morse codes (Use 'ls' to give file)

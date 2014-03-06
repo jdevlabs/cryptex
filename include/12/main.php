@@ -6,7 +6,12 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        Watch your HEADers.
+        Oliver Wood had arrived. He was <i>c</i>arrying a large wooden crate under <i>h</i>is arm. Harry landed n<i>e</i>xt to him.
+      </p>
+      <p>
+        "Very nice," said Wood, his eyes glinting. "I see what M<i>c</i>Gonagall meant … you really are a natural. I'm just going to teach you the rules this evening, then you'll be joining team practice three times a wee<i>k</i>."</p>
+      <p>
+        <i>He</i> opened the cr<i>a</i>te. Insi<i>de</i> were fou<i>r</i> different sized ball<i>s</i>.
       </p>
       <hr>
     </div>

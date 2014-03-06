@@ -12,6 +12,7 @@
       <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
       <a href="https://github.com/rootAvish">Avishkar Gupta</a>,
       <a href="https://github.com/zishanAhmad">Zishan Ahmad</a>,
+      <a href="https://github.com/kwikadi">Aditya Kumar</a>,
       <a href="https://github.com/sharanagrawal">Sharan Agrawal</a>,
       <a href="https://github.com/trigonaminima">Shivam Rana</a>
       </p> -->
