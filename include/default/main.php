@@ -16,7 +16,7 @@
       </div>
       <div class="col-sm-3">
       <!-- Todo: type="password" -->
-        <input style="margin-top: 15px;" name="pass" type="text" placeholder="Your Password" class="form-control" required>
+        <input style="margin-top: 15px;" name="pass" type="password" placeholder="Your Password" class="form-control" required>
       </div>
       <div class="col-sm-1">
         <button id="signinBtn"type="submit" style="margin-top: 15px;" class="btn btn-primary">Sign in</button>

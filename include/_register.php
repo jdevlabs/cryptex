@@ -34,7 +34,6 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['pass
       {
         $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`,`gender`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."','".$sex."')";
         $r1 =  mysql_query($q);
-        //Note: What if one of these queries is successful and the other isn't?
         $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `qlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '', '')";
         $r2 =  mysql_query($q);
 

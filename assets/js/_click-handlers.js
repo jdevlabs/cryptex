@@ -1,4 +1,3 @@
-// Todo: Merge other ajax click handlers here
 $(document).ready(function()
 {
   /**
@@ -45,8 +44,6 @@ $(document).ready(function()
 
   /**
    * Logout User
-   *
-   * Note: An ajax request to logout the user? doesn't make much sense, does it?
    */
 
   $('#logout').click(function(e)

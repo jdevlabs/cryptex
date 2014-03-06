@@ -12,7 +12,6 @@
 **ans** : Final answer for current level.
 
 * Done: Show full names in the leaderboard instead of usernames.
-* Note: Remove all debugging related help like mysql_error()
 
 * Every single php file should be able to handle direct execution, in which case, either redirect to a proper place or show an echo message.
 

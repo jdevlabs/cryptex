@@ -72,10 +72,14 @@ To read git's man pages do:
 
 ## Todo
 
+* Facebook Integration
+
 * SQL Injection. Hashed Passwords.
     * Password Compat
 
+* Database parameters on the server are different
+* Remove all debugging related help like mysql_error()
+
 * Remove reset functionality
-
-* $_SESSION['qlevel']
-
+* Merge all click handlers to one file
+* Merge JS <footer>
