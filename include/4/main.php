@@ -15,7 +15,11 @@
       <form class="form-horizontal" method="POST">
           <div class="control-group">
             <label class="col-sm-6 control-label">Last name of who prophesied voldemort's death?</label>
+          <?php if ($wrongAns == 1) { ?>
+            <div class="col-sm-4 controls has-error">
+          <?php } else { ?>
             <div class="col-sm-4 controls">
+          <?php } ?>
               <select name="prophecy" class="form-control">
                 <option>Prof. Minerva Mc Gonagall</option>
                 <option>Prof. Albus Dumbledore</option>

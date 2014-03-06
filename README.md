@@ -72,14 +72,10 @@ To read git's man pages do:
 
 ## Todo
 
-* After Register?
-
 * SQL Injection. Hashed Passwords.
     * Password Compat
 
 * Remove reset functionality
-
-* Answer is correct but we have db issues...
 
 * $_SESSION['qlevel']
 

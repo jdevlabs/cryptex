@@ -17,14 +17,14 @@ if(isset($_POST['user'],  $_POST['pass']))
       echo("Successfully logged in");
       $_SESSION['loggedin'] = 1;
       $_SESSION['user'] = $uName;
-      $_SESSION['userid'] = $row[1];;
+      $_SESSION['userid'] = $row[1];
 
-      $result = mysql_query("SELECT level, score FROM gamedata WHERE userid = '$row[1]'");
+      $result = mysql_query("SELECT level, score, hints FROM gamedata WHERE userid = '$row[1]'");
       $row = mysql_fetch_row($result);
 
       $_SESSION['level'] = $row[0];
       $_SESSION['score'] = $row[1];
-      $_SESSION['hints'] = 0;
+      $_SESSION['hints'] = $row[2];
     }
     else
       echo "Either Username or Password is Incorrect";

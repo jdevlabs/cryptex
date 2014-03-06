@@ -9,7 +9,7 @@ $(document).ready(function()
 
     // Get values from the form
     uname = $('#username').val();
-    full = $('#fullname').val(); 
+    full = $('#fullname').val();
     gender = $('#gender').val();
     email = $('#email').val();
     pass = $('#password').val(); cpass = $('#cpass').val();
@@ -29,10 +29,11 @@ $(document).ready(function()
       data: $("#regForm").serialize(),
       success: function(data, tStatus)
       {
-        //Todo: Auot-Login after valid registeration?
+        //Todo: Auto-Login after valid registeration?
         if ( data.indexOf("Registeration Successful") != -1 )
         {
-          alert('Okay.');
+          // alert('Okay.');
+          document.location.href='/cryptex/index.php';
         }
         else if ( data.indexOf("Email already exists") != -1 )
         {

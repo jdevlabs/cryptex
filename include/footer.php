@@ -4,15 +4,15 @@
 
   <div id="footer">
     <div class="container">
-      <!-- The Flawless Freeware Faction -->
-      <p class="muted credit" align="right">Designed by the 3F's for Algorhythm'14</p>
+      <!-- Jamia Developer Labs -->
+      <p class="muted credit" align="right">Designed by <a href="https://github.com/orgs/jdevlabs" target="_blank">JDevLabs</a> for Algorhythm'14</p>
       <!-- <p class="muted credit">
       Developed By:
       <a href="https://github.com/dufferzafar">Shadab Zafar</a>,
       <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
+      <a href="https://github.com/rootAvish">Avishkar Gupta</a>,
       <a href="https://github.com/zishanAhmad">Zishan Ahmad</a>,
-      <a href="https://github.com/rootAvish">Avishkar Gupta</a>
-      <a href="https://github.com/anzalkhan">Anzal Khan</a>
+      <a href="https://github.com/sharanagrawal">Sharan Agrawal</a>,
       <a href="https://github.com/trigonaminima">Shivam Rana</a>
       </p> -->
     </div>
@@ -29,7 +29,7 @@
   <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
   <script type="text/javascript" src="assets/js/_hints.js"></script>
-  <script src="assets/js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script>
   <!-- Todo: PL - Move this into a js file -->
 
   <script>

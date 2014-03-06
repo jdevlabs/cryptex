@@ -1,5 +1,6 @@
 <?php
 require '../config/connect.php';
+require '../config/session.php';
 
 // Think of other possible validation gotcha's
 if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['password'], $_POST['email']))
@@ -38,7 +39,24 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['pass
         $r2 =  mysql_query($q);
 
         if ($r1 and $r2)
+        {
+          $_SESSION['user'] = $uName;
+
+          $result = mysql_query("SELECT userid FROM user WHERE username = '$uName'");
+          $row = mysql_fetch_row($result);
+
+          $_SESSION['userid'] = $row[0];
+
+          $result = mysql_query("SELECT level, score, hints FROM gamedata WHERE userid = '$row[1]'");
+          $row = mysql_fetch_row($result);
+
+          $_SESSION['level'] = $row[0];
+          $_SESSION['score'] = $row[1];
+          $_SESSION['hints'] = $row[2];
+          $_SESSION['loggedin'] = 1;
+
           echo("Registeration Successful");
+        }
         else
           echo("An error occurred while inserting into db. <br> Please Try Again Later :( <br>".mysql_error());
       }

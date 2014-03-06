@@ -16,6 +16,7 @@ Onto Crypto:
 * Cookies -> Ceaser cipher
 * Italicized alphabets -> Response headers -> XOR
 * Substitution cipher -> robots.txt
+
 * Morse codes (Use 'ls' to give file)
 * Text at the end of image
 * Image -> Zip -> mp3 (order)
