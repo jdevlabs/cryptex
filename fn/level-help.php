@@ -79,20 +79,29 @@ function xorCipher($string, $key)
   return $outText;
 }
 
+/**
+ * Convert a string to morse code.
+ * @param  str $str String to convert
+ * @return str $morse  Morse Code
+ */
 function strMorse($str)
 {
-  $morseTable = array('a'=>'.-','b'=>'-...','c'=>'-.-.','d'=>'-..','e'=>'.','f'=>'..-.','g'=>'--.','h'=>'....','i'=>'..','j'=>'.---','k'=>'-.-','l'=>'.-..','m'=>'--','n'=>'-.','o'=>'---','p'=>'.--.','q'=>'--.-','r'=>'.-.','s'=>'...','t'=>'-','u'=>'..-','v'=>'...-','w'=>'.--','x'=>'-..-','y'=>'-.--','z'=>'--..');
+  $morseTable = array('a'=>'.-','b'=>'-...','c'=>'-.-.','d'=>'-..','e'=>'.','f'=>'..-.','g'=>'--.','h'=>'....','i'=>'..','j'=>'.---','k'=>'-.-','l'=>'.-..','m'=>'--','n'=>'-.','o'=>'---','p'=>'.--.','q'=>'--.-','r'=>'.-.','s'=>'...','t'=>'-','u'=>'..-','v'=>'...-','w'=>'.--','x'=>'-..-','y'=>'-.--','z'=>'--..',' '=>' ');
 
   $morse = '';
 
-  for ($i=0; $i < strlen($name); $i++)
-    $morse .= $morseTable[$name[$i]] . '  ';
+  for ($i=0; $i < strlen($str); $i++)
+    $morse .= $morseTable[$str[$i]] . '  ';
 
  return $morse;
 }
 
-
-function StringToFile($string, $file)
+/**
+ * Output a string to a PNG Image
+ * @param str $string Input String
+ * @param str $file   Path to PNG File
+ */
+function strToPNG($string, $file)
 {
   $im = imagecreatetruecolor(300, 100);
 

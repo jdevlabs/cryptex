@@ -2,19 +2,16 @@
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
   // The ques has not yet been generated.
-  if ($_SESSION['level'] != $_SESSION['qlevel'])
+  if ($_SESSION['level'] == $_SESSION['qlevel'])
   {
-    $name = str_replace(" ", "", strtolower(getRandomFamily('Black')));
+    $name = strtolower(getRandomFamily('Black'));
     $ques = strMorse($name);
 
-    // Generate question.
-    $ques = array_rand($q);
-
-    StringToFile($ques, "./Image.png");
+    strToPNG($ques, "./Image.png");
 
     // Save to db.
     updateField("gamedata", "ques", $ques, $_SESSION['userid']);
-    updateField("gamedata", "ans", $q[$ques], $_SESSION['userid']);
+    updateField("gamedata", "ans", $name, $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
   else
@@ -32,6 +29,7 @@
       <p>
         What the morse?
       </p>
+      <img src="" alt="">
       <hr>
     </div>
     <div class="row col-sm-offset-2">

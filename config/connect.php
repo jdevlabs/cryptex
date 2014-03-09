@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(0);
+// error_reporting(0);
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'test');

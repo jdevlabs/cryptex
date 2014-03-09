@@ -28,7 +28,7 @@
 
   // Load the right level
   if ($_SESSION['loggedin'] == 1)
-    require "include/1".$_SESSION['level']."/main.php" ;
+    require "include/".$_SESSION['level']."/main.php" ;
   else
     require "include/default/main.php" ;
 
