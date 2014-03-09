@@ -7,7 +7,15 @@
   require "include/navmod.php";
 ?>
 
-<?php if ($_SESSION['loggedin'] != 1 ) { ?>
+<?php
+
+if (time() < 1394548200)
+{
+  echo("<h3>You can't register before Tuesday, March 11, 2014 8:00:00 PM</h3>");
+  require "include/footer.php";
+}
+else {
+ if ($_SESSION['loggedin'] != 1 ) { ?>
 <script> document.title = "Cryptex | Register" </script>
 <div class="container">
     <div class="col-md-6 col-md-offset-3 well" style="margin-top: 50px;">
@@ -54,7 +62,8 @@
       </form>
     </div>
 </div>
-<?php } ?>
+<?php }
+}?>
 
 <?php
   require "include/footer.php";

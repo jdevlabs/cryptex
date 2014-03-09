@@ -10,6 +10,12 @@
   require "include/nav.php";
   require "include/navmod.php";
 
+if (time() < 1394548200)
+{
+  echo("<h3>You can't register before Tuesday, March 11, 2014 8:00:00 PM</h3>");
+  require "include/footer.php";
+}
+else {
 //Todo: Update from facebook app before moving into production
 define('APP_ID', '585698748162793');
 define('APP_SECRET', 'd10588327cfd864f16d4bafda58d4f44');
@@ -32,14 +38,15 @@ if ($user)
 
   if (!empty($user_profile ))
   {
-		if( login($user_profile['email']) == 0 )
-		insert($user_profile);
-	}
+    if( login($user_profile['email']) == 0 )
+    insert($user_profile);
+  }
 }
 else
 {
   $login_url = $facebook->getLoginUrl(array( 'scope' => 'email'));
   echo('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>');
+}
 }
 
 function login($email)
