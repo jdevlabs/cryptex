@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2014 at 08:28 PM
+-- Generation Time: Mar 09, 2014 at 06:50 PM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `test`
+-- Database: `csijmico_cryptex`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,9 @@ CREATE TABLE IF NOT EXISTS `gamedata` (
   `level` int(3) NOT NULL,
   `score` int(10) NOT NULL,
   `reached` varchar(12) NOT NULL,
+  `hints` int(3) NOT NULL,
   `qlevel` int(3) NOT NULL,
+  `hlevel` int(3) NOT NULL,
   `ques` varchar(100) NOT NULL,
   `ans` varchar(100) NOT NULL,
   PRIMARY KEY (`userid`)
@@ -41,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `gamedata` (
 -- Dumping data for table `gamedata`
 --
 
-INSERT INTO `gamedata` (`userid`, `level`, `score`, `reached`, `qlevel`, `ques`, `ans`) VALUES
-(1, 1, 1000, '1390067826', 0, '', '');
+INSERT INTO `gamedata` (`userid`, `level`, `score`, `reached`, `hints`, `qlevel`, `hlevel`, `ques`, `ans`) VALUES
+(1, 1, 1000, '1390067826', 0, 0, 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -64,8 +66,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userid`, `username`, `pass`, `email`, `name`,`gender`) VALUES
-(1, 'dummy', 'pass', 'dummy@chu.in', 'Dummy User', 'M');
+INSERT INTO `user` (`userid`, `username`, `pass`, `email`, `name`, `gender`) VALUES
+(1, 'dufferZafar', 'plok', 'dufferzafar0@gmail.com', 'Shadab Zafar', 'M');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

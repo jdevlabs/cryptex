@@ -32,7 +32,7 @@ $(document).ready(function()
         if ( data.indexOf("Registeration Successful") != -1 )
         {
           // alert('Okay.');
-          document.location.href='/cryptex/index.php';
+          document.location.href='/index.php';
         }
         else if ( data.indexOf("Email already exists") != -1 )
         {
