@@ -42,9 +42,49 @@ elseif ($_SESSION['level'] == 2)
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cryptex</title>
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/bs.sticky.footer.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 
+<style>
+/* Sticky footer styles */
+html,
+body {
+ height: 100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+ height: auto !important;
+ min-height: 100%;
+ height: 100%;
+
+ /* Negative indent footer by it's height */
+ margin-bottom: -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+ height: 40px;
+}
+
+#footer {
+ padding-top: 10px;
+
+ right: 15px;
+ background-color: #efefef;
+}
+
+@media (max-width: 767px) {
+  /* Site-wide footer */
+ #footer {
+   display: none;
+ }
+ /* Signin button on the home page */
+ #signinBtn {
+  width: 100%;
+ }
+}
+
+</style>
 
 <body>

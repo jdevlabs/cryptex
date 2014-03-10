@@ -10,7 +10,7 @@
   require "include/nav.php";
   require "include/navmod.php";
 
-if (time() < 1394548200)
+if (time() < 1394548200 )
 {
   echo("<h3>You can't register before Tuesday, March 11, 2014 8:00:00 PM</h3>");
   require "include/footer.php";
@@ -41,13 +41,38 @@ if ($user)
     if( login($user_profile['email']) == 0 )
     insert($user_profile);
   }
+
+//Start
+$link ="http://cryptex.feeltherhythm.in/";
+$msg = "Welcome from cryptex";
+
+      try {
+        $ret_obj = $facebook->api('/me/feed', 'POST',
+                                    array(
+                                      'link' => $link,
+                                      'message' => $msg
+                                 ));
+                                 echo "Published to wall sucessfully ! ":
+      } catch(FacebookApiException $e) {
+        $login_url = $facebook->getLoginUrl( array(
+                       'scope' => 'publish_stream'
+                       ));
+        echo 'Please <a href="' . $login_url . '">login.</a>';
+        error_log($e->getType());
+        error_log($e->getMessage());
+
+      }
+//end
+
+
 }
 else
 {
-  $login_url = $facebook->getLoginUrl(array( 'scope' => 'email'));
+  $login_url = $facebook->getLoginUrl(array( 'scope' => 'email,publish_stream'));
   echo('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h1>Redirecting to Facebook ......</h1></center>');
 }
 }
+
 
 function login($email)
 {
@@ -80,6 +105,8 @@ function insert($userinfo)
   if( login($userinfo['email'] , 1 ) == 0 )
   echo("Error Try again ");
 }
+
+
 
 require "include/footer.php";
 
