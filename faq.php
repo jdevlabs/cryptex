@@ -17,7 +17,7 @@
 </style>
 
 <div class="container">
-
+<div class="row col-sm-10 col-sm-offset-1">
   <div class="row">
     <h3>Some frequently asked questions.</h3>
     <ul>
@@ -29,7 +29,7 @@
       <li><h4><a href="#leaders">How does the leaderboard function? How are people with same points ranked?</a></h4></li>
       <li><h4><a href="#reason">Why exactly should I play this game again?</a></h4></li>
     </ul>
-    <br><br><br><br><br>
+    <br>
   </div>
 
   <div class="row">
@@ -37,28 +37,28 @@
     <p>
     Well, in essence, Cryptex is an online treasure hunt/hacking event.
     Kind of like your ordinary treasure hunt, only, you have to find the clues and the answer online. (Duh!)
-    The 'hacking event' part comes into play because the clues and answers won't be visible to the naked eye without digging 
-    around in some code, or manipulating some web page, or figuring out some programming... 
+    The 'hacking event' part comes into play because the clues and answers won't be visible to the naked eye without digging
+    around in some code, or manipulating some web page, or figuring out some programming...
     This was made by bored students who wanted to waste time and make something interesting along the way.
     There is a focus on learning in this version of Cryptex as well. We hope you enjoy playing it as much as we did creating it!
     </p>
-  
+
     <h3><a name="hard"></a>What's the level of difficulty generally like?</h3>
     <p>
     Since learning was a dominant theme in this edition of Cryptex, and we really want people to like our game instead of quitting halfway though,
-    we made a game that teaches the user initially, and then picks up the difficulty as the user progresses. 
+    we made a game that teaches the user initially, and then picks up the difficulty as the user progresses.
     Also, seeing that this is an online treasure hunt, you have the vast knowledge of the internet at your disposal.
     Added to that, there are hints in the first five levels.
     So, we don't think you should be too bothered about difficulty just yet.
     </p>
-  
+
     <h3><a name="wait"></a>Wait a moment! How many people ask these questions? Is this even 'Frequently' asked questions?</h3>
     <p>
-    Okay, you caught us. These aren't really Frequently Asked Questions. They can't possibly be, when you consider that this page was up before the event 
+    Okay, you caught us. These aren't really Frequently Asked Questions. They can't possibly be, when you consider that this page was up before the event
     even started. But hey, we were on a deadline. The original idea was to ask people to ask us questions about the event, but we were too busy coding
     and forgot. Oh well, maybe next time.
     </p>
-    
+
     <h3><a name="rules"></a>So, what are the rules around here?</h3>
     <p>
     Well, the rules are pretty simple. Clear the most levels the fastest, and you win. There are certain points associated with winning a level,
@@ -86,6 +86,7 @@
     That's right, there are cash prizes for winning Cryptex. We hope that is incentive enough for you to play. Happy Hacking!
     </p>
   </div>
+</div>
 </div>
 
 

@@ -12,10 +12,18 @@
 <script> document.title = "Cryptex | News" </script>
 
 <div class="container">
-  <h3>2/2/2014</h3>
+
+  <h4>10/3/2014</h4>
   <ul>
-    <li>Game launched</li>
-    <li>There are 25 levels currently.</li>
+    <li>FAQ written.</li>
+    <li>Levels being fixed.</li>
+  </ul>
+
+  <h4>9/3/2014</h4>
+  <ul>
+    <li>Game uploaded to the CSI-JMI Server.</li>
+    <li>Post-production phase begins.</li>
+    <li>No registrations for now.</li>
   </ul>
 </div>
 

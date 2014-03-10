@@ -83,25 +83,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <a class="close" data-dismiss="modal">×</a>
-        <h3>This is Cryptex 2014, Welcome.</h3>
+        <h3>Welcome to Cryptex</h3>
       </div>
       <div class="modal-body">
-        <h4>Here are some rules , should they apply to you</h4>
         <p>
-          Acceptable
-          hacking this site.
-          bragging in front of your friends.
-          Helping your friends Indirectly ,by hinting your approach to a level or mocking their poor analytical skills
-          Unacceptable
-          Disclosing the hints to levels , either online or to a friend
-          Posting the answers online , yes even on facebook
-
-          Be sure to tell your friends , and make sure they tell thiers
-          Let the game begin!
+          Throughout the game you will find references - some direct, others cryptic - to the wondrous world of Harry Potter.
+          Though it has nothing to do with hacking or anything even remotely related to computers. The authors are just
+          nostalgic about it. So in case you are having a hard time to understand things, blame J.K.Rowling <3.
         </p>
       </div>
       <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">I Understand</a>
+        <button data-dismiss="modal" class="btn btn-success">Let's get started!</button>
       </div>
     </div>
   </div>

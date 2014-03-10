@@ -12,7 +12,7 @@
 <script> document.title = "Cryptex | Leaderboard" </script>
 <div class="container">
 <div class ="panel panel-default">
-  <div class="panel-heading" align="center">Leaderboard: The Top 25 Hackers</div>
+  <div class="panel-heading" align="center">Leaderboard: The Top 35 Hackers</div>
     <table class="table table-hover">
     <thead>
       <tr>

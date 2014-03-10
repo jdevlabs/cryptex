@@ -4,10 +4,14 @@
 
   <div id="footer">
     <div class="container">
-      <!-- Jamia Developer Labs -->
+      <!--
+      Jamia Developer Labs :
+      If code excites you as much as it does us, we will be open-sourcing the entire code of cryptex once the contest ends.
+      It will be available here: https://github.com/orgs/jdevlabs/cryptex
+      -->
       <p class="muted credit" align="right">Designed by <a href="https://github.com/orgs/jdevlabs" target="_blank">JDevLabs</a> for Algorhythm'14</p>
-      <!-- <p class="muted credit">
-      Developed By:
+      <!--
+      Developers:
       <a href="https://github.com/dufferzafar">Shadab Zafar</a>,
       <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
       <a href="https://github.com/rootAvish">Avishkar Gupta</a>,
@@ -15,7 +19,7 @@
       <a href="https://github.com/kwikadi">Aditya Kumar</a>,
       <a href="https://github.com/sharanagrawal">Sharan Agrawal</a>,
       <a href="https://github.com/trigonaminima">Shivam Rana</a>
-      </p> -->
+      -->
     </div>
   </div>
 
