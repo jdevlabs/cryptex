@@ -76,23 +76,18 @@ To read git's man pages do:
     * Test logins
     * Post to profile?
 
-* Password Compat
-    * Hashing
-
 ----------------------------------
 
 **Aditya**
 
 * Contact: setup email and #cryptex
-* News + FAQ
+
 * Modal on 1st Level
     * Tell your friends
 
 * Levels: Fillers + Hints
-* Harry Potter Data ?
-* Level 12 -> Italicized Alphabets.
 
-* Don't give hint, just deduct score?
+* Harry Potter Data ?
 
 ----------------------------------
 
