@@ -11,6 +11,9 @@ order deny,allow
 deny from all
 </Limit>
 
+# Disable Directory Listing
+Options -Indexes
+
 # compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
