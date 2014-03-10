@@ -32,7 +32,7 @@ if (isset($_POST['username'], $_POST['fullname'], $_POST['gender'], $_POST['pass
       }
       else
       {
-        $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`,`gender`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."','".$sex."')";
+        $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`, `gender`, `admin`) VALUES ('".$uName."','".$pass."' , '".$email."' , '".$name."', '".$sex."' , '0')";
         $r1 =  mysql_query($q);
         $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `hints`, `qlevel`, `hlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '0', '0', '', '')";
         $r2 =  mysql_query($q);

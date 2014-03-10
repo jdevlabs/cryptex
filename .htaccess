@@ -2,8 +2,8 @@
 
 
 RewriteEngine On
-RewriteRule ^([a-zA-Z0-9]+)$ index.php?pid=$1
-RewriteRule ^([a-zA-Z0-9]+)/$ index.php?pid=$1
+RewriteRule ^([a-zA-Z0-9]+)$ index.php
+RewriteRule ^([a-zA-Z0-9]+)/$ index.php
 
 
 <Limit GET POST>
@@ -17,8 +17,8 @@ deny from all
 </Limit>
 
 
-AuthUserFile /home/thinkdif/public_html/_vti_pvt/service.pwd
-AuthGroupFile /home/thinkdif/public_html/_vti_pvt/service.grp
+AuthUserFile /home/csijmico/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/csijmico/public_html/_vti_pvt/service.grp
 
 AddType application/x-javascript .js
 AddType application/vnd.ms-fontobject .eot
