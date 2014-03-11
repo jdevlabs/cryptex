@@ -9,7 +9,7 @@
   require "include/nav.php";
   require "include/navmod.php";
 
-  if (time() < 1394508600)
+  if (time() < 1394551800)
   {
     echo("<center><h3>You can't register before Tuesday, March 11, 2014 9:00:00 PM</h3></center>");
     require "include/footer.php";

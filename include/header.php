@@ -45,6 +45,8 @@ elseif ($_SESSION['level'] == 2)
   <link rel="icon" type="image/png" href="assets/img/crypt.png">
 </head>
 
+<body>
+
 <style>
 /* Sticky footer styles */
 html,
@@ -85,7 +87,4 @@ body {
   width: 100%;
  }
 }
-
 </style>
-
-<body>

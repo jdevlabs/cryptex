@@ -6,21 +6,10 @@
     </div>
   </div>
 <?php if ($_SESSION['loggedin'] != 1 ) { ?>
-  <div class="row col-sm-offset-1" style="margin-top: 100px;" >
-    <form id="submitForm" method="POST">
-      <div align="center" class="col-sm-3">
-        <label style="margin-top: 21px; margin-right: -30px;">Let's Login Hackerboy!</label>
+  <div class="row" style="margin-top: 100px;" >
+      <div align="center">
+        <a href="facebook.php"><button class="btn btn-success btn-lg btn-default">Login with Facebook</button></a>
       </div>
-      <div class="col-sm-3">
-        <input style="margin-top: 15px;" name="user" type="text" placeholder="Your Username" class="form-control"  required autofocus>
-      </div>
-      <div class="col-sm-3">
-        <input style="margin-top: 15px;" name="pass" type="password" placeholder="Your Password" class="form-control" required>
-      </div>
-      <div class="col-sm-1">
-        <button id="signinBtn"type="submit" style="margin-top: 15px;" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
   </div>
 <?php } ?>
   </div>

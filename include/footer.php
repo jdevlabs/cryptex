@@ -6,8 +6,8 @@
     <div class="container">
       <!--
       Jamia Developer Labs :
-      If code excites you as much as it does us, we will be open-sourcing the entire code of cryptex once the contest ends.
-      It will be available here: https://github.com/orgs/jdevlabs/cryptex
+
+      We are a group of people who believe in DOING stuff.
       -->
       <p class="muted credit" align="right">Designed by <a href="https://github.com/orgs/jdevlabs" target="_blank">JDevLabs</a> for Algorhythm'14</p>
       <!--
@@ -19,6 +19,9 @@
       <a href="https://github.com/kwikadi">Aditya Kumar</a>,
       <a href="https://github.com/sharanagrawal">Sharan Agrawal</a>,
       <a href="https://github.com/trigonaminima">Shivam Rana</a>
+
+      If code excites you as much as it does us, we will be open-sourcing the entire code of cryptex once the contest ends.
+      It will be available here: https://github.com/orgs/jdevlabs/cryptex
       -->
     </div>
   </div>
@@ -29,8 +32,6 @@
   <script type="text/javascript" src="assets/js/bootbox.min.js"></script>
   <script type="text/javascript" src="assets/js/vibrate.js"></script>
 
-  <script type="text/javascript" src="assets/js/_login.js"></script>
-  <script type="text/javascript" src="assets/js/_register.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
   <script type="text/javascript" src="assets/js/_hints.js"></script>
   <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script>

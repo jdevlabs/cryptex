@@ -63,8 +63,8 @@
             <!-- <p>Don't have a problem but still want to talk to us? We'll love to hear from you.</p> -->
           </div>
           <div class="modal-body">
-            <p>You can email us at: <a href="mailto:jdevlabs.cryptex@gmail.com">jdevlabs.cryptex@gmail.com</a></p>
-            <p>In case you need instant solution to your problems, join the <a href="">#cryptex</a> channel at freenode.</p>
+            <p>You can email us at: <a href="mailto:cryptex.jdevlabs@gmail.com">cryptex.jdevlabs@gmail.com</a></p>
+            <p>In case you need instant solutions to your problems, join the <a href="">#cryptex</a> channel at freenode.</p>
           </div>
           <div class="modal-footer">
             <div class="form-group">
