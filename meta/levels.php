@@ -18,23 +18,28 @@ $levelScore[2] = 1300;
 
 // Level 3
 $hint[3] = <<<'EOD'
-Julius Ceaser was a great man, wasn't he?
+View Source. Figure out JS. Easy peesy! <br><br>
+In case you are having a hard time doing that, I dont think I'd be able to help you. <br><br>
+But maybe <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">this</a> can.
 EOD;
-$hintCost[3] = 500;
-$levelScore[3] = 1000;
+$hintCost[3] = 700;
+$levelScore[3] = 1600;
 
 // Level 4
 $hint[4] = <<<'EOD'
+What do you do when a questions doesn't have the right choices. <br><br>
+Simple. Change the choices, Harry. <br><br>
+Just CHANGE them.
 EOD;
-$hintCost[4] = 700;
-$levelScore[4] = 1400;
+$hintCost[4] = 1000;
+$levelScore[4] = 2000;
 
 // Level 5
 $hint[5] = <<<'EOD'
 
 EOD;
-$hintCost[5] = 1000;
-$levelScore[5] = 2000;
+$hintCost[5] = 1300;
+$levelScore[5] = 2500;
 
 /*
 $levelData[1]['hint'] =

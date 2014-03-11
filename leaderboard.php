@@ -35,7 +35,7 @@
         echo "<td>" . $row['name'] . "</td>";
         echo "<td>" . $row['level'] . "</td>";
         echo "<td>" . $row['score'] . "</td>";
-        echo "<td>" . date('j M, g:i A', $row['reached']) . "</td>";
+        echo "<td>" . date('j M, g:i A', $row['reached']+34200) . "</td>";
         echo "<td>" . $row['hints'] . "</td>";
         echo "</tr>";
         $i++;

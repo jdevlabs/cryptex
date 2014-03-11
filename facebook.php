@@ -40,7 +40,7 @@
         $result = mysql_query("SELECT `userid`,`username` FROM user WHERE `email` = '".$user_profile['email']."'");
         if (mysql_num_rows($result) == 0)
         {
-          $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`, `gender`, `admin`) VALUES ('".$user_profile['first_name']." ".$user_profile['last_name']."',' ' , '".$user_profile['email']."' , '".$user_profile['first_name']." ".$user_profile['last_name']."', '' , '0')";
+          $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`, `gender`, `admin`) VALUES ('".$user_profile['first_name']." ".$user_profile['last_name']."','".$user."' , '".$user_profile['email']."' , '".$user_profile['first_name']." ".$user_profile['last_name']."', '' , '0')";
           $r1 =  mysql_query($q);
 
           $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `hints`, `qlevel`, `hlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '0', '0', '', '')";

@@ -26,9 +26,12 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p id="quesData">
-        Nearly-Headless Nick was learning to code in <b>Javascript</b>. <br><br>
-        His current chapter is <b>Conditionals</b> <br><br>
-        Help him solve Question no 3.
+        Harry enters the room to find Seamus and Dean studying for the upcoming <a href="http://harrypotter.wikia.com/wiki/Nastily_Exhausting_Wizarding_Test">N.E.W.Ts</a> <br><br>
+        There has been a new course added titled "Beginners' Javascript". <br><br>
+        Now, pyrotechnics are an easy stuff for Seamus but JS? It's driving him nuts. <br><br>
+        And Dean still thinks Javascript has something to do with Java. <br><br>
+        They have been trying to find out the answer to this level for like 19 minutes.<br><br>
+        I know you can do better than that!
       </p>
       <hr>
     </div>

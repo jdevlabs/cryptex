@@ -13,7 +13,10 @@
 
 <div class="container">
   <div class="row">
-    <h4>Some boring stuff goes here.</h4>
+    <center>
+      <h4>This is a hacking contest, for god's sakes.</h4>
+      <h5>Just do your thing!</h5>
+    </center>
   </div>
 </div>
 

@@ -30,7 +30,11 @@
 
           <div class="control-group">
             <label class="col-sm-6 control-label">The number of horcruxes is:</label>
+          <?php if ($wrongAns == 1) { ?>
+            <div class="col-sm-4 controls has-error">
+          <?php } else { ?>
             <div class="col-sm-4 controls">
+          <?php } ?>
               <select name="horcrux" class="form-control">
                 <option>6</option>
                 <option>0</option>
@@ -41,7 +45,11 @@
 
           <div class="control-group">
             <label class="col-sm-6 control-label">Draco Dormiens Nunquam ...?</label>
+          <?php if ($wrongAns == 1) { ?>
+            <div class="col-sm-4 controls has-error">
+          <?php } else { ?>
             <div class="col-sm-4 controls">
+          <?php } ?>
               <select name="moto" class="form-control">
                 <option>Sinister</option>
                 <option>Veritas</option>
