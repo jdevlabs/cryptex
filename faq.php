@@ -62,7 +62,7 @@
     <h3><a name="rules"></a>So, what are the rules around here?</h3>
     <p>
     Well, the rules are pretty simple. Clear the most levels the fastest, and you win. There are certain points associated with winning a level,
-    taking hints, and so on and so forth, but that is boring. So we put all the 'serious' info in a separate Rules page. You can find it at (??).
+    taking hints, and so on and so forth, but that is boring. So we put all the 'serious' info in a separate Rules page. You can find it <a href="rules.php">here</a>.
     </p>
 
     <h3><a name="levels"></a>How many levels does Cryptex have?</h3>

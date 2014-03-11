@@ -80,13 +80,10 @@ To read git's man pages do:
 
 **Aditya**
 
-* Contact: setup email and #cryptex
-
 * Modal on 1st Level
-    * Tell your friends
+* Tell your friends
 
 * Levels: Fillers + Hints
-
 * Harry Potter Data ?
 
 ----------------------------------

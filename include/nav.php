@@ -19,6 +19,7 @@
       <li class="divider"></li>
       <li><a href="news.php"><i class="glyphicon glyphicon-bullhorn"></i> News</a></li>
       <li><a href="faq.php"><i class="glyphicon glyphicon-question-sign"></i> FAQ</a></li>
+      <li><a href="rules.php"><i class="glyphicon glyphicon-ok"></i> Rules</a></li>
       <li><a href="leaderboard.php"><i class="glyphicon glyphicon-list"></i> Leaderboard</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
