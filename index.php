@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
   require_once "config/connect.php";
   require_once "config/session.php";
 
@@ -34,4 +36,6 @@
 
   // Ends HTML; Loads JS
   require "include/footer.php";
+
+ob_end_flush();
 ?>

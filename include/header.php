@@ -1,7 +1,6 @@
 <?php
-// Todo: PP -> Fix level numbers
-// 11th level: Cookies + Ceaser Cipher
-if ($_SESSION['level'] == 1)
+// 5th level: Cookies + Ceaser Cipher
+if ($_SESSION['level'] == 5)
 {
   if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
@@ -15,10 +14,10 @@ if ($_SESSION['level'] == 1)
     $ques = getField("gamedata", "ques", $_SESSION['userid']);
 
   //Expires in 30 days, arbitrarily chosen - Would be unset by then
-  setcookie("ButBrutusIsAnHonourableMan", $ques, time()+60*60*24*30);
+  setcookie("ButBrutusIsAnHonourableMan", $ques, time()+60*60*24*300);
 }
-// 12th level: Italicized Text + Response Headers + XOR
-elseif ($_SESSION['level'] == 2)
+// 6th level: Italicized Text + Response Headers + XOR
+elseif ($_SESSION['level'] == 6)
 {
   if ($_SESSION['level'] != $_SESSION['qlevel'])
   {

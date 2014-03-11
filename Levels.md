@@ -57,6 +57,9 @@ Let's Hack:
 * [Hax.tor hu](http://hax.tor.hu/warmup1/)
 * [Hack this site](http://www.hackthissite.org/missions/basic/)
 
+* http://doxbindtelxceher.onion/pgp.txt
+* http://doxbindtelxceher.onion/faq.php
+
 Capture The Flags:
 
 * [Felicity - BreakIn](http://felicity.iiit.ac.in/threads/events/break-in/)

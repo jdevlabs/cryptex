@@ -27,7 +27,8 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        Count the number of '<?php echo $ques ?>' in the file that google loves. <br>
+        Count the number of '<?php echo $ques ?>' in the file that google loves. <br><br>
+        Wondering why there isn't a Harry Potter story attached to this question - I was busy fighting ROBOTS.
       </p>
       <hr>
     </div>

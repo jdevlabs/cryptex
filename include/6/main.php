@@ -11,7 +11,8 @@
       <p>
         "Very nice," said Wood, his eyes glinting. "I see what M<i>c</i>Gonagall meant … you really are a natural. I'm just going to teach you the rules this evening, then you'll be joining team practice three times a wee<i>k</i>."</p>
       <p>
-        <i>He</i> opened the cr<i>a</i>te. Insi<i>de</i> were fou<i>r</i> different sized ball<i>s</i>.
+        <i>He</i> opened the cr<i>a</i>te. Insi<i>de</i> were fou<i>r</i> different sized ball<i>s</i>. <br><br>
+         Or were they "9"?
       </p>
       <hr>
     </div>

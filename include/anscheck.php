@@ -20,9 +20,9 @@ if ($_SESSION['loggedin'] == 1)
       // mysql_query("UPDATE gamedata SET level = '1', score = '1000', reached = '" . time() ."' WHERE userid = $uid");
 
       // Cleanup after levels
-      if ($level == 11)
+      if ($level == 5)
         setcookie("ButBrutusIsAnHonourableMan", $ques, time()-1000);
-      elseif ($level == 12)
+      elseif ($level == 6)
         header_remove("ABBarPlusABarB");
 
       $wrongAns = 0;

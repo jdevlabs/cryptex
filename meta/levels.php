@@ -36,10 +36,28 @@ $levelScore[4] = 2000;
 
 // Level 5
 $hint[5] = <<<'EOD'
-
+Real game starts. <br><br>
+There won't be any hints now. <br><br>
+Good Luck!
 EOD;
-$hintCost[5] = 1300;
-$levelScore[5] = 2500;
+$hintCost[5] = 100;
+$levelScore[5] = 3000;
+
+// Level 6
+$hint[6] = <<<'EOD'
+Real game starts. <br><br>
+There won't be any hints now. <br><br>
+Good Luck!
+EOD;
+$hintCost[6] = 300;
+$levelScore[6] = 4000;
+
+// Level 7
+$hint[7] = <<<'EOD'
+What you are seeing is a Monoalphabetic Substituion Cipher.
+EOD;
+$hintCost[7] = 1500;
+$levelScore[7] = 5000;
 
 /*
 $levelData[1]['hint'] =
