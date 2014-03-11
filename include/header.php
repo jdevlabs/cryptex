@@ -42,6 +42,7 @@ elseif ($_SESSION['level'] == 2)
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cryptex</title>
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="assets/img/crypt.png">
 </head>
 
 <style>

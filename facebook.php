@@ -9,7 +9,7 @@
   require "include/nav.php";
   require "include/navmod.php";
 
-  if (time() < 1394548200)
+  if (time() < 1394508600)
   {
     echo("<center><h3>You can't register before Tuesday, March 11, 2014 9:00:00 PM</h3></center>");
     require "include/footer.php";
@@ -36,36 +36,33 @@
 
       if (!empty($user_profile))
       {
-        if(login($user_profile['email']) == 0 )
+        // User does not already exists!
+        $result = mysql_query("SELECT `userid`,`username` FROM user WHERE `email` = '".$user_profile['email']."'");
+        if (mysql_num_rows($result) == 0)
         {
-          insert($user_profile);
+          $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`, `gender`, `admin`) VALUES ('".$user_profile['first_name']." ".$user_profile['last_name']."',' ' , '".$user_profile['email']."' , '".$user_profile['first_name']." ".$user_profile['last_name']."', '' , '0')";
+          $r1 =  mysql_query($q);
+
+          $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `hints`, `qlevel`, `hlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '0', '0', '', '')";
+          $r2 =  mysql_query($q);
+
+          login($user_profile['email']);
+
+          postMsg("I am playing Cryptex! Think you can beat me?","http://cryptex.feeltherhythm.in/");
+        }
+        else
+        {
+          login($user_profile['email']);
         }
       }
     }
     else
     {
       $login_url = $facebook->getLoginUrl(array( 'scope' => 'email,publish_stream'));
-      echo('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h3>Redirecting to Facebook...</h3></center>');
+      echo('<meta http-equiv="refresh" content="0; URL='.$login_url.'"><center><h5>Initializing the awesome...</h5></center>');
     }
 
     require "include/footer.php";
-  }
-
-  function postMsg($msg, $link)
-  {
-    $link ="http://cryptex.feeltherhythm.in/";
-    $msg = "I am playing Cryptex! Think you can beat me?";
-
-    try
-    {
-      $ret_obj = $facebook->api('/me/feed', 'POST', array('link' => $link,'message' => $msg));
-      echo "Published to wall sucessfully ! ";
-    }
-    catch(FacebookApiException $e)
-    {
-      $login_url = $facebook->getLoginUrl(array('scope' => 'publish_stream'));
-      echo 'Please <a href="' . $login_url . '">login.</a>';
-    }
   }
 
   function login($email)
@@ -88,31 +85,26 @@
       $_SESSION['score'] = $row[1];
       $_SESSION['hints'] = $row[2];
 
-      echo '<meta http-equiv="refresh" content="0; URL=index.php"><center><h1>Logged In , Redirecting to home</h1></center>' ;
+      echo '<meta http-equiv="refresh" content="0; URL=index.php"><center><h5>Almost done!</h5></center>' ;
     }
-
     else
+    {
+      echo "Login Failed!";
       return 0;
+    }
   }
 
-  function insert($userinfo)
+  function postMsg($msg, $link)
   {
-    $q = "INSERT INTO `user`(`username`, `pass` , `email` , `name`, `gender`, `admin`) VALUES ('".$userinfo['first_name']." ".$userinfo['last_name']."',' ' , '".$userinfo['email']."' , '".$userinfo['first_name']." ".$userinfo['last_name']."', '' , '0')";
-    $r1 =  mysql_query($q);
-
-    $q = "INSERT INTO `gamedata`(`level`, `score`, `reached`, `hints`, `qlevel`, `hlevel`, `ques`, `ans`) VALUES ('1', '1000', " . time() . ", '0', '0', '0', '', '')";
-    $r2 =  mysql_query($q);
-
-    if ($r1 and $r2)
+    try
     {
-      if( login($userinfo['email']) == 0 )
-        echo("An error occurred while inserting into db. <br> Please Try Again Later :(");
-      else
-        postMsg("Sha", "Link");
+      $ret_obj = $facebook->api('/me/feed', 'POST', array('link' => $link,'message' => $msg));
+      echo "Published to wall sucessfully ! ";
     }
-    else
+    catch(FacebookApiException $e)
     {
-      echo("An error occurred while inserting into db. <br> Please Try Again Later :(");
+      $login_url = $facebook->getLoginUrl(array('scope' => 'publish_stream'));
+      echo 'Please <a href="' . $login_url . '">login.</a>';
     }
   }
 

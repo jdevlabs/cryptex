@@ -76,6 +76,8 @@ To read git's man pages do:
     * Test logins
     * Post to profile?
 
+* Remove Logout Ajax Call
+
 ----------------------------------
 
 **Aditya**
