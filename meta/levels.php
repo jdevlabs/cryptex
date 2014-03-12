@@ -68,7 +68,6 @@ EOD;
 $hintCost[8] = 300;
 $levelScore[8] = 6000;
 
-
 // Level 9
 $hint[9] = <<<'EOD'
 Real game starts. <br><br>
@@ -78,7 +77,6 @@ EOD;
 $hintCost[9] = 300;
 $levelScore[9] = 7000;
 
-
 // Level 10
 $hint[10] = <<<'EOD'
 Real game starts. <br><br>
@@ -87,6 +85,16 @@ Good Luck!
 EOD;
 $hintCost[10] = 300;
 $levelScore[10] = 8000;
+
+// Level 11
+$hint[11] = <<<'EOD'
+Real game starts. <br><br>
+There won't be any hints now. <br><br>
+Good Luck!
+EOD;
+$hintCost[11] = 300;
+$levelScore[11] = 8000;
+
 
 /*
 $levelData[1]['hint'] =

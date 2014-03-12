@@ -18,6 +18,7 @@ Onto Crypto:
 * Substitution cipher -> robots.txt
 * QR Code -> Onion Address -> Data(MD5)
 * Exif Data + Text at the end of image
+* Browser User Agent + MD5 Decrypt
 
 * Image -> Zip -> mp3 (order)
 

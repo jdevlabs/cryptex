@@ -1,9 +1,16 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  if ($_SESSION['level'] != $_SESSION['qlevel'])
+  if ($_SESSION['level'] == $_SESSION['qlevel'])
   {
-    updateField("gamedata", "ans", "Congratulations", $_SESSION['userid']);
+    // $name = strtolower(getRandomFamily('Black'));
+    // $ques = strMorse($name);
+
+    // strToPNG($ques, "./Image.png");
+
+    // Save to db.
+    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
+    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
@@ -14,15 +21,10 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-<?php if (strtolower($_SERVER['HTTP_USER_AGENT']) == "kreacher") { ?>
-        Kudos! You finally have the right browser. <br><br>
-        The answer is: 2e781e46cd473612f108b29a62e711ab
-<?php } else { ?>
-        I hate the browser you are using. <br><br>
-        You won't see the real question till you use the correct one. <br><br>
-        How about the first word of chapter twenty four of OOTP?
-<?php } ?>
+        We are in the process of adding more levels. <br><br>
+        Sorry for any inconvenience we might have caused.
       </p>
+      <img src="" alt="">
       <hr>
     </div>
     <div class="row col-sm-offset-2">
