@@ -17,8 +17,8 @@ Onto Crypto:
 * Italicized alphabets -> Response headers -> XOR (Key?)
 * Substitution cipher -> robots.txt
 * QR Code -> Onion Address -> Data(MD5)
+* Exif Data + Text at the end of image
 
-* Text at the end of image
 * Image -> Zip -> mp3 (order)
 
 * Morse codes (Use 'ls' to give file)
@@ -37,8 +37,6 @@ Let's Hack:
 ### Research
 
 * Audio Steganography
-* Exif Metadata - GD in PHP
-
 * Base64
 
 * Send a mail from dumbledore@hogwarts.edu to voldemort@gmail.com

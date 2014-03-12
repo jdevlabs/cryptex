@@ -1,23 +1,11 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  // The ques has not yet been generated.
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
+  if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    $name = strtolower(getRandomFamily('Black'));
-    $ques = strMorse($name);
-
-    strToPNG($ques, "./Image.png");
-
     // Save to db.
-    updateField("gamedata", "ques", $ques, $_SESSION['userid']);
-    updateField("gamedata", "ans", $name, $_SESSION['userid']);
+    updateField("gamedata", "ans", "Lorcan Lysander", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
-  }
-  else
-  {
-    // Get Old question from database.
-    $ques = getField("gamedata", "ques", $_SESSION['userid']);
   }
 ?>
 
@@ -27,9 +15,10 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        What the morse?
+        "Open your eyes, look within. Are you satisfied with the life you're living?"
+        -- Bob Marley
       </p>
-      <img src="" alt="">
+      <img src="within.jpg" style="display: none;">
       <hr>
     </div>
     <div class="row col-sm-offset-2">
