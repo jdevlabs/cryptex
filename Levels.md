@@ -11,7 +11,7 @@ Ol' HTML:
 * Javascript output
 * Edit HTML: Inspect element ('bacon' from the list)
 
-* QR Code -> Onion Address -> Data?
+* QR Code -> Onion Address -> Data(MD5)
 
 Onto Crypto:
 
@@ -19,9 +19,10 @@ Onto Crypto:
 * Italicized alphabets -> Response headers -> XOR (Key?)
 * Substitution cipher -> robots.txt
 
-* Morse codes (Use 'ls' to give file)
 * Text at the end of image
 * Image -> Zip -> mp3 (order)
+
+* Morse codes (Use 'ls' to give file)
 
 Let's Hack:
 

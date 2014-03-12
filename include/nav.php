@@ -43,7 +43,6 @@
           <p id="avScore"><i class="glyphicon glyphicon-star"></i><strong> Score :</strong><?php echo '  ' . $_SESSION['score'];?></p>
           <p id="avHints"><i class="glyphicon glyphicon-gift"></i><strong> Hints Used :</strong><?php echo '  ' . $_SESSION['hints'];?></p>
           <li class="divider"></li>
-          <a href="" id="resetProgress"><i class="glyphicon glyphicon-list"></i> Reset Progress</a>
           <a href="" id="logout" style="margin-top: 15px;"><i class="glyphicon glyphicon-off"></i> Logout</a>
         </ul>
       </li>

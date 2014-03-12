@@ -12,7 +12,7 @@
 <script> document.title = "Cryptex | Leaderboard" </script>
 <div class="container">
 <div class ="panel panel-default">
-  <div class="panel-heading" align="center">Leaderboard: The Top 35 Hackers</div>
+  <div class="panel-heading" align="center">Leaderboard: The Top 50 Hackers</div>
     <table class="table table-hover">
     <thead>
       <tr>
@@ -26,7 +26,7 @@
     </thead>
     <tbody>
     <?php
-      $result = mysql_query("SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid AND user.admin <> 1 ORDER BY score DESC,reached DESC LIMIT 35");
+      $result = mysql_query("SELECT * FROM gamedata, user WHERE user.userid = gamedata.userid AND user.admin <> 1 ORDER BY score DESC,reached DESC LIMIT 50");
       $i = 1;
       while($row = mysql_fetch_array($result))
       {

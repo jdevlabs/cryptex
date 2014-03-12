@@ -4,20 +4,20 @@
   // The ques has not yet been generated.
   if ($_SESSION['level'] == $_SESSION['qlevel'])
   {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
+    $name = strtolower(getRandomFamily('Black'));
+    $ques = strMorse($name);
 
-    // strToPNG($ques, "./Image.png");
+    strToPNG($ques, "./Image.png");
 
-    // // Save to db.
-    updateField("gamedata", "ques", "LastLevel", $_SESSION['userid']);
-    updateField("gamedata", "ans", "Kya main GSoC mein select ho paunga?", $_SESSION['userid']);
+    // Save to db.
+    updateField("gamedata", "ques", $ques, $_SESSION['userid']);
+    updateField("gamedata", "ans", $name, $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
   else
   {
     // Get Old question from database.
-    // $ques = getField("gamedata", "ques", $_SESSION['userid']);
+    $ques = getField("gamedata", "ques", $_SESSION['userid']);
   }
 ?>
 
@@ -27,8 +27,7 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
+        What the morse?
       </p>
       <img src="" alt="">
       <hr>

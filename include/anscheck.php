@@ -38,7 +38,7 @@ if ($_SESSION['loggedin'] == 1)
   {
     if (isset($_POST['prophecy'], $_POST['horcrux'], $_POST['moto']))
     {
-      if (($_POST['prophecy'] == "Trelawney") && ($_POST['horcrux'] == "7") && ($_POST['moto'] == "Titillandus"))
+      if ((strtolower($_POST['prophecy']) == "trelawney") && ($_POST['horcrux'] == "7") && (strtolower($_POST['moto']) == "titillandus"))
       {
         updateField("gamedata", "level", $level + 1, $uid);
         updateField("gamedata", "reached", time(), $uid);
