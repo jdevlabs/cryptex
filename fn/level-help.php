@@ -117,4 +117,6 @@ function strToPNG($string, $file)
   imagedestroy($im);
 }
 
+
+
 ?>

@@ -11,13 +11,12 @@ Ol' HTML:
 * Javascript output
 * Edit HTML: Inspect element ('bacon' from the list)
 
-* QR Code -> Onion Address -> Data(MD5)
-
 Onto Crypto:
 
 * Cookies -> Ceaser cipher (Key?)
 * Italicized alphabets -> Response headers -> XOR (Key?)
 * Substitution cipher -> robots.txt
+* QR Code -> Onion Address -> Data(MD5)
 
 * Text at the end of image
 * Image -> Zip -> mp3 (order)
@@ -65,4 +64,3 @@ Capture The Flags:
 
 * [Felicity - BreakIn](http://felicity.iiit.ac.in/threads/events/break-in/)
 * Cognizance - Backdoor
-* 

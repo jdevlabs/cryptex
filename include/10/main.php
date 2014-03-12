@@ -1,10 +1,16 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  // The ques has not yet been generated.
-  if ($_SESSION['level'] != $_SESSION['qlevel'])
+  if ($_SESSION['level'] == $_SESSION['qlevel'])
   {
-    updateField("gamedata", "ans", "7464C734272D8ED72DA4269D3B19F5E9", $_SESSION['userid']);
+    // $name = strtolower(getRandomFamily('Black'));
+    // $ques = strMorse($name);
+
+    // strToPNG($ques, "./Image.png");
+
+    // Save to db.
+    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
+    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
@@ -14,9 +20,11 @@
     <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
-      <center>
-        <img src="qr.png">
-      </center>
+      <p>
+        We are in the process of adding more levels. <br><br>
+        Sorry for any inconvenience we might have caused.
+      </p>
+      <img src="" alt="">
       <hr>
     </div>
     <div class="row col-sm-offset-2">
