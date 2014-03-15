@@ -66,16 +66,14 @@ There won't be any hints now. <br><br>
 Good Luck!
 EOD;
 $hintCost[8] = 300;
-$levelScore[8] = 6000;
+$levelScore[8] = 5000;
 
 // Level 9
 $hint[9] = <<<'EOD'
-Real game starts. <br><br>
-There won't be any hints now. <br><br>
-Good Luck!
+Have you used Base 64 anywhere?
 EOD;
-$hintCost[9] = 300;
-$levelScore[9] = 7000;
+$hintCost[9] = 2000;
+$levelScore[9] = 5000;
 
 // Level 10
 $hint[10] = <<<'EOD'
@@ -84,17 +82,32 @@ There won't be any hints now. <br><br>
 Good Luck!
 EOD;
 $hintCost[10] = 300;
-$levelScore[10] = 8000;
+$levelScore[10] = 5000;
 
 // Level 11
 $hint[11] = <<<'EOD'
+Have you used Base 64 anywhere?
+EOD;
+$hintCost[11] = 300;
+$levelScore[11] = 5000;
+
+// Level 12
+$hint[12] = <<<'EOD'
 Real game starts. <br><br>
 There won't be any hints now. <br><br>
 Good Luck!
 EOD;
-$hintCost[11] = 300;
-$levelScore[11] = 8000;
+$hintCost[12] = 300;
+$levelScore[12] = 5000;
 
+// Level 13
+$hint[13] = <<<'EOD'
+Real game starts. <br><br>
+There won't be any hints now. <br><br>
+Good Luck!
+EOD;
+$hintCost[13] = 300;
+$levelScore[13] = 5000;
 
 /*
 $levelData[1]['hint'] =

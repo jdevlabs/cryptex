@@ -67,9 +67,10 @@
         break;
 
         $r = $i+1;
+        $id = mysql_result($result, $i, 'pass');
         echo "<tr>";
         echo "<td>" . $r . "</td>" ;
-        echo "<td>" . mysql_result($result, $i, 'name')  . "</td>";
+        echo "<td><a href=\"https://facebook.com/profile.php?id=$id\">" . mysql_result($result, $i, 'name')  . "</a></td>";
         echo "<td>" . mysql_result($result, $i, 'level') . "</td>";
         echo "<td>" . mysql_result($result, $i, 'score') . "</td>";
         echo "<td>" . date('j M, g:i A', mysql_result($result, $i, 'reached')+34200) . "</td>";

@@ -9,7 +9,7 @@
   require "include/nav.php";
   require "include/navmod.php";
 
-  if (time() > 0)
+  if (time() < 1)
   {
     echo("<center><h3>You can't register before Wednesday, March 12, 2014 9:00:00 PM</h3></center>");
     require "include/footer.php";
@@ -48,11 +48,33 @@
 
           login($user_profile['email']);
 
-          postMsg("I am playing Cryptex! Think you can beat me?","http://cryptex.feeltherhythm.in/");
+
+	$msg  ="I am playing Cryptex! Think you can beat me? Join at : http://cryptex.feeltherhythm.in/";
+	$link ="http://cryptex.feeltherhythm.in/";
+
+              try{
+    		  $ret_obj = $facebook->api('/me/feed', 'POST', array('link' => $link,'message' => $msg));
+    		  echo "Published to wall sucessfully ! ";
+   	       }catch(FacebookApiException $e)
+   		 {
+   		   $login_url = $facebook->getLoginUrl(array('scope' => 'publish_stream'));
+   		   echo 'Please <a href="' . $login_url . '">login.</a>';
+   		 }
         }
         else
         {
           login($user_profile['email']);
+          $msg  ="I am playing Cryptex! Think you can beat me?";
+	$link ="http://cryptex.feeltherhythm.in/";
+
+              try{
+    		  $ret_obj = $facebook->api('/me/feed', 'POST', array('link' => $link,'message' => $msg));
+    		  echo "Published to wall sucessfully ! ";
+   	       }catch(FacebookApiException $e)
+   		 {
+   		   $login_url = $facebook->getLoginUrl(array('scope' => 'publish_stream'));
+   		   echo 'Please <a href="' . $login_url . '">login.</a>';
+   		 }
         }
       }
     }
@@ -86,6 +108,7 @@
       $_SESSION['hints'] = $row[2];
 
       echo '<meta http-equiv="refresh" content="0; URL=index.php"><center><h5>Almost done!</h5></center>' ;
+
     }
     else
     {

@@ -30,7 +30,7 @@
           <?php } else { ?>
             <div class="controls">
               <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+                  <input name="answer" type="text" class="form-control" placeholder="The answer in upper case is...">
           <?php } ?>
               </div>
             </div>

@@ -1,16 +1,9 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
+  if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
-
-    // strToPNG($ques, "./Image.png");
-
-    // Save to db.
-    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
-    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
+    updateField("gamedata", "ans", "Unicorn", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
@@ -21,10 +14,16 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
+        "Come seek us where our voices sound, <br>
+        We cannot sing above the ground, <br>
+        And while you're searching, ponder this; <br>
+        We've taken what you'll sorely miss, <br>
+        An hour long you'll have to look, <br>
+        And recover what we took, <br>
+        But past an hour - the prospect's black, <br>
+        Too late, it's gone, it won't come back." <br>
       </p>
-      <img src="" alt="">
+      <a href="Secrets.mp3">Download?</a>
       <hr>
     </div>
     <div class="row col-sm-offset-2">
