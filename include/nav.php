@@ -37,7 +37,18 @@
           <strong class="caret"></strong>
         </a>
         <ul class="dropdown-menu col-lg-7" style="padding: 15px; padding-bottom: 15px;">
-          <div class="row col-md-12 col-md-pull-right"><img src="assets/img/avatar.svg" alt="avatar"></div>
+        <?php
+          $n = rand(1,4);
+          if ($n == 1)
+            $avatar = "wolve.svg";
+          elseif ($n == 2)
+            $avatar = "iron.svg";
+          elseif ($n == 3)
+            $avatar = "bat.svg";
+          else
+            $avatar = "wonder.svg";
+        ?>
+          <center><img <?php echo "src=\"assets/img/" . $avatar . "\"" ?> alt="avatar"></center>
           <h4 style="margin-bottom: 15px;"><?php echo $_SESSION['user'];?></h4>
           <p id="avLevel"><i class="glyphicon glyphicon-bookmark"></i><strong> Level :</strong><?php echo '  ' . $_SESSION['level'];?></p>
           <p id="avScore"><i class="glyphicon glyphicon-star"></i><strong> Score :</strong><?php echo '  ' . $_SESSION['score'];?></p>
