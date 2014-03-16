@@ -20,7 +20,10 @@ Onto Crypto:
 * Exif Data + Text at the end of image
 * Browser User Agent + MD5 Decrypt
 
+* Figure Crypting (43wdxz 4edcvgt5 65rdcvb 6tfcgh8uhb 9ijn) -> sochi
+* PPM -> PNG
 * Image -> Zip -> mp3 (order)
+* Simple PE Reversing
 
 * Morse codes (Use 'ls' to give file)
 
