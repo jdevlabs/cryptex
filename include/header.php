@@ -32,6 +32,10 @@ elseif ($_SESSION['level'] == 6)
 
   header("ABBarPlusABarB: " . $ques);
 }
+elseif ($_SESSION['level'] == 15)
+{
+  header("Hint: Send a header named answer with your answer");
+}
 
 ?>
 

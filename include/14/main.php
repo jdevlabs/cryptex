@@ -1,30 +1,24 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
+  if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
-
-    // strToPNG($ques, "./Image.png");
-
-    // Save to db.
-    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
-    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
+    // I'm so hungry I could eat a hippogriff!
+    // SHA1: 15EF1A3EB86575FD7A390AAE55BB6909A8C0C8D8
+    // MD5: 6A387977BAF290B1FD2ABF03DC14127C
+    updateField("gamedata", "ans", "6A387977BAF290B1FD2ABF03DC14127C", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
-
   <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
   <div class="container">
     <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
-      <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
-      </p>
-      <img src="" alt="">
+        <p>
+          Here is a gift for you... <br><br>
+        </p>
+        <a href="voldemort.exec">Voila!</a>
       <hr>
     </div>
     <div class="row col-sm-offset-2">
@@ -38,7 +32,7 @@
           <?php } else { ?>
             <div class="controls">
               <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+                  <input name="answer" type="text" class="form-control" placeholder="The answer in upper-case is...">
           <?php } ?>
               </div>
             </div>

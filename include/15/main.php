@@ -1,18 +1,5 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
-
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
-  {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
-
-    // strToPNG($ques, "./Image.png");
-
-    // Save to db.
-    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
-    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
-    updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
-  }
 ?>
 
   <script> document.title = "Cryptex | Level " <?php echo '+ "' . $_SESSION['level'] . '"' ?> </script>
@@ -21,32 +8,58 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
+        Welcome to the Hogwarts Students Database.<br><br>
+        Your task is to find the wand of Hermione Granger.
       </p>
-      <img src="" alt="">
       <hr>
     </div>
-    <div class="row col-sm-offset-2">
-      <form method="POST">
-        <div class="form-group">
-          <div class="control-group">
-          <?php if ($wrongAns == 1) { ?>
-            <div class="controls has-error">
-              <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Wrong answer. Please try again!">
-          <?php } else { ?>
-            <div class="controls">
-              <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
-          <?php } ?>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <button type="submit" class="btn btn-primary form-control">Submit</button>
-            </div>
-          </div>
+    <div class="row col-sm-8 col-sm-offset-2">
+    <form class="form-horizontal" method="POST">
+      <div class="control-group">
+        <label class="col-sm-1 control-label">Name:</label>
+        <div class="col-sm-3 controls">
+          <input name="sname" type="text" class="form-control" placeholder="Student's Name">
         </div>
-      </form>
+      </div>
+
+      <div class="control-group">
+        <label class="col-sm-2 control-label">Password:</label>
+        <div class="col-sm-3 controls">
+          <input name="spass" type="text" class="form-control" placeholder="Student's Password">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <button type="Submit" class="col-sm-2 col-sm-offset-1 btn btn-primary">Lookup</button>
+      </div>
+    </form>
+    </div>
+
+    <?php
+      if(isset($_POST['sname']) AND !(empty($_POST['sname'])))
+      {
+        $q = "SELECT * FROM injection WHERE `name` = '".stripcslashes($_POST['sname'])."' AND `pass` = '".stripcslashes($_POST['spass'])."'";
+        $result = mysql_query($q);
+      }
+     ?>
+
+    <div class="row col-sm-8 col-sm-offset-2">
+    <hr>
+    <?php if (mysql_num_rows($result) > 0) { ?>
+    <h4>Record:</h4>
+    <?php
+        while ($row = mysql_fetch_row($result))
+        {
+          echo "Name: " . $row[1] . "<br>";
+          echo "Year:"  . $row[3] . "<br>";
+          echo "Pet:"   . $row[4] . "<br>";
+          echo "Wand:"  . $row[5] . "<br>";
+          echo "<br>";
+        }
+    ?>
+    <?php } else { ?>
+    <h4>You aren't trying harder, I guess.</h4>
+    <?php } ?>
+    <hr>
     </div>
   </div>

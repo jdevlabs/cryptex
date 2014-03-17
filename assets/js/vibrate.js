@@ -30,7 +30,8 @@ jQuery.fn.vibrate = function(conf)
       var rotate = Math.floor(Math.random() * config.spread - (config.spread - 1) / 2); // cheers to erik@birdy.nu for the rotation-idea
       t.css({position: 'relative', left: leftPos +'px', top: topPos +'px', WebkitTransform: 'rotate(' +rotate +'deg)'});
     };
-
+    // Are you looking for something kid?
+    // Try extracting the Album Art and checking it out!
     var doVibration = function ()
     {
       var vibrationInterval = setInterval(vibrate, config.speed);

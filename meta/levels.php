@@ -88,30 +88,38 @@ $levelScore[10] = 5000;
 $hint[11] = <<<'EOD'
 Have you used Base 64 anywhere?
 EOD;
-$hintCost[11] = 300;
+$hintCost[11] = 2000;
 $levelScore[11] = 5000;
 
 // Level 12
 $hint[12] = <<<'EOD'
-Real game starts. <br><br>
-There won't be any hints now. <br><br>
-Good Luck!
+What-if an image is not an image. <br><br>
+Look where and how you type.
 EOD;
-$hintCost[12] = 300;
+$hintCost[12] = 3000;
 $levelScore[12] = 5000;
 
 // Level 13
 $hint[13] = <<<'EOD'
-Real game starts. <br><br>
-There won't be any hints now. <br><br>
-Good Luck!
+Pixies Per Million (PPM)
 EOD;
-$hintCost[13] = 300;
+$hintCost[13] = 2000;
 $levelScore[13] = 5000;
 
-/*
-$levelData[1]['hint'] =
-$levelData[1]['cost'] =
-$levelData[1]['score'] =
-*/
+// Level 14
+$hint[14] = <<<'EOD'
+An exectuable ready to be disassembled.
+EOD;
+$hintCost[14] = 2000;
+$levelScore[14] = 5000;
+
+// Level 15
+$hint[15] = <<<'EOD'
+You have the answer right? <br><br>
+But where do you enter it? <br><br>
+Hooch Everard Abbott Dudley Edgecombe Rookwood Shunpike
+EOD;
+$hintCost[15] = 3000;
+$levelScore[15] = 5000;
+
 ?>

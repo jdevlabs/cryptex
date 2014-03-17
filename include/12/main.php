@@ -1,16 +1,9 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
+  if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
-
-    // strToPNG($ques, "./Image.png");
-
-    // Save to db.
-    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
-    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
+    updateField("gamedata", "ans", "sochi", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
@@ -20,11 +13,9 @@
     <div class="row col-sm-8 col-sm-offset-2" style="margin-top: 100px;">
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
-      <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
-      </p>
-      <img src="" alt="">
+      <center>
+        <img src="hogwarts.png">
+      </center>
       <hr>
     </div>
     <div class="row col-sm-offset-2">
@@ -38,7 +29,7 @@
           <?php } else { ?>
             <div class="controls">
               <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+                  <input name="answer" type="text" class="form-control" placeholder="I know what this is...">
           <?php } ?>
               </div>
             </div>

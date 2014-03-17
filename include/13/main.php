@@ -1,16 +1,9 @@
 <?php
   if (!isset($_SESSION['loggedin'])) die("Bitch Please.");
 
-  if ($_SESSION['level'] == $_SESSION['qlevel'])
+  if ($_SESSION['level'] != $_SESSION['qlevel'])
   {
-    // $name = strtolower(getRandomFamily('Black'));
-    // $ques = strMorse($name);
-
-    // strToPNG($ques, "./Image.png");
-
-    // Save to db.
-    updateField("gamedata", "ques", "Last Level", $_SESSION['userid']);
-    updateField("gamedata", "ans", "We are making new levels", $_SESSION['userid']);
+    updateField("gamedata", "ans", "Fleur Delacour", $_SESSION['userid']);
     updateField("gamedata", "qlevel", $_SESSION['level'], $_SESSION['userid']);
   }
 ?>
@@ -21,10 +14,12 @@
       <h5><i class="icon glyphicon glyphicon-fire"></i> Level <?php echo $_SESSION['level']; ?></h5>
       <hr>
       <p>
-        We are in the process of adding more levels. <br><br>
-        Sorry for any inconvenience we might have caused.
+        Hermione had warned Harry about the pixies near Hogsmeade. <br><br>
+        But Harry didn't listen, he picked up the Marauder's Map and went off... <br><br>
+        There were 177 rows containing 62 pixies each. That's a heck lot of pixies. <br><br>
+        And don't forget the map - the Marauder's Map. <br><br>
       </p>
-      <img src="" alt="">
+      <a href="wtf.map">Aaah! the pixies...</a>
       <hr>
     </div>
     <div class="row col-sm-offset-2">
@@ -38,7 +33,7 @@
           <?php } else { ?>
             <div class="controls">
               <div class="col-sm-7">
-                  <input name="answer" type="text" class="form-control" placeholder="Umm... It means...">
+                  <input name="answer" type="text" class="form-control" placeholder="The name is...">
           <?php } ?>
               </div>
             </div>

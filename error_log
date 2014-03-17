@@ -1,0 +1,92 @@
+[18-Mar-2014 15:13:09 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:13:36 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:13:50 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:14:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:14:55 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:15:17 America/New_York] PHP Fatal error:  Call to undefined function getallheaders() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:15:25 America/New_York] PHP Fatal error:  Call to undefined function getallheaders() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:15:28 America/New_York] PHP Fatal error:  Call to undefined function getallheaders() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:15:31 America/New_York] PHP Fatal error:  Call to undefined function getallheaders() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:15:54 America/New_York] PHP Notice:  Undefined index: loggedin in /home/csijmico/public_html/cryptex/config/session.php on line 5
+[18-Mar-2014 15:15:54 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:17:47 America/New_York] PHP Fatal error:  Call to undefined function apache_request_headers() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:17:49 America/New_York] PHP Fatal error:  Call to undefined function apache_request_headers() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:19:44 America/New_York] PHP Fatal error:  Call to undefined function apache_request_headers() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:19:47 America/New_York] PHP Fatal error:  Call to undefined function apache_request_headers() in /home/csijmico/public_html/cryptex/include/anscheck.php on line 57
+[18-Mar-2014 15:20:55 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:20:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:20:55 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:21:00 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:21:00 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:21:00 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:21:07 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:21:07 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:21:07 America/New_York] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/csijmico/public_html/cryptex/include/15/main.php on line 48
+[18-Mar-2014 15:21:07 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:21:21 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:21:21 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:21:21 America/New_York] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/csijmico/public_html/cryptex/include/15/main.php on line 48
+[18-Mar-2014 15:21:21 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:27:01 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:27:01 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:27:01 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:27:10 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:27:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:27:10 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:28:26 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 81
+[18-Mar-2014 15:28:26 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:28:26 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:28:50 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:28:50 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:28:50 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:29:18 America/New_York] PHP Notice:  Undefined index: answer in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:29:18 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:29:18 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:30:03 America/New_York] PHP Notice:  Undefined index: 16 in /home/csijmico/public_html/cryptex/include/navmod.php on line 21
+[18-Mar-2014 15:30:03 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:30:36 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:30:36 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:30:36 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:30:42 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:30:42 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:30:42 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:30:50 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:30:50 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:30:50 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:31:02 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:31:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:31:02 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:31:11 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:31:11 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:31:11 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:31:24 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:31:24 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:31:24 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:31:58 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:31:58 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:31:58 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:33:26 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:33:26 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:33:26 America/New_York] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/csijmico/public_html/cryptex/include/15/main.php on line 49
+[18-Mar-2014 15:33:26 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:33:34 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:33:34 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:33:34 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:33:56 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:33:56 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:33:56 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:34:36 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:34:36 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:34:36 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:34:50 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:34:50 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:34:50 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:35:10 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:35:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 38
+[18-Mar-2014 15:35:10 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:35:34 America/New_York] PHP Notice:  Undefined index: ANSWER in /home/csijmico/public_html/cryptex/include/anscheck.php on line 82
+[18-Mar-2014 15:35:34 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 37
+[18-Mar-2014 15:35:34 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50
+[18-Mar-2014 15:36:06 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/csijmico/public_html/cryptex/config/session.php:30) in /home/csijmico/public_html/cryptex/include/header.php on line 33
+[18-Mar-2014 15:36:06 America/New_York] PHP Notice:  Undefined variable: wrongAns in /home/csijmico/public_html/cryptex/include/6/main.php on line 23
+[18-Mar-2014 15:36:06 America/New_York] PHP Notice:  Undefined variable: firstTime in /home/csijmico/public_html/cryptex/include/footer.php on line 50

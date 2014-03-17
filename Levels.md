@@ -21,16 +21,13 @@ Onto Crypto:
 * Browser User Agent + MD5 Decrypt
 
 * Figure Crypting (43wdxz 4edcvgt5 65rdcvb 6tfcgh8uhb 9ijn) -> sochi
-* PPM -> PNG
+* PPM -> PNG (Hermione spelling?)
+* SQL injection 
+
 * Image -> Zip -> mp3 (order)
 * Simple PE Reversing
 
 * Morse codes (Use 'ls' to give file)
-
-Let's Hack:
-
-* SQL injection 
-  * Customer Name : List record
 
 ### The Last Level
 
