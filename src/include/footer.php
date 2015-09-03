@@ -32,6 +32,7 @@
   <script type="text/javascript" src="assets/js/bootbox.min.js"></script>
   <script type="text/javascript" src="assets/js/vibrate.js"></script>
 
+  <script type="text/javascript" src="assets/js/_login.js"></script>
   <script type="text/javascript" src="assets/js/_click-handlers.js"></script>
   <script type="text/javascript" src="assets/js/_hints.js"></script>
   <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script>
