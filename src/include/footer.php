@@ -4,24 +4,17 @@
 
   <div id="footer">
     <div class="container">
+      <p class="muted credit" align="right">Made with <span class="glyphicon glyphicon-heart"></span> in <a href="http://github.com/jdevlabs/cryptex/">PHP</a> by <a href="http://github.com/dufferzafar/" target="_blank">@dufferZafar</a> and <a href="https://github.com/jdevlabs/cryptex/graphs/contributors">friends</a>.</p>
       <!--
-      Jamia Developer Labs :
+        Developers:
 
-      We are a group of people who believe in DOING stuff.
-      -->
-      <p class="muted credit" align="right">Designed by <a href="https://github.com/orgs/jdevlabs" target="_blank">JDevLabs</a> for Algorhythm'14</p>
-      <!--
-      Developers:
-      <a href="https://github.com/dufferzafar">Shadab Zafar</a>,
-      <a href="https://github.com/hammadhaleem">Hammad Haleem</a>,
-      <a href="https://github.com/rootAvish">Avishkar Gupta</a>,
-      <a href="https://github.com/zishanAhmad">Zishan Ahmad</a>,
-      <a href="https://github.com/kwikadi">Aditya Kumar</a>,
-      <a href="https://github.com/sharanagrawal">Sharan Agrawal</a>,
-      <a href="https://github.com/trigonaminima">Shivam Rana</a>
-
-      If code excites you as much as it does us, we will be open-sourcing the entire code of cryptex once the contest ends.
-      It will be available here: https://github.com/orgs/jdevlabs/cryptex
+          Shadab Zafar   - https://github.com/dufferzafar
+          Hammad Haleem  - https://github.com/hammadhaleem
+          Avishkar Gupta - https://github.com/rootAvish
+          Zishan Ahmad   - https://github.com/zishanAhmad
+          Aditya Kumar   - https://github.com/kwikadi
+          Sharan Agrawal - https://github.com/sharanagrawal
+          Shivam Rana    - https://github.com/trigonaminima
       -->
     </div>
   </div>
