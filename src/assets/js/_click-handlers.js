@@ -53,9 +53,9 @@ $(document).ready(function()
       url: "include/_logout.php",
       success: function(data, tStatus)
       {
-        // alert(data);
-        if (data.indexOf("Logout Successful") > 0 )
+        if (data === "Logout Successful" ) {
           window.location.reload(true);
+        }
       },
       error:function(jqXHR, tStatus, errorThrown)
       {
